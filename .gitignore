@@ -1,0 +1,21 @@
+# Dipendenze
+node_modules/
+
+# File di sistema e log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# File di ambiente (Token e segreti)
+.env
+.npmrc
+
+
+
+
+
+
+
+
+

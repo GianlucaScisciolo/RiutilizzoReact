@@ -1,0 +1,48 @@
+{
+  "name": "@gianlucascisciolo/riutilizzoreact",
+  "version": "0.0.1",
+  "description": "Repository contenente del codice riutilizzabile per più progetti React.",
+  "type": "module",
+  "main": "./dist/riutilizzoreact.umd.js",
+  "module": "./dist/riutilizzoreact.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/riutilizzoreact.es.js",
+      "require": "./dist/riutilizzoreact.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0", 
+    "styled-components": ">=6.0.0",
+    "lucide-react": ">=0.200.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GianlucaScisciolo/RiutilizzoReact.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "license": "ISC"
+}
+
+
+
+
+
+
+
+
+
