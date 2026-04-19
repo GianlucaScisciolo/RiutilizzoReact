@@ -17,24 +17,21 @@ export default defineConfig({
       external: [
         'react', 
         'react-dom', 
+        'react/jsx-runtime', 
         'styled-components', 
         'lucide-react', 
         /^react-bootstrap.*/, 
         /^@fortawesome.*/, 
       ],
       output: {
+        inlineDynamicImports: false, 
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'jsxRuntime', 
           'styled-components': 'styled',
           'lucide-react': 'LucideReact',
           'react-bootstrap': 'ReactBootstrap',
-          'react-bootstrap/Card': 'ReactBootstrap.Card',
-          'react-bootstrap/ListGroup': 'ReactBootstrap.ListGroup',
-          'react-bootstrap/esm/Row': 'ReactBootstrap.Row',
-          'react-bootstrap/esm/Col': 'ReactBootstrap.Col',
-          '@fortawesome/react-fontawesome': 'FontAwesomeIcon',
-          '@fortawesome/free-solid-svg-icons': 'FreeSolidSvgIcons'
         }
       }
     }

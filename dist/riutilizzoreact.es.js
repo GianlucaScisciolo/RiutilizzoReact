@@ -4,15 +4,12 @@ import i from "react-bootstrap/Card";
 import a from "react-bootstrap/ListGroup";
 import o from "react-bootstrap/esm/Row";
 import s from "react-bootstrap/esm/Col";
-import { ChevronDown as c, ChevronLeft as l, ChevronRight as u, ChevronUp as d, Download as f, Euro as p, Eye as m, EyeClosed as h, LogIn as g, Pencil as _, Save as v, Search as y, Trash2 as b, X as x } from "lucide-react";
-import { FontAwesomeIcon as S } from "@fortawesome/react-fontawesome";
-import { faFile as C, faFileExcel as ee, faFilePdf as w } from "@fortawesome/free-solid-svg-icons";
+import { ChevronDown as c, ChevronLeft as l, ChevronRight as u, ChevronUp as d, Download as f, Euro as p, Eye as m, EyeClosed as h, LogIn as ee, Pencil as g, Save as _, Search as v, Trash2 as y, X as b } from "lucide-react";
+import { FontAwesomeIcon as x } from "@fortawesome/react-fontawesome";
+import { faFile as te, faFileExcel as ne, faFilePdf as re } from "@fortawesome/free-solid-svg-icons";
+import { Fragment as S, jsx as C, jsxs as w } from "react/jsx-runtime";
 import { Card as T, Table as E } from "react-bootstrap";
-//#region \0rolldown/runtime.js
-var D = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports), te = /* @__PURE__ */ ((e) => typeof require < "u" ? require : typeof Proxy < "u" ? new Proxy(e, { get: (e, t) => (typeof require < "u" ? require : e)[t] }) : e)(function(e) {
-	if (typeof require < "u") return require.apply(this, arguments);
-	throw Error("Calling `require` for \"" + e + "\" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.");
-}), O = r(i)`
+var ie = r(i)`
   background-color: #111111;
   overflow: hidden;
   border: 5px solid #000000;
@@ -22,25 +19,25 @@ var D = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports), t
 
   color: white;
   text-align: center;
-`, ne = r(i.Header)`
+`, ae = r(i.Header)`
   color: #ffffff;
   background-color: #000000;
   border: 5px solid #000000;
   min-height: 70px;
-`, re = r(a.Item)`
+`, oe = r(a.Item)`
   color: #ffffff;
   background-color: transparent;
   border: 5px solid #000000;
   min-height: 70px;
-`, k = r.div`
+`, se = r.div`
   overflow: hidden;
   transition: max-height 1.5s ease-out;
-`, ie = r(o)`
+`, ce = r(o)`
   display: flex;
   flex-wrap: wrap;
   padding-left: 3%;
   padding-right: 3%;
-`, ae = r(s)`
+`, le = r(s)`
   position: relative; 
   color: #FFFFFF;
   border-radius: 40px;
@@ -53,7 +50,7 @@ var D = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports), t
   height: auto;
   min-height: 50px;
   min-width: 300px;
-`, A = r.label`
+`, ue = r.label`
   width: 100%;
   color: #ffffff;
   background-color: transparent;
@@ -63,7 +60,7 @@ var D = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports), t
   text-align: center;
   min-height: 70px;
   margin-top: 2%;
-`, j = r.textarea`
+`, D = r.textarea`
   width: 100%;
   color: #ffffff;
   background-color: transparent;
@@ -73,13 +70,13 @@ var D = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports), t
   text-align: center;
   min-height: 70px;
   margin-bottom: 20px;
-`, M = r(j)`
+`, de = r(D)`
   background-color: #000000;
-`, oe = r(j)`
+`, fe = r(D)`
   background-color: #0050EF;
-`, se = r(j)`
+`, pe = r(D)`
   background-color: #500000;
-`, ce = r.input`
+`, O = r.input`
   width: 100%;
   color: #ffffff;
   background-color: transparent;
@@ -89,68 +86,68 @@ var D = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports), t
   text-align: center;
   min-height: 70px;
   margin-bottom: 20px;
-`, le = r(ce)`
+`, me = r(O)`
   background-color: #000000;
-`, ue = r(ce)`
+`, he = r(O)`
   background-color: #0050EF;
-`, de = r(ce)`
+`, ge = r(O)`
   background-color: #500000;
-`, N = "\n  color: #FFFFFF;\n  cursor: pointer;\n  transition: 0.5s all ease-out;\n", P = `
-  ${N}
+`, k = "\n  color: #FFFFFF;\n  cursor: pointer;\n  transition: 0.5s all ease-out;\n", A = `
+  ${k}
   &:hover {
     color: #0050EF;
   }
-`, fe = `
-  ${N}
+`, _e = `
+  ${k}
   &:hover {
     color: #500000;
   }
-`, pe = r(v)`
-  ${P}
-`, me = r(v)`
-  ${N}
-`, he = r(v)`
-  ${N}
+`, ve = r(_)`
+  ${A}
+`, ye = r(_)`
+  ${k}
+`, be = r(_)`
+  ${k}
   color: #0050EF;
-`, ge = r(h)`
-  ${N}
+`, xe = r(h)`
+  ${k}
   transition: 0.5s all ease-out;
-`, _e = r(m)`
-  ${N}
+`, Se = r(m)`
+  ${k}
   transition: 0.5s all ease-out;
   color: #0050EF;
-`, ve = r(y)`
-  ${P}
-`, ye = r(y)`
-  ${N}
-`, be = r(y)`
-  ${N}
+`, Ce = r(v)`
+  ${A}
+`, we = r(v)`
+  ${k}
+`, Te = r(v)`
+  ${k}
   color: #0050EF;
-`, xe = r(p)`
+`, Ee = r(p)`
   color: #FFFFFF;
   transition: 0.5s all ease-out;
-`, Se = r(d)`
-  ${P}
-`, Ce = r(c)`
-  ${P}
-`, we = r(g)`
-  ${P}
-`, Te = r(S)`
+`, De = r(d)`
+  ${A}
+`, Oe = r(c)`
+  ${A}
+`, ke = r(ee)`
+  ${A}
+`, Ae = r(x)`
   color: #FFFFFF;
-`, Ee = r(S)`
-  ${N}
-`, De = r(S)`
-  ${N}
+`, je = r(x)`
+  ${k}
+`, Me = r(x)`
+  ${k}
   color: #0050EF;
-`, Oe = r(f)`
-  ${P}
+`, Ne = r(f)`
+  ${A}
 `;
-r(x)`
-  ${fe}
+r(b)`
+  ${_e}
 `;
-var ke = r(b)`
-  ${fe}
-`, F = r.button`
+var Pe = r(y)`
+  ${_e}
+`, j = r.button`
   border-radius: 40px;
   border: 5px solid #000000;
   background-color: #000000;
@@ -159,43 +156,43 @@ var ke = r(b)`
   padding: 2% 15%;
   cursor: pointer;
 `;
-r(F)`
+r(j)`
   transition: 0.5s all ease-out;
   &:hover {
     background-color: #0050EF;
     color: #FFFFFF;
   }
-`, r(F)`
+`, r(j)`
   transition: 0.5s all ease-out;
   &:hover {
     background-color: #500000;
     color: #FFFFFF;
   }
-`, r(F)`
+`, r(j)`
   background-color: #0050EF;
   &:hover {
     background-color: #000000;
     color: #FFFFFF;
   }
-`, r(F)`
+`, r(j)`
   background-color: #500000;
   &:hover {
     background-color: #000000;
     color: #FFFFFF;
   }
 `;
-var Ae = r.select`
+var M = r.select`
   width: 100%;
   min-height: 70px;
   background-color: #0050EF;
   border: 5px solid #000000;
   color: #FFFFFF;
   text-align: center;
-`, je = r(Ae)`
+`, Fe = r(M)`
   background-color: #111111;
-`, Me = r(Ae)`
+`, Ie = r(M)`
   background-color: #0050EF;
-`, Ne = r(Ae)`
+`, Le = r(M)`
   background-color: #500000;
 `;
 r.option`
@@ -204,409 +201,233 @@ r.option`
     background-color: #0050EF;
   }
 `;
-var Pe = r.span`
+var Re = r.span`
   color: #FF0000;
   padding: 10px;
-`, I = {
-	StyledListGroupItem: re,
-	StyledRow: ie,
-	StyledCol: ae,
-	StyledSaveNotSelected: pe,
+`, N = {
+	StyledListGroupItem: oe,
+	StyledRow: ce,
+	StyledCol: le,
+	StyledSaveNotSelected: ve,
 	grandezzaIcona: 50,
-	StyledSearchNotSelected: ve,
-	StyledArrowTopNotSelected: Se,
-	StyledArrowBottomNotSelected: Ce,
-	StyledLoginNotSelected: we,
-	StyledPencilNotSelected: r(_)`
-  ${N}
+	StyledSearchNotSelected: Ce,
+	StyledArrowTopNotSelected: De,
+	StyledArrowBottomNotSelected: Oe,
+	StyledLoginNotSelected: ke,
+	StyledPencilNotSelected: r(g)`
+  ${k}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `,
-	StyledLabel: A,
-	StyledInputBlock: le,
-	StyledInputModifica: ue,
-	StyledInputElimina: de,
-	StyledTextAreaBlock: M,
-	StyledTextAreaModifica: oe,
-	StyledTextAreaElimina: se,
-	StyledForm: O,
-	StyledHeader: ne,
-	SlideContainer: k,
-	StyledSpanErrore: Pe,
-	StyledSelectBlock: je,
-	StyledSelectModifica: Me,
-	StyledSelectElimina: Ne,
-	StyledEyeClosedNotSelected: ge,
-	StyledEyeOpenNotSelected: _e,
-	StyledEuroNotSelected: xe,
-	StyledFileIconNotSelected: Te,
-	StyledDownloadNotSelected: Oe,
-	StyledTrashNotSelected: ke,
-	StyledSearchNotSelected2: ye,
-	StyledSaveNotSelected2: me,
-	StyledSearchSelected2: be,
-	StyledSaveSelected2: he,
-	StyledFileIconNotSelected2: Ee,
-	StyledFileIconSelected2: De
+	StyledLabel: ue,
+	StyledInputBlock: me,
+	StyledInputModifica: he,
+	StyledInputElimina: ge,
+	StyledTextAreaBlock: de,
+	StyledTextAreaModifica: fe,
+	StyledTextAreaElimina: pe,
+	StyledForm: ie,
+	StyledHeader: ae,
+	SlideContainer: se,
+	StyledSpanErrore: Re,
+	StyledSelectBlock: Fe,
+	StyledSelectModifica: Ie,
+	StyledSelectElimina: Le,
+	StyledEyeClosedNotSelected: xe,
+	StyledEyeOpenNotSelected: Se,
+	StyledEuroNotSelected: Ee,
+	StyledFileIconNotSelected: Ae,
+	StyledDownloadNotSelected: Ne,
+	StyledTrashNotSelected: Pe,
+	StyledSearchNotSelected2: we,
+	StyledSaveNotSelected2: ye,
+	StyledSearchSelected2: Te,
+	StyledSaveSelected2: be,
+	StyledFileIconNotSelected2: je,
+	StyledFileIconSelected2: Me
 };
 //#endregion
 //#region src/Tags.js
-function Fe(e, t) {
-	return e === 0 || e === 2 ? t.StyledPencilNotSelected : e === 1 ? t.StyledPencilSelected : _;
+function ze(e, t) {
+	return e === 0 || e === 2 ? t.StyledPencilNotSelected : e === 1 ? t.StyledPencilSelected : g;
 }
-function Ie(e, t) {
-	return e === 0 || e === 1 ? t.StyledTrashNotSelected : e === 2 ? t.StyledTrashSelected : b;
+function Be(e, t) {
+	return e === 0 || e === 1 ? t.StyledTrashNotSelected : e === 2 ? t.StyledTrashSelected : y;
 }
-function L(e, t, n) {
+function P(e, t, n) {
 	return t ? e !== 1 && e !== 2 ? n.StyledInputBlock : e === 1 ? n.StyledInputModifica : n.StyledInputElimina : e === 2 ? n.StyledInputElimina : n.StyledInputBlock;
 }
-function R(e, t, n) {
+function F(e, t, n) {
 	return t ? e !== 1 && e !== 2 ? n.StyledTextAreaBlock : e === 1 ? n.StyledTextAreaModifica : n.StyledTextAreaElimina : e === 2 ? n.StyledTextAreaElimina : n.StyledTextAreaBlock;
 }
 //#endregion
-//#region node_modules/react/cjs/react-jsx-runtime.production.js
-var Le = /* @__PURE__ */ D(((e) => {
-	var t = Symbol.for("react.transitional.element"), n = Symbol.for("react.fragment");
-	function r(e, n, r) {
-		var i = null;
-		if (r !== void 0 && (i = "" + r), n.key !== void 0 && (i = "" + n.key), "key" in n) for (var a in r = {}, n) a !== "key" && (r[a] = n[a]);
-		else r = n;
-		return n = r.ref, {
-			$$typeof: t,
-			type: e,
-			key: i,
-			ref: n === void 0 ? null : n,
-			props: r
-		};
-	}
-	e.Fragment = n, e.jsx = r, e.jsxs = r;
-})), Re = /* @__PURE__ */ D(((e) => {
-	process.env.NODE_ENV !== "production" && (function() {
-		function t(e) {
-			if (e == null) return null;
-			if (typeof e == "function") return e.$$typeof === D ? null : e.displayName || e.name || null;
-			if (typeof e == "string") return e;
-			switch (e) {
-				case _: return "Fragment";
-				case y: return "Profiler";
-				case v: return "StrictMode";
-				case C: return "Suspense";
-				case ee: return "SuspenseList";
-				case E: return "Activity";
-			}
-			if (typeof e == "object") switch (typeof e.tag == "number" && console.error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), e.$$typeof) {
-				case g: return "Portal";
-				case x: return e.displayName || "Context";
-				case b: return (e._context.displayName || "Context") + ".Consumer";
-				case S:
-					var n = e.render;
-					return e = e.displayName, e ||= (e = n.displayName || n.name || "", e === "" ? "ForwardRef" : "ForwardRef(" + e + ")"), e;
-				case w: return n = e.displayName || null, n === null ? t(e.type) || "Memo" : n;
-				case T:
-					n = e._payload, e = e._init;
-					try {
-						return t(e(n));
-					} catch {}
-			}
-			return null;
-		}
-		function n(e) {
-			return "" + e;
-		}
-		function r(e) {
-			try {
-				n(e);
-				var t = !1;
-			} catch {
-				t = !0;
-			}
-			if (t) {
-				t = console;
-				var r = t.error, i = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
-				return r.call(t, "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.", i), n(e);
-			}
-		}
-		function i(e) {
-			if (e === _) return "<>";
-			if (typeof e == "object" && e && e.$$typeof === T) return "<...>";
-			try {
-				var n = t(e);
-				return n ? "<" + n + ">" : "<...>";
-			} catch {
-				return "<...>";
-			}
-		}
-		function a() {
-			var e = O.A;
-			return e === null ? null : e.getOwner();
-		}
-		function o() {
-			return Error("react-stack-top-frame");
-		}
-		function s(e) {
-			if (ne.call(e, "key")) {
-				var t = Object.getOwnPropertyDescriptor(e, "key").get;
-				if (t && t.isReactWarning) return !1;
-			}
-			return e.key !== void 0;
-		}
-		function c(e, t) {
-			function n() {
-				ie || (ie = !0, console.error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)", t));
-			}
-			n.isReactWarning = !0, Object.defineProperty(e, "key", {
-				get: n,
-				configurable: !0
-			});
-		}
-		function l() {
-			var e = t(this.type);
-			return ae[e] || (ae[e] = !0, console.error("Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.")), e = this.props.ref, e === void 0 ? null : e;
-		}
-		function u(e, t, n, r, i, a) {
-			var o = n.ref;
-			return e = {
-				$$typeof: h,
-				type: e,
-				key: t,
-				props: n,
-				_owner: r
-			}, (o === void 0 ? null : o) === null ? Object.defineProperty(e, "ref", {
-				enumerable: !1,
-				value: null
-			}) : Object.defineProperty(e, "ref", {
-				enumerable: !1,
-				get: l
-			}), e._store = {}, Object.defineProperty(e._store, "validated", {
-				configurable: !1,
-				enumerable: !1,
-				writable: !0,
-				value: 0
-			}), Object.defineProperty(e, "_debugInfo", {
-				configurable: !1,
-				enumerable: !1,
-				writable: !0,
-				value: null
-			}), Object.defineProperty(e, "_debugStack", {
-				configurable: !1,
-				enumerable: !1,
-				writable: !0,
-				value: i
-			}), Object.defineProperty(e, "_debugTask", {
-				configurable: !1,
-				enumerable: !1,
-				writable: !0,
-				value: a
-			}), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
-		}
-		function d(e, n, i, o, l, d) {
-			var p = n.children;
-			if (p !== void 0) if (o) if (re(p)) {
-				for (o = 0; o < p.length; o++) f(p[o]);
-				Object.freeze && Object.freeze(p);
-			} else console.error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
-			else f(p);
-			if (ne.call(n, "key")) {
-				p = t(e);
-				var m = Object.keys(n).filter(function(e) {
-					return e !== "key";
-				});
-				o = 0 < m.length ? "{key: someKey, " + m.join(": ..., ") + ": ...}" : "{key: someKey}", M[p + o] || (m = 0 < m.length ? "{" + m.join(": ..., ") + ": ...}" : "{}", console.error("A props object containing a \"key\" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />", o, p, m, p), M[p + o] = !0);
-			}
-			if (p = null, i !== void 0 && (r(i), p = "" + i), s(n) && (r(n.key), p = "" + n.key), "key" in n) for (var h in i = {}, n) h !== "key" && (i[h] = n[h]);
-			else i = n;
-			return p && c(i, typeof e == "function" ? e.displayName || e.name || "Unknown" : e), u(e, p, i, a(), l, d);
-		}
-		function f(e) {
-			p(e) ? e._store && (e._store.validated = 1) : typeof e == "object" && e && e.$$typeof === T && (e._payload.status === "fulfilled" ? p(e._payload.value) && e._payload.value._store && (e._payload.value._store.validated = 1) : e._store && (e._store.validated = 1));
-		}
-		function p(e) {
-			return typeof e == "object" && !!e && e.$$typeof === h;
-		}
-		var m = te("react"), h = Symbol.for("react.transitional.element"), g = Symbol.for("react.portal"), _ = Symbol.for("react.fragment"), v = Symbol.for("react.strict_mode"), y = Symbol.for("react.profiler"), b = Symbol.for("react.consumer"), x = Symbol.for("react.context"), S = Symbol.for("react.forward_ref"), C = Symbol.for("react.suspense"), ee = Symbol.for("react.suspense_list"), w = Symbol.for("react.memo"), T = Symbol.for("react.lazy"), E = Symbol.for("react.activity"), D = Symbol.for("react.client.reference"), O = m.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ne = Object.prototype.hasOwnProperty, re = Array.isArray, k = console.createTask ? console.createTask : function() {
-			return null;
-		};
-		m = { react_stack_bottom_frame: function(e) {
-			return e();
-		} };
-		var ie, ae = {}, A = m.react_stack_bottom_frame.bind(m, o)(), j = k(i(o)), M = {};
-		e.Fragment = _, e.jsx = function(e, t, n) {
-			var r = 1e4 > O.recentlyCreatedOwnerStacks++;
-			return d(e, t, n, !1, r ? Error("react-stack-top-frame") : A, r ? k(i(e)) : j);
-		}, e.jsxs = function(e, t, n) {
-			var r = 1e4 > O.recentlyCreatedOwnerStacks++;
-			return d(e, t, n, !0, r ? Error("react-stack-top-frame") : A, r ? k(i(e)) : j);
-		};
-	})();
-})), z = (/* @__PURE__ */ D(((e, t) => {
-	process.env.NODE_ENV === "production" ? t.exports = Le() : t.exports = Re();
-})))();
-function B({ eseguiSalvataggio: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ (0, z.jsx)(n.StyledListGroupItem, {
+//#region src/Operazioni.jsx
+function I({ eseguiSalvataggio: e, vistaItem: t, StyledComponents: n }) {
+	return t === "card" || t === "form" ? /* @__PURE__ */ C(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ (0, z.jsx)(n.StyledRow, { children: /* @__PURE__ */ (0, z.jsx)(n.StyledCol, { children: /* @__PURE__ */ (0, z.jsx)(n.StyledSaveNotSelected, {
+		children: /* @__PURE__ */ C(n.StyledRow, { children: /* @__PURE__ */ C(n.StyledCol, { children: /* @__PURE__ */ C(n.StyledSaveNotSelected, {
 			className: "salvaItemButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		}) }) })
-	}) : /* @__PURE__ */ (0, z.jsx)(n.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsx)(n.StyledSaveNotSelected, {
+	}) : /* @__PURE__ */ C(n.StyledColOperazioni, { children: /* @__PURE__ */ C(n.StyledSaveNotSelected, {
 		className: "center salvaItemButton",
 		size: n.grandezzaIcona,
 		onClick: e
 	}) });
 }
-function V({ handleSearch: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ (0, z.jsx)(n.StyledListGroupItem, {
+function L({ handleSearch: e, vistaItem: t, StyledComponents: n }) {
+	return t === "card" || t === "form" ? /* @__PURE__ */ C(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ (0, z.jsx)(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ C(n.StyledSearchNotSelected, {
 			className: "ricercaItemsButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ (0, z.jsx)(n.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+	}) : /* @__PURE__ */ C(n.StyledColOperazioni, { children: /* @__PURE__ */ C("div", {
 		style: { width: "100%" },
-		children: /* @__PURE__ */ (0, z.jsx)(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ C(n.StyledSearchNotSelected, {
 			className: "center ricercaItemsButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
 	}) });
 }
-function H({ eseguiRicerca: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ (0, z.jsx)(n.StyledListGroupItem, {
+function R({ eseguiRicerca: e, vistaItem: t, StyledComponents: n }) {
+	return t === "card" || t === "form" ? /* @__PURE__ */ C(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ (0, z.jsx)(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ C(n.StyledSearchNotSelected, {
 			className: "ricercaEntrateUsciteButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ (0, z.jsx)(n.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+	}) : /* @__PURE__ */ C(n.StyledColOperazioni, { children: /* @__PURE__ */ C("div", {
 		style: { width: "100%" },
-		children: /* @__PURE__ */ (0, z.jsx)(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ C(n.StyledSearchNotSelected, {
 			className: "ricercaEntrateUsciteButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
 	}) });
 }
-function U({ eseguiLogin: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ (0, z.jsx)(n.StyledListGroupItem, {
+function z({ eseguiLogin: e, vistaItem: t, StyledComponents: n }) {
+	return t === "card" || t === "form" ? /* @__PURE__ */ C(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "3%",
 			paddingBottom: "3%"
 		},
-		children: /* @__PURE__ */ (0, z.jsx)(n.StyledLoginNotSelected, {
+		children: /* @__PURE__ */ C(n.StyledLoginNotSelected, {
 			className: "loginButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ (0, z.jsx)(n.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsx)(n.StyledLoginNotSelected, {
+	}) : /* @__PURE__ */ C(n.StyledColOperazioni, { children: /* @__PURE__ */ C(n.StyledLoginNotSelected, {
 		className: "center loginButton",
 		size: n.grandezzaIcona,
 		onClick: e
 	}) });
 }
-function W({ eseguiModificaProfilo: e, vistaItem: t, StyledComponents: n }) {
+function B({ eseguiModificaProfilo: e, vistaItem: t, StyledComponents: n }) {
 	let r = t === "form" ? n.StyledPencilNotSelected : n.StyledPencilNotSelected2;
-	return t === "card" || t === "form" ? /* @__PURE__ */ (0, z.jsx)(n.StyledListGroupItem, {
+	return t === "card" || t === "form" ? /* @__PURE__ */ C(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ (0, z.jsx)(r, {
+		children: /* @__PURE__ */ C(r, {
 			className: "modificaProfiloButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ (0, z.jsx)(n.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsx)(n.StyledPencilNotSelectedModificaProfilo, {
+	}) : /* @__PURE__ */ C(n.StyledColOperazioni, { children: /* @__PURE__ */ C(n.StyledPencilNotSelectedModificaProfilo, {
 		className: "center modificaProfiloButton",
 		size: n.grandezzaIcona,
 		onClick: e
 	}) });
 }
-function G({ ottieniFileRangePDF: e, ottieniFileRangeExcel: t, eliminaItemsRange: n, vistaItem: r, StyledComponents: i }) {
-	return r === "card" || r === "form" ? /* @__PURE__ */ (0, z.jsxs)(i.StyledListGroupItem, {
+function V({ ottieniFileRangePDF: e, ottieniFileRangeExcel: t, eliminaItemsRange: n, vistaItem: r, StyledComponents: i }) {
+	return r === "card" || r === "form" ? /* @__PURE__ */ w(i.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "3%"
 		},
 		children: [
-			/* @__PURE__ */ (0, z.jsxs)("div", { children: [/* @__PURE__ */ (0, z.jsx)(i.StyledFileIconNotSelected, {
-				icon: w,
+			/* @__PURE__ */ w("div", { children: [/* @__PURE__ */ C(i.StyledFileIconNotSelected, {
+				icon: re,
 				size: "2xl",
 				style: { marginRight: "50%" }
-			}), /* @__PURE__ */ (0, z.jsx)(i.StyledFileIconNotSelected, {
-				icon: ee,
+			}), /* @__PURE__ */ C(i.StyledFileIconNotSelected, {
+				icon: ne,
 				size: "2xl"
 			})] }),
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
-			/* @__PURE__ */ (0, z.jsxs)("div", { children: [/* @__PURE__ */ (0, z.jsx)(i.StyledDownloadNotSelected, {
+			/* @__PURE__ */ C("br", {}),
+			/* @__PURE__ */ w("div", { children: [/* @__PURE__ */ C(i.StyledDownloadNotSelected, {
 				size: i.grandezzaIcona,
 				style: { marginRight: "50%" },
 				onClick: e
-			}), /* @__PURE__ */ (0, z.jsx)(i.StyledDownloadNotSelected, {
+			}), /* @__PURE__ */ C(i.StyledDownloadNotSelected, {
 				size: i.grandezzaIcona,
 				onClick: t
 			})] }),
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
-			/* @__PURE__ */ (0, z.jsx)("div", { children: /* @__PURE__ */ (0, z.jsx)(i.StyledTrashNotSelected, {
+			/* @__PURE__ */ C("br", {}),
+			/* @__PURE__ */ C("div", { children: /* @__PURE__ */ C(i.StyledTrashNotSelected, {
 				size: i.grandezzaIcona,
 				onClick: n
 			}) }),
-			/* @__PURE__ */ (0, z.jsx)("br", {})
+			/* @__PURE__ */ C("br", {})
 		]
-	}) : /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-		/* @__PURE__ */ (0, z.jsx)(i.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsxs)("div", {
+	}) : /* @__PURE__ */ w(S, { children: [
+		/* @__PURE__ */ C(i.StyledColOperazioni, { children: /* @__PURE__ */ w("div", {
 			style: { width: "100%" },
-			children: [/* @__PURE__ */ (0, z.jsx)(i.StyledFileIconNotSelected, {
-				icon: w,
+			children: [/* @__PURE__ */ C(i.StyledFileIconNotSelected, {
+				icon: re,
 				className: "left",
 				style: { marginRight: "50%" },
 				size: "2xl"
-			}), /* @__PURE__ */ (0, z.jsx)(i.StyledDownloadNotSelected, {
+			}), /* @__PURE__ */ C(i.StyledDownloadNotSelected, {
 				size: i.grandezzaIcona,
 				className: "rigth",
 				onClick: e
 			})]
 		}) }),
-		/* @__PURE__ */ (0, z.jsx)(i.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsxs)("div", {
+		/* @__PURE__ */ C(i.StyledColOperazioni, { children: /* @__PURE__ */ w("div", {
 			style: { width: "100%" },
-			children: [/* @__PURE__ */ (0, z.jsx)(i.StyledFileIconNotSelected, {
-				icon: ee,
+			children: [/* @__PURE__ */ C(i.StyledFileIconNotSelected, {
+				icon: ne,
 				className: "left",
 				style: { marginRight: "50%" },
 				size: "2xl"
-			}), /* @__PURE__ */ (0, z.jsx)(i.StyledDownloadNotSelected, {
+			}), /* @__PURE__ */ C(i.StyledDownloadNotSelected, {
 				size: i.grandezzaIcona,
 				className: "rigth",
 				onClick: t
 			})]
 		}) }),
-		/* @__PURE__ */ (0, z.jsx)(i.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+		/* @__PURE__ */ C(i.StyledColOperazioni, { children: /* @__PURE__ */ C("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ (0, z.jsx)(i.StyledTrashNotSelected2, {
+			children: /* @__PURE__ */ C(i.StyledTrashNotSelected2, {
 				size: i.grandezzaIcona,
 				className: "center",
 				onClick: n
@@ -614,54 +435,54 @@ function G({ ottieniFileRangePDF: e, ottieniFileRangeExcel: t, eliminaItemsRange
 		}) })
 	] });
 }
-function ze({ selectOperation: e, item: t, vistaItem: n, StyledComponents: r }) {
-	let i = Ie(t.tipo_selezione, r), a = Fe(t.tipo_selezione, r);
-	return n === "card" || n === "form" ? /* @__PURE__ */ (0, z.jsxs)(r.StyledListGroupItem, {
+function Ve({ selectOperation: e, item: t, vistaItem: n, StyledComponents: r }) {
+	let i = Be(t.tipo_selezione, r), a = ze(t.tipo_selezione, r);
+	return n === "card" || n === "form" ? /* @__PURE__ */ w(r.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000"
 		},
-		children: [/* @__PURE__ */ (0, z.jsx)(a, {
+		children: [/* @__PURE__ */ C(a, {
 			className: "modificaItemButton",
 			size: r.grandezzaIcona,
 			onClick: () => e("pencil", t),
 			style: { marginRight: "50%" }
-		}), /* @__PURE__ */ (0, z.jsx)(i, {
+		}), /* @__PURE__ */ C(i, {
 			className: "eliminaItemButton",
 			size: r.grandezzaIcona,
 			onClick: () => e("trash", t)
 		})]
-	}) : /* @__PURE__ */ (0, z.jsx)(r.StyledColOperazioni, { children: /* @__PURE__ */ (0, z.jsxs)("div", {
+	}) : /* @__PURE__ */ C(r.StyledColOperazioni, { children: /* @__PURE__ */ w("div", {
 		style: { width: "100%" },
-		children: [/* @__PURE__ */ (0, z.jsx)(a, {
+		children: [/* @__PURE__ */ C(a, {
 			className: "left modificaItemButton",
 			size: r.grandezzaIcona,
 			onClick: () => e("pencil", t),
 			style: { marginRight: "50%" }
-		}), /* @__PURE__ */ (0, z.jsx)(i, {
+		}), /* @__PURE__ */ C(i, {
 			className: "rigth eliminaItemButton",
 			size: r.grandezzaIcona,
 			onClick: () => e("trash", t)
 		})]
 	}) });
 }
-var Be = ({ selectedIdsModifica: e, selectedIdsEliminazione: t, handleEdit: n, handleDelete: r }) => /* @__PURE__ */ (0, z.jsx)(z.Fragment, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+var He = ({ selectedIdsModifica: e, selectedIdsEliminazione: t, handleEdit: n, handleDelete: r }) => /* @__PURE__ */ C(S, { children: /* @__PURE__ */ C("div", {
 	className: "contenitore-2",
-	children: /* @__PURE__ */ (0, z.jsxs)(o, { children: [e.length > 0 && /* @__PURE__ */ (0, z.jsx)(s, { children: /* @__PURE__ */ (0, z.jsx)("button", {
+	children: /* @__PURE__ */ w(o, { children: [e.length > 0 && /* @__PURE__ */ C(s, { children: /* @__PURE__ */ C("button", {
 		className: "bottone-blu-non-selezionato",
 		onClick: n,
 		children: "Modifica"
-	}) }), t.length > 0 && /* @__PURE__ */ (0, z.jsx)(s, { children: /* @__PURE__ */ (0, z.jsx)("button", {
+	}) }), t.length > 0 && /* @__PURE__ */ C(s, { children: /* @__PURE__ */ C("button", {
 		className: "bottone-rosso-non-selezionato",
 		onClick: r,
 		children: "Elimina"
 	}) })] })
 }) });
-function Ve({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
+function Ue({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
 	let i = (e) => {
 		n(e);
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(r.StyledListGroupItem, {
+	return /* @__PURE__ */ w(r.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
@@ -669,53 +490,53 @@ function Ve({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
 			paddingBottom: "20px"
 		},
 		children: [
-			e.includes("insert") && t === "insert" && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				e.includes("search") && /* @__PURE__ */ (0, z.jsx)(r.StyledSearchNotSelected2, {
+			e.includes("insert") && t === "insert" && /* @__PURE__ */ w(S, { children: [
+				e.includes("search") && /* @__PURE__ */ C(r.StyledSearchNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
 					onClick: () => i("search")
 				}),
-				/* @__PURE__ */ (0, z.jsx)(r.StyledSaveSelected2, {
+				/* @__PURE__ */ C(r.StyledSaveSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
 					onClick: () => i("insert")
 				}),
-				e.includes("file") && /* @__PURE__ */ (0, z.jsx)(r.StyledFileIconNotSelected2, {
-					icon: C,
+				e.includes("file") && /* @__PURE__ */ C(r.StyledFileIconNotSelected2, {
+					icon: te,
 					size: "2xl",
 					onClick: () => i("file")
 				})
 			] }),
-			e.includes("search") && t === "search" && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				/* @__PURE__ */ (0, z.jsx)(r.StyledSearchSelected2, {
+			e.includes("search") && t === "search" && /* @__PURE__ */ w(S, { children: [
+				/* @__PURE__ */ C(r.StyledSearchSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
 					onClick: () => i("search")
 				}),
-				e.includes("insert") && /* @__PURE__ */ (0, z.jsx)(r.StyledSaveNotSelected2, {
+				e.includes("insert") && /* @__PURE__ */ C(r.StyledSaveNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
 					onClick: () => i("insert")
 				}),
-				e.includes("file") && /* @__PURE__ */ (0, z.jsx)(r.StyledFileIconNotSelected2, {
-					icon: C,
+				e.includes("file") && /* @__PURE__ */ C(r.StyledFileIconNotSelected2, {
+					icon: te,
 					size: "2xl",
 					onClick: () => i("file")
 				})
 			] }),
-			e.includes("file") && t === "file" && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				e.includes("search") && /* @__PURE__ */ (0, z.jsx)(r.StyledSearchNotSelected2, {
+			e.includes("file") && t === "file" && /* @__PURE__ */ w(S, { children: [
+				e.includes("search") && /* @__PURE__ */ C(r.StyledSearchNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
 					onClick: () => i("search")
 				}),
-				e.includes("insert") && /* @__PURE__ */ (0, z.jsx)(r.StyledSaveNotSelected2, {
+				e.includes("insert") && /* @__PURE__ */ C(r.StyledSaveNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
 					onClick: () => i("insert")
 				}),
-				/* @__PURE__ */ (0, z.jsx)(r.StyledFileIconNotSelected2, {
-					icon: C,
+				/* @__PURE__ */ C(r.StyledFileIconNotSelected2, {
+					icon: te,
 					size: "2xl",
 					onClick: () => i("file")
 				})
@@ -725,40 +546,40 @@ function Ve({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
 }
 //#endregion
 //#region src/form_item/FormItem.jsx
-function He({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
-	return /* @__PURE__ */ (0, z.jsx)(r.StyledForm, { children: /* @__PURE__ */ (0, z.jsx)(Ve, {
+function We({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
+	return /* @__PURE__ */ C(r.StyledForm, { children: /* @__PURE__ */ C(Ue, {
 		elementi: e,
 		tipoForm: t,
 		setTipoForm: n,
 		StyledComponents: r
 	}) });
 }
-function Ue({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
-	return /* @__PURE__ */ (0, z.jsx)(r.StyledForm, { children: /* @__PURE__ */ (0, z.jsx)(Ve, {
+function Ge({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
+	return /* @__PURE__ */ C(r.StyledForm, { children: /* @__PURE__ */ C(Ue, {
 		elementi: e,
 		tipoForm: t,
 		setTipoForm: n,
 		StyledComponents: r
 	}) });
 }
-function We({ campi: t, indici: n, eseguiSalvataggio: r }) {
-	return /* @__PURE__ */ (0, z.jsxs)(I.StyledForm, { children: [
-		/* @__PURE__ */ (0, z.jsx)(I.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsxs)(I.SlideContainer, {
+function Ke({ campi: t, indici: n, eseguiSalvataggio: r }) {
+	return /* @__PURE__ */ w(N.StyledForm, { children: [
+		/* @__PURE__ */ C(N.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ w(N.SlideContainer, {
 			style: {
 				maxHeight: "2000px",
 				overflowY: "auto"
 			},
 			children: [
 				n.map((n) => {
-					let r = t.type[n] ? L(1, !0, I) : R(1, !0, I);
-					return /* @__PURE__ */ (0, z.jsxs)(e, { children: [
-						/* @__PURE__ */ (0, z.jsx)(I.StyledLabel, {
+					let r = t.type[n] ? P(1, !0, N) : F(1, !0, N);
+					return /* @__PURE__ */ w(e, { children: [
+						/* @__PURE__ */ C(N.StyledLabel, {
 							htmlFor: t.name[n],
 							children: t.label[n]
 						}),
-						t.name[n] === "prezzo" ? /* @__PURE__ */ (0, z.jsx)(I.StyledRow, { children: /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-							/* @__PURE__ */ (0, z.jsx)(r, {
+						t.name[n] === "prezzo" ? /* @__PURE__ */ C(N.StyledRow, { children: /* @__PURE__ */ w(S, { children: [
+							/* @__PURE__ */ C(r, {
 								style: ["prezzo", "totale"].includes(t.name[n]) ? {
 									marginLeft: "-10%",
 									marginRight: 0,
@@ -775,17 +596,17 @@ function We({ campi: t, indici: n, eseguiSalvataggio: r }) {
 								onClick: t.onClick,
 								onBlur: t.onBlur
 							}),
-							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ (0, z.jsx)(I.StyledEuroNotSelected, {
+							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ C(N.StyledEuroNotSelected, {
 								style: {
 									maxWidth: "5%",
 									marginTop: "13px"
 								},
-								size: I.grandezzaIcona,
+								size: N.grandezzaIcona,
 								onClick: null
 							}),
 							t.options[n]
-						] }) }) : /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-							/* @__PURE__ */ (0, z.jsx)(r, {
+						] }) }) : /* @__PURE__ */ w(S, { children: [
+							/* @__PURE__ */ C(r, {
 								style: ["prezzo", "totale"].includes(t.name[n]) ? {
 									marginLeft: "-10%",
 									marginRight: 0,
@@ -802,47 +623,47 @@ function We({ campi: t, indici: n, eseguiSalvataggio: r }) {
 								onClick: t.onClick,
 								onBlur: t.onBlur
 							}),
-							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ (0, z.jsx)(I.StyledEuroNotSelected, {
+							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ C(N.StyledEuroNotSelected, {
 								style: {
 									maxWidth: "5%",
 									marginTop: "13px"
 								},
-								size: I.grandezzaIcona,
+								size: N.grandezzaIcona,
 								onClick: null
 							}),
 							t.options[n]
 						] }),
-						t.errore[n] !== "" && /* @__PURE__ */ (0, z.jsx)(I.StyledSpanErrore, { children: t.errore[n] })
+						t.errore[n] !== "" && /* @__PURE__ */ C(N.StyledSpanErrore, { children: t.errore[n] })
 					] }, n);
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			]
 		}),
-		/* @__PURE__ */ (0, z.jsx)(B, {
+		/* @__PURE__ */ C(I, {
 			eseguiSalvataggio: r,
 			vistaItem: "form",
-			StyledComponents: I
+			StyledComponents: N
 		})
 	] });
 }
-function Ge({ campi: t, indici: r, handleSearch: i }) {
+function qe({ campi: t, indici: r, handleSearch: i }) {
 	let [a, o] = n(!0), [s, c] = n(!0);
-	return L(1, !0, I), R(1, !0, I), /* @__PURE__ */ (0, z.jsxs)(I.StyledForm, { children: [
-		/* @__PURE__ */ (0, z.jsx)(I.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsxs)(I.SlideContainer, {
+	return P(1, !0, N), F(1, !0, N), /* @__PURE__ */ w(N.StyledForm, { children: [
+		/* @__PURE__ */ C(N.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ w(N.SlideContainer, {
 			style: {
 				maxHeight: "2000px",
 				overflowY: "auto"
 			},
 			children: [
 				r.map((n) => {
-					let r = t.type[n] ? L(1, !0, I) : R(1, !0, I);
-					return /* @__PURE__ */ (0, z.jsxs)(e, { children: [/* @__PURE__ */ (0, z.jsx)(I.StyledLabel, {
+					let r = t.type[n] ? P(1, !0, N) : F(1, !0, N);
+					return /* @__PURE__ */ w(e, { children: [/* @__PURE__ */ C(N.StyledLabel, {
 						htmlFor: t.name[n],
 						children: t.label[n]
-					}), /* @__PURE__ */ (0, z.jsx)(r, {
+					}), /* @__PURE__ */ C(r, {
 						rows: 1,
 						name: t.name[n],
 						id: t.id[n],
@@ -855,38 +676,38 @@ function Ge({ campi: t, indici: r, handleSearch: i }) {
 						onBlur: t.onBlur
 					}, n)] }, n);
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			]
 		}),
-		/* @__PURE__ */ (0, z.jsx)(V, {
+		/* @__PURE__ */ C(L, {
 			setIsVisible: o,
 			arrowUp: s,
 			setArrowUp: c,
 			handleSearch: i,
 			vistaItem: "form",
-			StyledComponents: I
+			StyledComponents: N
 		})
 	] });
 }
-function Ke({ campi: t, indici: r, eseguiLogin: i }) {
+function Je({ campi: t, indici: r, eseguiLogin: i }) {
 	let [a, o] = n("password"), s = (e) => {
 		e.preventDefault(), o(a === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(I.StyledForm, { children: [
-		/* @__PURE__ */ (0, z.jsx)(I.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsxs)(I.SlideContainer, {
+	return /* @__PURE__ */ w(N.StyledForm, { children: [
+		/* @__PURE__ */ C(N.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ w(N.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: [
 				r.map((n) => {
-					let r = t.type[n] ? L(1, !0, I) : R(1, !0, I), i = a === "password" ? I.StyledEyeClosedNotSelected : I.StyledEyeOpenNotSelected;
-					return /* @__PURE__ */ (0, z.jsxs)(e, { children: [
-						/* @__PURE__ */ (0, z.jsx)(I.StyledLabel, {
+					let r = t.type[n] ? P(1, !0, N) : F(1, !0, N), i = a === "password" ? N.StyledEyeClosedNotSelected : N.StyledEyeOpenNotSelected;
+					return /* @__PURE__ */ w(e, { children: [
+						/* @__PURE__ */ C(N.StyledLabel, {
 							htmlFor: t.name[n],
 							children: t.label[n]
 						}),
-						/* @__PURE__ */ (0, z.jsxs)(I.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+						/* @__PURE__ */ w(N.StyledRow, { children: [/* @__PURE__ */ C(r, {
 							style: t.name[n] === "password" ? {
 								marginLeft: "-10%",
 								marginRight: 0,
@@ -908,47 +729,47 @@ function Ke({ campi: t, indici: r, eseguiLogin: i }) {
 							onChange: t.onChange,
 							onClick: t.onClick,
 							onBlur: t.onBlur
-						}), t.name[n] === "password" && /* @__PURE__ */ (0, z.jsx)(i, {
+						}), t.name[n] === "password" && /* @__PURE__ */ C(i, {
 							style: {
 								maxWidth: "5%",
 								marginTop: "13px"
 							},
-							size: I.grandezzaIcona,
+							size: N.grandezzaIcona,
 							onClick: s
 						})] }),
 						t.options[n],
-						t.errore[n] && /* @__PURE__ */ (0, z.jsx)(I.StyledSpanErrore, { children: t.errore[n] })
+						t.errore[n] && /* @__PURE__ */ C(N.StyledSpanErrore, { children: t.errore[n] })
 					] }, n);
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			]
 		}),
-		/* @__PURE__ */ (0, z.jsx)(U, {
+		/* @__PURE__ */ C(z, {
 			eseguiLogin: i,
 			vistaItem: "form",
-			StyledComponents: I
+			StyledComponents: N
 		})
 	] });
 }
-function qe({ campi: t, indici: r, eseguiModificaProfilo: i }) {
+function Ye({ campi: t, indici: r, eseguiModificaProfilo: i }) {
 	let [a, o] = n("password"), [s, c] = n("password"), [l, u] = n("password"), d = (e, t) => {
 		e.preventDefault(), t === "password_attuale" ? o(a === "text" ? "password" : "text") : t === "nuova_password" ? c(s === "text" ? "password" : "text") : t === "conferma_nuova_password" && u(l === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(I.StyledForm, { children: [
-		/* @__PURE__ */ (0, z.jsx)(I.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsxs)(I.SlideContainer, {
+	return /* @__PURE__ */ w(N.StyledForm, { children: [
+		/* @__PURE__ */ C(N.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ w(N.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: [
 				r.map((n) => {
-					let r = t.type[n] ? L(1, !0, I) : R(1, !0, I), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? I.StyledEyeClosedNotSelected : I.StyledEyeOpenNotSelected;
-					return /* @__PURE__ */ (0, z.jsxs)(e, { children: [
-						/* @__PURE__ */ (0, z.jsx)(I.StyledLabel, {
+					let r = t.type[n] ? P(1, !0, N) : F(1, !0, N), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? N.StyledEyeClosedNotSelected : N.StyledEyeOpenNotSelected;
+					return /* @__PURE__ */ w(e, { children: [
+						/* @__PURE__ */ C(N.StyledLabel, {
 							htmlFor: t.name[n],
 							children: t.label[n]
 						}),
-						/* @__PURE__ */ (0, z.jsxs)(I.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+						/* @__PURE__ */ w(N.StyledRow, { children: [/* @__PURE__ */ C(r, {
 							style: t.name[n].includes("password") ? {
 								marginLeft: "-10%",
 								marginRight: 0,
@@ -970,43 +791,43 @@ function qe({ campi: t, indici: r, eseguiModificaProfilo: i }) {
 							onChange: t.onChange,
 							onClick: t.onClick,
 							onBlur: t.onBlur
-						}), t.name[n].includes("password") && /* @__PURE__ */ (0, z.jsx)(i, {
+						}), t.name[n].includes("password") && /* @__PURE__ */ C(i, {
 							style: {
 								maxWidth: "5%",
 								marginTop: "13px"
 							},
-							size: I.grandezzaIcona,
+							size: N.grandezzaIcona,
 							onClick: (e) => d(e, t.name[n])
 						})] }),
 						t.options[n],
-						t.errore[n] && /* @__PURE__ */ (0, z.jsx)(I.StyledSpanErrore, { children: t.errore[n] })
+						t.errore[n] && /* @__PURE__ */ C(N.StyledSpanErrore, { children: t.errore[n] })
 					] }, n);
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			]
 		}),
-		/* @__PURE__ */ (0, z.jsx)(W, {
+		/* @__PURE__ */ C(B, {
 			eseguiModificaProfilo: i,
 			vistaItem: "form",
-			StyledComponents: I
+			StyledComponents: N
 		})
 	] });
 }
-function Je({ campi: t, indici: r, ottieniFileRangePDF: i, ottieniFileRangeExcel: a, eliminaItemsRange: o }) {
+function Xe({ campi: t, indici: r, ottieniFileRangePDF: i, ottieniFileRangeExcel: a, eliminaItemsRange: o }) {
 	let [s, c] = n(!0), [l, u] = n(!0), d = s ? "2000px" : "0px";
-	return L(1, !0, I), R(1, !0, I), /* @__PURE__ */ (0, z.jsxs)(I.StyledForm, { children: [
-		/* @__PURE__ */ (0, z.jsx)(I.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsxs)(I.SlideContainer, {
+	return P(1, !0, N), F(1, !0, N), /* @__PURE__ */ w(N.StyledForm, { children: [
+		/* @__PURE__ */ C(N.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ w(N.SlideContainer, {
 			style: { maxHeight: `${d}` },
 			children: [
 				r.map((n) => {
-					let r = t.type[n] ? L(1, !0, I) : R(1, !0, I);
-					return /* @__PURE__ */ (0, z.jsxs)(e, { children: [/* @__PURE__ */ (0, z.jsx)(I.StyledLabel, {
+					let r = t.type[n] ? P(1, !0, N) : F(1, !0, N);
+					return /* @__PURE__ */ w(e, { children: [/* @__PURE__ */ C(N.StyledLabel, {
 						htmlFor: t.name[n],
 						children: t.label[n]
-					}), /* @__PURE__ */ (0, z.jsx)(r, {
+					}), /* @__PURE__ */ C(r, {
 						rows: 1,
 						name: t.name[n],
 						id: t.id[n],
@@ -1019,31 +840,31 @@ function Je({ campi: t, indici: r, ottieniFileRangePDF: i, ottieniFileRangeExcel
 						onBlur: t.onBlur
 					}, n)] }, n);
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			]
 		}),
-		/* @__PURE__ */ (0, z.jsx)(G, {
+		/* @__PURE__ */ C(V, {
 			ottieniFileRangePDF: i,
 			ottieniFileRangeExcel: a,
 			eliminaItemsRange: o,
 			vistaItem: "form",
-			StyledComponents: I
+			StyledComponents: N
 		})
 	] });
 }
-function Ye({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
-	return /* @__PURE__ */ (0, z.jsxs)(I.StyledForm, { children: [
-		/* @__PURE__ */ (0, z.jsx)(I.StyledHeader, { children: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
-		/* @__PURE__ */ (0, z.jsxs)(I.SlideContainer, {
+function Ze({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
+	return /* @__PURE__ */ w(N.StyledForm, { children: [
+		/* @__PURE__ */ C(N.StyledHeader, { children: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
+		/* @__PURE__ */ w(N.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: [
-				/* @__PURE__ */ (0, z.jsx)(I.StyledLabel, {
+				/* @__PURE__ */ C(N.StyledLabel, {
 					htmlFor: "primo_anno",
 					children: i === "italiano" ? "Primo anno" : "First year"
 				}),
-				/* @__PURE__ */ (0, z.jsx)(I.StyledInputModifica, {
+				/* @__PURE__ */ C(N.StyledInputModifica, {
 					rows: 1,
 					name: "primo_anno",
 					id: "primo_anno",
@@ -1053,58 +874,58 @@ function Ye({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 					placeholder: i === "italiano" ? "Primo anno" : "First year",
 					onChange: (e) => n(e, t)
 				}),
-				/* @__PURE__ */ (0, z.jsx)(I.StyledLabel, {
+				/* @__PURE__ */ C(N.StyledLabel, {
 					htmlFor: "ultimo_anno",
 					children: i === "italiano" ? "Ultimo anno" : "Last year"
 				}),
-				/* @__PURE__ */ (0, z.jsxs)(I.StyledSelectModifica, {
+				/* @__PURE__ */ w(N.StyledSelectModifica, {
 					name: "ultimo_anno",
 					id: "ultimo_anno",
 					value: e.ultimo_anno,
 					onChange: (e) => n(e, t),
 					children: [
-						/* @__PURE__ */ (0, z.jsx)("option", {
+						/* @__PURE__ */ C("option", {
 							value: parseInt(e.primo_anno) + 1,
 							children: parseInt(e.primo_anno) + 1
 						}),
-						/* @__PURE__ */ (0, z.jsx)("option", {
+						/* @__PURE__ */ C("option", {
 							value: parseInt(e.primo_anno) + 2,
 							children: parseInt(e.primo_anno) + 2
 						}),
-						/* @__PURE__ */ (0, z.jsx)("option", {
+						/* @__PURE__ */ C("option", {
 							value: parseInt(e.primo_anno) + 3,
 							children: parseInt(e.primo_anno) + 3
 						}),
-						/* @__PURE__ */ (0, z.jsx)("option", {
+						/* @__PURE__ */ C("option", {
 							value: parseInt(e.primo_anno) + 4,
 							children: parseInt(e.primo_anno) + 4
 						}),
-						/* @__PURE__ */ (0, z.jsx)("option", {
+						/* @__PURE__ */ C("option", {
 							value: parseInt(e.primo_anno) + 5,
 							children: parseInt(e.primo_anno) + 5
 						})
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			]
 		}),
-		/* @__PURE__ */ (0, z.jsx)(H, {
+		/* @__PURE__ */ C(R, {
 			eseguiRicerca: (e) => r(e),
 			vistaItem: "form",
-			StyledComponents: I
+			StyledComponents: N
 		})
 	] });
 }
-var Xe = r(o)`
+var Qe = r(o)`
   display: flex;
   align-items: stretch; 
   justify-content: space-between;
   flex-wrap: wrap;
   padding-left: 3%;
   padding-right: 3%;
-`, K = r(s)`
+`, H = r(s)`
   flex: 1;
   display: flex;
   flex-direction: column; /* Organizza il contenuto verticalmente */
@@ -1117,15 +938,15 @@ var Xe = r(o)`
   min-height: 100px;
   color: #FFFFFF;
 `;
-r(K)`
+r(H)`
   max-height: ${(e) => e.isVisible ? "1000px" : "0"}; 
   overflow: hidden;
   transition: max-height 1s ease-out;
-`, r(K)`
+`, r(H)`
   border: 5px solid #000000;
   background-color: #000000;
 `;
-var Ze = r(K)`
+var $e = r(H)`
   border: 5px solid #000000;
   background-color: #000000;
   min-width: 230px;
@@ -1133,130 +954,130 @@ var Ze = r(K)`
   min-height: 80px;
   max-height: 80px;
 `;
-r(K)`
+r(H)`
   border: 5px solid #000000;
   background-color: #0050EF;
-`, r(K)`
+`, r(H)`
   border: 5px solid #000000;
   background-color: #500000;
 `, r.div`
   display: flex;
   flex-direction: row-reverse;
 `;
-var q = "\n  flex: 1;\n  display: flex;\n  align-items: center; /* Centro verticale */\n  justify-content: center; /* Centro orizzontale */\n  width: 100%;\n  height: 100%;\n  border: none;\n  outline: none;\n  background-color: transparent;\n  color: inherit;\n  padding: 0; \n  margin: 0;\n  text-align: center; /* Centro orizzontale del testo */\n  overflow: hidden; /* Nasconde l'overflow */\n  resize: vertical;\n  border-radius: 40px;\n  min-height: 50px;\n  border: 5px solid #000000; \n  color: #FFFFFF;\n  padding: auto;\n", Qe = r.textarea`
-  ${q}
-`, $e = r(Qe)`
+var U = "\n  flex: 1;\n  display: flex;\n  align-items: center; /* Centro verticale */\n  justify-content: center; /* Centro orizzontale */\n  width: 100%;\n  height: 100%;\n  border: none;\n  outline: none;\n  background-color: transparent;\n  color: inherit;\n  padding: 0; \n  margin: 0;\n  text-align: center; /* Centro orizzontale del testo */\n  overflow: hidden; /* Nasconde l'overflow */\n  resize: vertical;\n  border-radius: 40px;\n  min-height: 50px;\n  border: 5px solid #000000; \n  color: #FFFFFF;\n  padding: auto;\n", W = r.textarea`
+  ${U}
+`, et = r(W)`
   background-color: #111111;
-`, et = r(Qe)`
+`, tt = r(W)`
   background-color: #0050EF;
-`, tt = r(Qe)`
+`, nt = r(W)`
   background-color: #500000;
-`, nt = r.input`
-  ${q}
-`, rt = r(nt)`
+`, rt = r.input`
+  ${U}
+`, it = r(rt)`
   background-color: #111111;
-`, it = r(nt)`
+`, at = r(rt)`
   background-color: #0050EF;
-`, at = r(nt)`
+`, ot = r(rt)`
   background-color: #500000;
-`, ot = r.button`
-  ${q}
-`, st = "\n  margin-left: 10%;\n  margin-right: 10%;\n  border: 5px solid #000000;\n  background-color: #000000;\n  cursor: pointer;  \n  transition: 0.5s all ease-out;\n";
-r(ot)`
-  ${st}
+`, st = r.button`
+  ${U}
+`, ct = "\n  margin-left: 10%;\n  margin-right: 10%;\n  border: 5px solid #000000;\n  background-color: #000000;\n  cursor: pointer;  \n  transition: 0.5s all ease-out;\n";
+r(st)`
+  ${ct}
   &:hover {
     background-color: #0050EF;
     color: #FFFFFF;
   }
-`, r(ot)`
-  ${st}
+`, r(st)`
+  ${ct}
   &:hover {
     background-color: #500000;
     color: #FFFFFF;
   }
 `;
-var J = "\n  color: #FFFFFF;\n  cursor: pointer;\n", ct = r(v)`
-  ${J}
+var G = "\n  color: #FFFFFF;\n  cursor: pointer;\n", lt = r(_)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, lt = r(h)`
-  ${J}
+`, ut = r(h)`
+  ${G}
   transition: 0.5s all ease-out;
-`, ut = r(m)`
-  ${J}
+`, dt = r(m)`
+  ${G}
   transition: 0.5s all ease-out;
   color: #0050EF;
-`, dt = r(y)`
-  ${J}
+`, ft = r(v)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, ft = r(p)`
+`, pt = r(p)`
   color: #FFFFFF;
   transition: 0.5s all ease-out;
-`, pt = r(l)`
-  ${J}
+`, mt = r(l)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, mt = r(u)`
-  ${J}
+`, ht = r(u)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, ht = r(g)`
-  ${J}
+`, gt = r(ee)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, gt = r(_)`
-  ${J}
-`, _t = r(_)`
-  ${J}
+`, _t = r(g)`
+  ${G}
+`, vt = r(g)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, vt = r(_)`
+`, yt = r(g)`
   color: #0050EF;
   cursor: pointer;
-`, yt = r(b)`
-  ${J}
-`, bt = r(b)`
+`, bt = r(y)`
+  ${G}
+`, xt = r(y)`
   color: #500000;
   cursor: pointer;
-`, xt = r(S)`
+`, St = r(x)`
   color: #FFFFFF;
-`, St = r(S)`
-  ${J}
+`, Ct = r(x)`
+  ${G}
   color: #0050EF;
-`, Ct = r(f)`
-  ${J}
+`, wt = r(f)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `;
-r(x)`
-  ${J}
+r(b)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #500000;
   }
 `;
-var wt = r(b)`
-  ${J}
+var Tt = r(y)`
+  ${G}
   transition: 0.5s all ease-out;
   &:hover {
     color: #500000;
   }
-`, Tt = r.select`
+`, K = r.select`
   cursor: pointer;
   width: 100%;
   border-radius: 40px;
@@ -1264,11 +1085,11 @@ var wt = r(b)`
   border: 5px solid #000000;
   color: #FFFFFF;
   text-align: center;
-`, Et = r(Tt)`
+`, Et = r(K)`
   background-color: #111111;
-`, Dt = r(Tt)`
+`, Dt = r(K)`
   background-color: #0050EF;
-`, Ot = r(Tt)`
+`, Ot = r(K)`
   background-color: #500000;
 `;
 r.option`
@@ -1277,30 +1098,30 @@ r.option`
     background-color: #0050EF;
   }
 `;
-var Y = {
-	StyledPencilNotSelected: gt,
-	StyledPencilSelected: vt,
+var q = {
+	StyledPencilNotSelected: _t,
+	StyledPencilSelected: yt,
 	grandezzaIcona: 50,
-	StyledTrashNotSelected: yt,
-	StyledTrashSelected: bt,
-	StyledColOperazioni: Ze,
-	StyledSaveNotSelected: ct,
-	StyledSearchNotSelected: dt,
-	StyledArrowLeftNotSelected: pt,
-	StyledArrowRightNotSelected: mt,
-	StyledFileIconNotSelected: xt,
-	StyledDownloadNotSelected: Ct,
-	StyledTrashNotSelected2: wt,
-	StyledLoginNotSelected: ht,
-	StyledPencilNotSelectedModificaProfilo: _t,
-	StyledInputBlock: rt,
-	StyledInputModifica: it,
-	StyledInputElimina: at,
-	StyledTextAreaBlock: $e,
-	StyledTextAreaModifica: et,
-	StyledTextAreaElimina: tt,
-	StyledRow: Xe,
-	StyledCol: K,
+	StyledTrashNotSelected: bt,
+	StyledTrashSelected: xt,
+	StyledColOperazioni: $e,
+	StyledSaveNotSelected: lt,
+	StyledSearchNotSelected: ft,
+	StyledArrowLeftNotSelected: mt,
+	StyledArrowRightNotSelected: ht,
+	StyledFileIconNotSelected: St,
+	StyledDownloadNotSelected: wt,
+	StyledTrashNotSelected2: Tt,
+	StyledLoginNotSelected: gt,
+	StyledPencilNotSelectedModificaProfilo: vt,
+	StyledInputBlock: it,
+	StyledInputModifica: at,
+	StyledInputElimina: ot,
+	StyledTextAreaBlock: et,
+	StyledTextAreaModifica: tt,
+	StyledTextAreaElimina: nt,
+	StyledRow: Qe,
+	StyledCol: H,
 	StyledSpanErrore: r.span`
   color: #FF0000;
   border-radius: 40px;
@@ -1309,10 +1130,10 @@ var Y = {
 	StyledSelectBlock: Et,
 	StyledSelectModifica: Dt,
 	StyledSelectElimina: Ot,
-	StyledEyeClosedNotSelected: lt,
-	StyledEyeOpenNotSelected: ut,
-	StyledEuroNotSelected: ft,
-	StyledFileIconSelected2: St
+	StyledEyeClosedNotSelected: ut,
+	StyledEyeOpenNotSelected: dt,
+	StyledEuroNotSelected: pt,
+	StyledFileIconSelected2: Ct
 }, kt = (e, t, n) => {
 	e.preventDefault();
 	let { name: r, value: i, id: a } = e.target, o = !0;
@@ -1331,20 +1152,20 @@ var Y = {
 //#endregion
 //#region src/row_item/RowItem.jsx
 function jt({ campi: t, indici: n, eseguiSalvataggio: r }) {
-	L(1, !0, Y), R(1, !0, Y);
+	P(1, !0, q), F(1, !0, q);
 	let i = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(B, {
+	return /* @__PURE__ */ w(q.StyledRow, { children: [/* @__PURE__ */ C(I, {
 		eseguiSalvataggio: r,
 		vistaItem: "row",
-		StyledComponents: Y
+		StyledComponents: q
 	}), n.map((n) => {
-		let r = t.type[n] ? L(1, !0, Y) : R(1, !0, Y);
-		return /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsxs)("div", {
+		let r = t.type[n] ? P(1, !0, q) : F(1, !0, q);
+		return /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ w("div", {
 			style: { width: "100%" },
-			children: [/* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [
-				/* @__PURE__ */ (0, z.jsx)(r, {
+			children: [/* @__PURE__ */ w(q.StyledRow, { children: [
+				/* @__PURE__ */ C(r, {
 					rows: 1,
 					style: ["prezzo", "totale"].includes(t.name[n]) ? { maxWidth: "90%" } : null,
 					name: t.name[n],
@@ -1358,16 +1179,16 @@ function jt({ campi: t, indici: n, eseguiSalvataggio: r }) {
 					onBlur: t.onBlur,
 					onContextMenu: (e) => i(e, t.placeholder[n])
 				}),
-				["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ (0, z.jsx)(Y.StyledEuroNotSelected, {
+				["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ C(q.StyledEuroNotSelected, {
 					style: {
 						maxWidth: "10%",
 						marginLeft: "-6px"
 					},
-					size: Y.grandezzaIcona,
+					size: q.grandezzaIcona,
 					onClick: null
 				}),
 				t.options[n]
-			] }), t.errore[n] !== "" && /* @__PURE__ */ (0, z.jsx)(Y.StyledSpanErrore, { children: t.errore[n] })]
+			] }), t.errore[n] !== "" && /* @__PURE__ */ C(q.StyledSpanErrore, { children: t.errore[n] })]
 		}) }) }, n);
 	})] });
 }
@@ -1382,23 +1203,23 @@ function Mt({ campi: t, indici: r, handleSearch: i }) {
 		!0,
 		!0
 	]), [s, c] = n(!0);
-	L(1, !0, Y), R(1, !0, Y);
+	P(1, !0, q), F(1, !0, q);
 	let l = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(V, {
+	return /* @__PURE__ */ w(q.StyledRow, { children: [/* @__PURE__ */ C(L, {
 		visibilita: a,
 		setVisibilita: o,
 		arrowUp: s,
 		setArrowUp: c,
 		handleSearch: i,
 		vistaItem: "row",
-		StyledComponents: Y
+		StyledComponents: q
 	}), r.map((n) => {
-		let r = t.type[n] ? L(1, !0, Y) : R(1, !0, Y);
-		return /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+		let r = t.type[n] ? P(1, !0, q) : F(1, !0, q);
+		return /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ C("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ (0, z.jsx)(Y.StyledRow, { children: a[n] && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+			children: /* @__PURE__ */ C(q.StyledRow, { children: a[n] && /* @__PURE__ */ w(S, { children: [/* @__PURE__ */ C(r, {
 				style: [
 					"prezzo_min",
 					"prezzo_max",
@@ -1421,34 +1242,34 @@ function Mt({ campi: t, indici: r, handleSearch: i }) {
 				"prezzo_max",
 				"totale_min",
 				"totale_max"
-			].includes(t.name[n]) && /* @__PURE__ */ (0, z.jsx)(Y.StyledEuroNotSelected, {
+			].includes(t.name[n]) && /* @__PURE__ */ C(q.StyledEuroNotSelected, {
 				style: {
 					maxWidth: "20%",
 					marginLeft: "-6px"
 				},
-				size: Y.grandezzaIcona,
+				size: q.grandezzaIcona,
 				onClick: null
 			})] }) })
 		}) }) }, n);
 	})] });
 }
 function Nt({ item: t, campi: r, indici: i, selectOperation: a, tipoItem: o, handleBlurItem: s }) {
-	let c = L(r.tipoSelezione, !1, Y), [l, u] = n(() => i.reduce((e, t) => ({
+	let c = P(r.tipoSelezione, !1, q), [l, u] = n(() => i.reduce((e, t) => ({
 		...e,
 		[t]: r.value[t]
 	}), {})), d = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [
-		/* @__PURE__ */ (0, z.jsx)(ze, {
+	return /* @__PURE__ */ w(q.StyledRow, { children: [
+		/* @__PURE__ */ C(Ve, {
 			selectOperation: a,
 			item: t,
 			vistaItem: "row",
-			StyledComponents: Y
+			StyledComponents: q
 		}),
-		/* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+		/* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ C("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ (0, z.jsx)(Y.StyledRow, { children: /* @__PURE__ */ (0, z.jsx)(c, {
+			children: /* @__PURE__ */ C(q.StyledRow, { children: /* @__PURE__ */ C(c, {
 				rows: 1,
 				name: "header",
 				value: r.header,
@@ -1457,11 +1278,11 @@ function Nt({ item: t, campi: r, indici: i, selectOperation: a, tipoItem: o, han
 			}) })
 		}) }),
 		i.map((n) => {
-			let i = r.type[n] ? L(r.tipoSelezione, r.valoreModificabile[n], Y) : R(r.tipoSelezione, r.valoreModificabile[n], Y);
-			return /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsxs)("div", {
+			let i = r.type[n] ? P(r.tipoSelezione, r.valoreModificabile[n], q) : F(r.tipoSelezione, r.valoreModificabile[n], q);
+			return /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ w("div", {
 				style: { width: "100%" },
-				children: [/* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [
-					/* @__PURE__ */ (0, z.jsx)(i, {
+				children: [/* @__PURE__ */ w(q.StyledRow, { children: [
+					/* @__PURE__ */ C(i, {
 						style: ["prezzo", "totale"].includes(r.name[n]) ? { maxWidth: "80%" } : null,
 						rows: 1,
 						name: r.name[n],
@@ -1476,15 +1297,15 @@ function Nt({ item: t, campi: r, indici: i, selectOperation: a, tipoItem: o, han
 						readOnly: t.tipo_selezione !== 1,
 						onContextMenu: (e) => d(e, r.placeholder[n])
 					}),
-					["prezzo", "totale"].includes(r.name[n]) && /* @__PURE__ */ (0, z.jsx)(Y.StyledEuroNotSelected, {
+					["prezzo", "totale"].includes(r.name[n]) && /* @__PURE__ */ C(q.StyledEuroNotSelected, {
 						style: {
 							maxWidth: "20%",
 							marginLeft: "-6px"
 						},
-						size: Y.grandezzaIcona
+						size: q.grandezzaIcona
 					}),
 					r.options[n]
-				] }), r.errore[n] && /* @__PURE__ */ (0, z.jsx)(Y.StyledSpanErrore, { children: r.errore[n] })]
+				] }), r.errore[n] && /* @__PURE__ */ C(q.StyledSpanErrore, { children: r.errore[n] })]
 			}) }) }, n);
 		})
 	] });
@@ -1493,17 +1314,17 @@ function Pt({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 	let o = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(G, {
+	return /* @__PURE__ */ w(q.StyledRow, { children: [/* @__PURE__ */ C(V, {
 		ottieniFileRangePDF: r,
 		ottieniFileRangeExcel: i,
 		eliminaItemsRange: a,
 		vistaItem: "row",
-		StyledComponents: Y
+		StyledComponents: q
 	}), n.map((n) => {
-		let r = t.type[n] ? L(1, !0, Y) : R(1, !0, Y);
-		return /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+		let r = t.type[n] ? P(1, !0, q) : F(1, !0, q);
+		return /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ C("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ (0, z.jsx)(Y.StyledRow, { children: /* @__PURE__ */ (0, z.jsx)(r, {
+			children: /* @__PURE__ */ C(q.StyledRow, { children: /* @__PURE__ */ C(r, {
 				rows: 1,
 				name: t.name[n],
 				id: t.id[n],
@@ -1525,16 +1346,16 @@ function Ft({ campi: t, indici: r, eseguiLogin: i }) {
 	}, c = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(U, {
+	return /* @__PURE__ */ w(q.StyledRow, { children: [/* @__PURE__ */ C(z, {
 		eseguiLogin: i,
 		vistaItem: "row",
-		StyledComponents: Y
+		StyledComponents: q
 	}), r.map((n) => {
-		let r = t.type[n] ? L(1, !0, Y) : R(1, !0, Y), i = a === "password" ? Y.StyledEyeClosedNotSelected : Y.StyledEyeOpenNotSelected;
-		return /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsxs)("div", {
+		let r = t.type[n] ? P(1, !0, q) : F(1, !0, q), i = a === "password" ? q.StyledEyeClosedNotSelected : q.StyledEyeOpenNotSelected;
+		return /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ w("div", {
 			style: { width: "100%" },
 			children: [
-				/* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+				/* @__PURE__ */ w(q.StyledRow, { children: [/* @__PURE__ */ C(r, {
 					style: t.name[n] === "password" ? { maxWidth: "80%" } : null,
 					rows: 1,
 					name: t.name[n],
@@ -1548,16 +1369,16 @@ function Ft({ campi: t, indici: r, eseguiLogin: i }) {
 					onClick: t.onClick,
 					onBlur: t.onBlur,
 					onContextMenu: (e) => c(e, t.placeholder[n])
-				}), t.name[n] === "password" && /* @__PURE__ */ (0, z.jsx)(i, {
+				}), t.name[n] === "password" && /* @__PURE__ */ C(i, {
 					style: {
 						maxWidth: "20%",
 						marginLeft: "-6px"
 					},
-					size: Y.grandezzaIcona,
+					size: q.grandezzaIcona,
 					onClick: s
 				})] }),
 				t.options[n],
-				t.errore[n] && /* @__PURE__ */ (0, z.jsx)(Y.StyledSpanErrore, { children: t.errore[n] })
+				t.errore[n] && /* @__PURE__ */ C(q.StyledSpanErrore, { children: t.errore[n] })
 			]
 		}) }) }, n);
 	})] });
@@ -1566,16 +1387,16 @@ function It({ campi: t, indici: r, eseguiModificaProfilo: i }) {
 	let [a, o] = n("password"), [s, c] = n("password"), [l, u] = n("password"), d = (e, t) => {
 		e.preventDefault(), t === "password_attuale" ? o(a === "text" ? "password" : "text") : t === "nuova_password" ? c(s === "text" ? "password" : "text") : t === "conferma_nuova_password" && u(l === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(W, {
+	return /* @__PURE__ */ w(q.StyledRow, { children: [/* @__PURE__ */ C(B, {
 		eseguiModificaProfilo: i,
 		vistaItem: "row",
-		StyledComponents: Y
+		StyledComponents: q
 	}), r.map((n) => {
-		let r = t.type[n] ? L(1, !0, Y) : R(1, !0, Y), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? Y.StyledEyeClosedNotSelected : Y.StyledEyeOpenNotSelected;
-		return /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsxs)("div", {
+		let r = t.type[n] ? P(1, !0, q) : F(1, !0, q), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? q.StyledEyeClosedNotSelected : q.StyledEyeOpenNotSelected;
+		return /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ w("div", {
 			style: { width: "100%" },
 			children: [
-				/* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+				/* @__PURE__ */ w(q.StyledRow, { children: [/* @__PURE__ */ C(r, {
 					style: t.name[n].includes("password") ? { maxWidth: "80%" } : null,
 					rows: 1,
 					name: t.name[n],
@@ -1589,30 +1410,30 @@ function It({ campi: t, indici: r, eseguiModificaProfilo: i }) {
 					onClick: t.onClick,
 					onBlur: t.onBlur,
 					onContextMenu: (e) => handleRightClick(e, t.placeholder[n])
-				}), t.name[n].includes("password") && /* @__PURE__ */ (0, z.jsx)(i, {
+				}), t.name[n].includes("password") && /* @__PURE__ */ C(i, {
 					style: {
 						maxWidth: "20%",
 						marginLeft: "-6px"
 					},
-					size: Y.grandezzaIcona,
+					size: q.grandezzaIcona,
 					onClick: (e) => d(e, t.name[n])
 				})] }),
 				t.options[n],
-				t.errore[n] && /* @__PURE__ */ (0, z.jsx)(Y.StyledSpanErrore, { children: t.errore[n] })
+				t.errore[n] && /* @__PURE__ */ C(q.StyledSpanErrore, { children: t.errore[n] })
 			]
 		}) }) }, n);
 	})] });
 }
 function Lt({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
-	return /* @__PURE__ */ (0, z.jsxs)(Y.StyledRow, { children: [
-		/* @__PURE__ */ (0, z.jsx)(H, {
+	return /* @__PURE__ */ w(q.StyledRow, { children: [
+		/* @__PURE__ */ C(R, {
 			eseguiRicerca: (e) => r(e),
 			vistaItem: "row",
-			StyledComponents: Y
+			StyledComponents: q
 		}),
-		/* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+		/* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ C("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ (0, z.jsx)(Y.StyledRow, { children: /* @__PURE__ */ (0, z.jsx)(Y.StyledInputBlock, {
+			children: /* @__PURE__ */ C(q.StyledRow, { children: /* @__PURE__ */ C(q.StyledInputBlock, {
 				rows: 1,
 				name: "header",
 				value: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs",
@@ -1620,9 +1441,9 @@ function Lt({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 				readOnly: !0
 			}) })
 		}) }),
-		/* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+		/* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ C("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ (0, z.jsx)(Y.StyledInputModifica, {
+			children: /* @__PURE__ */ C(q.StyledInputModifica, {
 				rows: 1,
 				name: "primo_anno",
 				id: "primo_anno",
@@ -1634,32 +1455,32 @@ function Lt({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 				onContextMenu: (e) => handleRightClick(e, "Primo anno")
 			})
 		}) }),
-		/* @__PURE__ */ (0, z.jsx)(Y.StyledCol, { children: /* @__PURE__ */ (0, z.jsx)("div", {
+		/* @__PURE__ */ C(q.StyledCol, { children: /* @__PURE__ */ C("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ (0, z.jsxs)(Y.StyledSelectModifica, {
+			children: /* @__PURE__ */ w(q.StyledSelectModifica, {
 				name: "ultimo_anno",
 				id: "ultimo_anno",
 				onContextMenu: (e) => handleRightClick(e, "Ultimo anno"),
 				value: e.ultimo_anno,
 				onChange: (e) => n(e, t),
 				children: [
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 1,
 						children: parseInt(e.primo_anno) + 1
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 2,
 						children: parseInt(e.primo_anno) + 2
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 3,
 						children: parseInt(e.primo_anno) + 3
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 4,
 						children: parseInt(e.primo_anno) + 4
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 5,
 						children: parseInt(e.primo_anno) + 5
 					})
@@ -1708,7 +1529,7 @@ var Rt = r(i)`
   transition: max-height 2s ease-out;
   background-color: #111111;
   border: 10px solid #000000;
-`, X = r.textarea`
+`, J = r.textarea`
   width: 100%;
   color: #ffffff;
   background-color: transparent;
@@ -1718,13 +1539,13 @@ var Rt = r(i)`
   box-sizing: border-box;
   text-align: center;
   min-height: 70px;
-`, Wt = r(X)`
+`, Wt = r(J)`
   background-color: #111111;
-`, Gt = r(X)`
+`, Gt = r(J)`
   background-color: #0050EF;
-`, Kt = r(X)`
+`, Kt = r(J)`
   background-color: #500000;
-`, qt = r.input`
+`, Y = r.input`
   width: 100%;
   color: #ffffff;
   background-color: transparent;
@@ -1734,13 +1555,13 @@ var Rt = r(i)`
   box-sizing: border-box;
   text-align: center;
   min-height: 70px;
-`, Jt = r(qt)`
+`, qt = r(Y)`
   background-color: #111111;
-`, Yt = r(qt)`
+`, Jt = r(Y)`
   background-color: #0050EF;
-`, Xt = r(qt)`
+`, Yt = r(Y)`
   background-color: #500000;
-`, Z = "\n  color: #FFFFFF;\n  cursor: pointer;\n";
+`, X = "\n  color: #FFFFFF;\n  cursor: pointer;\n";
 r.div`
   display: flex;
   justify-content: center;
@@ -1748,107 +1569,107 @@ r.div`
   height: 100%;
   padding-top:10px;
 `;
-var Zt = r(v)`
-  ${Z}
+var Xt = r(_)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, Qt = r(h)`
-  ${Z}
+`, Zt = r(h)`
+  ${X}
   transition: 0.5s all ease-out;
-`, $t = r(m)`
-  ${Z}
+`, Qt = r(m)`
+  ${X}
   transition: 0.5s all ease-out;
   color: #0050EF;
-`, en = r(y)`
-  ${Z}
+`, $t = r(v)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, tn = r(p)`
+`, en = r(p)`
   color: #FFFFFF;
   transition: 0.5s all ease-out;
-`, nn = r(d)`
-  ${Z}
+`, tn = r(d)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, rn = r(c)`
-  ${Z}
+`, nn = r(c)`
+  ${X}
+  transition: 0.5s all ease-out;
+  &:hover {
+    color: #0050EF;
+  }
+`, rn = r(ee)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `, an = r(g)`
-  ${Z}
-  transition: 0.5s all ease-out;
-  &:hover {
-    color: #0050EF;
-  }
-`, on = r(_)`
-  ${Z}
+  ${X}
 `;
-r(_)`
-  ${Z}
+r(g)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `;
-var sn = r(_)`
+var on = r(g)`
   color: #0050EF;
   cursor: pointer;
-`, cn = r(b)`
-  ${Z}
-`, ln = r(b)`
+`, sn = r(y)`
+  ${X}
+`, cn = r(y)`
   color: #500000;
   cursor: pointer;
-`, un = r(S)`
+`, ln = r(x)`
   color: #FFFFFF;
-`, dn = r(S)`
-  ${Z}
+`, un = r(x)`
+  ${X}
   color: #0050EF;
-`, fn = r(f)`
-  ${Z}
+`, dn = r(f)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `;
-r(x)`
-  ${Z}
+r(b)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #500000;
   }
 `;
-var pn = r(_)`
-  ${Z}
+var fn = r(g)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, mn = r(b)`
-  ${Z}
+`, pn = r(y)`
+  ${X}
   transition: 0.5s all ease-out;
   &:hover {
     color: #500000;
   }
-`, hn = r.select`
+`, Z = r.select`
   width: 100%;
   min-height: 70px;
   background-color: #0050EF;
   border: 5px solid #000000;
   color: #FFFFFF;
   text-align: center;
-`, gn = r(hn)`
+`, mn = r(Z)`
   background-color: #111111;
-`, _n = r(hn)`
+`, hn = r(Z)`
   background-color: #0050EF;
-`, vn = r(hn)`
+`, gn = r(Z)`
   background-color: #500000;
 `;
 r.option`
@@ -1859,31 +1680,31 @@ r.option`
   }
 `;
 var Q = {
-	StyledPencilNotSelected: on,
-	StyledPencilSelected: sn,
+	StyledPencilNotSelected: an,
+	StyledPencilSelected: on,
 	grandezzaIcona: 50,
-	StyledTrashNotSelected: cn,
-	StyledTrashSelected: ln,
+	StyledTrashNotSelected: sn,
+	StyledTrashSelected: cn,
 	StyledListGroupItem: Ht,
 	StyledRow: zt,
 	StyledCol: Bt,
-	StyledSaveNotSelected: Zt,
-	StyledEyeOpenNotSelected: $t,
-	StyledEyeClosedNotSelected: Qt,
-	StyledSearchNotSelected: en,
-	StyledArrowTopNotSelected: nn,
-	StyledArrowBottomNotSelected: rn,
-	StyledFileIconNotSelected: un,
-	StyledDownloadNotSelected: fn,
-	StyledTrashNotSelected2: mn,
-	StyledLoginNotSelected: an,
-	StyledPencilNotSelected2: pn,
-	StyledSelectBlock: gn,
-	StyledSelectModifica: _n,
-	StyledSelectElimina: vn,
-	StyledInputBlock: Jt,
-	StyledInputModifica: Yt,
-	StyledInputElimina: Xt,
+	StyledSaveNotSelected: Xt,
+	StyledEyeOpenNotSelected: Qt,
+	StyledEyeClosedNotSelected: Zt,
+	StyledSearchNotSelected: $t,
+	StyledArrowTopNotSelected: tn,
+	StyledArrowBottomNotSelected: nn,
+	StyledFileIconNotSelected: ln,
+	StyledDownloadNotSelected: dn,
+	StyledTrashNotSelected2: pn,
+	StyledLoginNotSelected: rn,
+	StyledPencilNotSelected2: fn,
+	StyledSelectBlock: mn,
+	StyledSelectModifica: hn,
+	StyledSelectElimina: gn,
+	StyledInputBlock: qt,
+	StyledInputModifica: Jt,
+	StyledInputElimina: Yt,
 	StyledTextAreaBlock: Wt,
 	StyledTextAreaModifica: Gt,
 	StyledTextAreaElimina: Kt,
@@ -1894,8 +1715,8 @@ var Q = {
   color: #FFFFFF;
   padding: 10px;
 `,
-	StyledEuroNotSelected: tn,
-	StyledFileIconSelected2: dn
+	StyledEuroNotSelected: en,
+	StyledFileIconSelected2: un
 };
 //#endregion
 //#region src/Colori.js
@@ -1904,20 +1725,20 @@ function $(e, t, n) {
 }
 //#endregion
 //#region src/Calcoli.js
-var yn = (e) => e.totale_gennaio + e.totale_febbraio + e.totale_marzo + e.totale_aprile + e.totale_maggio + e.totale_giugno + e.totale_luglio + e.totale_agosto + e.totale_settembre + e.totale_ottobre + e.totale_novembre + e.totale_dicembre, bn = (e) => parseInt(e.quantita_gennaio) + parseInt(e.quantita_febbraio) + parseInt(e.quantita_marzo) + parseInt(e.quantita_aprile) + parseInt(e.quantita_maggio) + parseInt(e.quantita_giugno) + parseInt(e.quantita_luglio) + parseInt(e.quantita_agosto) + parseInt(e.quantita_settembre) + parseInt(e.quantita_ottobre) + parseInt(e.quantita_novembre) + parseInt(e.quantita_dicembre);
+var _n = (e) => e.totale_gennaio + e.totale_febbraio + e.totale_marzo + e.totale_aprile + e.totale_maggio + e.totale_giugno + e.totale_luglio + e.totale_agosto + e.totale_settembre + e.totale_ottobre + e.totale_novembre + e.totale_dicembre, vn = (e) => parseInt(e.quantita_gennaio) + parseInt(e.quantita_febbraio) + parseInt(e.quantita_marzo) + parseInt(e.quantita_aprile) + parseInt(e.quantita_maggio) + parseInt(e.quantita_giugno) + parseInt(e.quantita_luglio) + parseInt(e.quantita_agosto) + parseInt(e.quantita_settembre) + parseInt(e.quantita_ottobre) + parseInt(e.quantita_novembre) + parseInt(e.quantita_dicembre);
 //#endregion
 //#region src/card_item/CardItem.jsx
-function xn({ campi: t, indici: n, eseguiSalvataggio: r }) {
+function yn({ campi: t, indici: n, eseguiSalvataggio: r }) {
 	let i = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [
-		/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsx)(Q.SlideContainer, {
+	return /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(Q.StyledCard, { children: [
+		/* @__PURE__ */ C(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ C(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: n.map((n) => {
-				let r = t.type[n] ? L(1, !0, Q) : R(1, !0, Q);
-				return /* @__PURE__ */ (0, z.jsxs)(e, { children: [/* @__PURE__ */ (0, z.jsxs)(Q.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+				let r = t.type[n] ? P(1, !0, Q) : F(1, !0, Q);
+				return /* @__PURE__ */ w(e, { children: [/* @__PURE__ */ w(Q.StyledRow, { children: [/* @__PURE__ */ C(r, {
 					rows: 1,
 					name: t.name[n],
 					id: t.id[n],
@@ -1929,29 +1750,29 @@ function xn({ campi: t, indici: n, eseguiSalvataggio: r }) {
 					onClick: t.onClick,
 					onBlur: t.onBlur,
 					onContextMenu: (e) => i(e, t.placeholder[n])
-				}), t.options[n]] }), t.errore[n] !== "" && /* @__PURE__ */ (0, z.jsx)(Q.StyledSpanErrore, { children: t.errore[n] })] }, n);
+				}), t.options[n]] }), t.errore[n] !== "" && /* @__PURE__ */ C(Q.StyledSpanErrore, { children: t.errore[n] })] }, n);
 			})
 		}),
-		/* @__PURE__ */ (0, z.jsx)(B, {
+		/* @__PURE__ */ C(I, {
 			eseguiSalvataggio: r,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] }) });
 }
-function Sn({ campi: t, indici: r, handleSearch: i }) {
+function bn({ campi: t, indici: r, handleSearch: i }) {
 	let [a, o] = n(!0), [s, c] = n(!0), l = a ? "2000px" : "0px";
-	L(1, !0, Q), R(1, !0, Q);
+	P(1, !0, Q), F(1, !0, Q);
 	let u = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [
-		/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsx)(Q.SlideContainer, {
+	return /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(Q.StyledCard, { children: [
+		/* @__PURE__ */ C(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ C(Q.SlideContainer, {
 			style: { maxHeight: `${l}` },
 			children: r.map((n) => {
-				let r = t.type[n] ? L(1, !0, Q) : R(1, !0, Q);
-				return /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(Q.StyledRow, { children: /* @__PURE__ */ (0, z.jsx)(r, {
+				let r = t.type[n] ? P(1, !0, Q) : F(1, !0, Q);
+				return /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(Q.StyledRow, { children: /* @__PURE__ */ C(r, {
 					rows: 1,
 					name: t.name[n],
 					id: t.id[n],
@@ -1965,7 +1786,7 @@ function Sn({ campi: t, indici: r, handleSearch: i }) {
 				}) }) }, n);
 			})
 		}),
-		/* @__PURE__ */ (0, z.jsx)(V, {
+		/* @__PURE__ */ C(L, {
 			setIsVisible: o,
 			arrowUp: s,
 			setArrowUp: c,
@@ -1975,18 +1796,18 @@ function Sn({ campi: t, indici: r, handleSearch: i }) {
 		})
 	] }) });
 }
-function Cn({ item: r, campi: i, indici: a, selectOperation: o, handleBlurItem: s }) {
+function xn({ item: r, campi: i, indici: a, selectOperation: o, handleBlurItem: s }) {
 	let c = t([]), [l, u] = n(() => a.reduce((e, t) => ({
 		...e,
 		[t]: i.value[t]
 	}), {})), d = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [
-		/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: i.header }),
-		/* @__PURE__ */ (0, z.jsx)(Q.SlideContainer, { children: a.map((t) => {
-			let n = i.type[t] ? L(i.tipoSelezione, i.valoreModificabile[t], Q) : R(i.tipoSelezione, i.valoreModificabile[t], Q);
-			return /* @__PURE__ */ (0, z.jsxs)(e, { children: [/* @__PURE__ */ (0, z.jsxs)(Q.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(n, {
+	return /* @__PURE__ */ w(Q.StyledCard, { children: [
+		/* @__PURE__ */ C(Q.StyledCardHeader, { children: i.header }),
+		/* @__PURE__ */ C(Q.SlideContainer, { children: a.map((t) => {
+			let n = i.type[t] ? P(i.tipoSelezione, i.valoreModificabile[t], Q) : F(i.tipoSelezione, i.valoreModificabile[t], Q);
+			return /* @__PURE__ */ w(e, { children: [/* @__PURE__ */ w(Q.StyledRow, { children: [/* @__PURE__ */ C(n, {
 				ref: (e) => c.current[t] = e,
 				rows: 1,
 				name: i.name[t],
@@ -2000,9 +1821,9 @@ function Cn({ item: r, campi: i, indici: a, selectOperation: o, handleBlurItem: 
 				onClick: (e) => At(e),
 				readOnly: r.tipo_selezione !== 1,
 				onContextMenu: (e) => d(e, i.placeholder[t])
-			}), i.options[t]] }), i.errore[t] && /* @__PURE__ */ (0, z.jsx)(Q.StyledSpanErrore, { children: i.errore[t] })] }, `input-${t}`);
+			}), i.options[t]] }), i.errore[t] && /* @__PURE__ */ C(Q.StyledSpanErrore, { children: i.errore[t] })] }, `input-${t}`);
 		}) }),
-		/* @__PURE__ */ (0, z.jsx)(ze, {
+		/* @__PURE__ */ C(Ve, {
 			selectOperation: o,
 			item: r,
 			vistaItem: "card",
@@ -2010,15 +1831,15 @@ function Cn({ item: r, campi: i, indici: a, selectOperation: o, handleBlurItem: 
 		})
 	] });
 }
-function wn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel: i, eliminaItemsRange: a }) {
+function Sn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel: i, eliminaItemsRange: a }) {
 	let o = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [
-		/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsx)(Q.SlideContainer, {
+	return /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(Q.StyledCard, { children: [
+		/* @__PURE__ */ C(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ C(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
-			children: n.map((n) => /* @__PURE__ */ (0, z.jsx)(e, { children: /* @__PURE__ */ (0, z.jsx)(t.type[n] ? L(1, !0, Q) : R(1, !0, Q), {
+			children: n.map((n) => /* @__PURE__ */ C(e, { children: /* @__PURE__ */ C(t.type[n] ? P(1, !0, Q) : F(1, !0, Q), {
 				rows: 1,
 				name: t.name[n],
 				id: t.id[n],
@@ -2032,7 +1853,7 @@ function wn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 				onContextMenu: (e) => o(e, t.placeholder[n])
 			}, n) }, n))
 		}),
-		/* @__PURE__ */ (0, z.jsx)(G, {
+		/* @__PURE__ */ C(V, {
 			ottieniFileRangePDF: r,
 			ottieniFileRangeExcel: i,
 			eliminaItemsRange: a,
@@ -2041,20 +1862,20 @@ function wn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 		})
 	] }) });
 }
-function Tn({ campi: t, indici: r, eseguiLogin: i }) {
+function Cn({ campi: t, indici: r, eseguiLogin: i }) {
 	let [a, o] = n("password"), s = (e) => {
 		e.preventDefault(), o(a === "text" ? "password" : "text");
 	}, c = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [
-		/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsx)(Q.SlideContainer, {
+	return /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(Q.StyledCard, { children: [
+		/* @__PURE__ */ C(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ C(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: r.map((n) => {
-				let r = t.type[n] ? L(1, !0, Q) : R(1, !0, Q), i = a === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
-				return /* @__PURE__ */ (0, z.jsxs)(e, { children: [
-					/* @__PURE__ */ (0, z.jsxs)(Q.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+				let r = t.type[n] ? P(1, !0, Q) : F(1, !0, Q), i = a === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
+				return /* @__PURE__ */ w(e, { children: [
+					/* @__PURE__ */ w(Q.StyledRow, { children: [/* @__PURE__ */ C(r, {
 						style: t.name[n] === "password" ? { maxWidth: "80%" } : null,
 						rows: 1,
 						name: t.name[n],
@@ -2068,7 +1889,7 @@ function Tn({ campi: t, indici: r, eseguiLogin: i }) {
 						onClick: t.onClick,
 						onBlur: t.onBlur,
 						onContextMenu: (e) => c(e, t.placeholder[n])
-					}), t.name[n] === "password" && /* @__PURE__ */ (0, z.jsx)(i, {
+					}), t.name[n] === "password" && /* @__PURE__ */ C(i, {
 						style: {
 							maxWidth: "20%",
 							marginLeft: "-6px",
@@ -2078,29 +1899,29 @@ function Tn({ campi: t, indici: r, eseguiLogin: i }) {
 						onClick: s
 					})] }),
 					t.options[n],
-					t.errore[n] && /* @__PURE__ */ (0, z.jsx)(Q.StyledSpanErrore, { children: t.errore[n] })
+					t.errore[n] && /* @__PURE__ */ C(Q.StyledSpanErrore, { children: t.errore[n] })
 				] }, n);
 			})
 		}),
-		/* @__PURE__ */ (0, z.jsx)(U, {
+		/* @__PURE__ */ C(z, {
 			eseguiLogin: i,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] }) });
 }
-function En({ campi: t, indici: r, eseguiModificaProfilo: i }) {
+function wn({ campi: t, indici: r, eseguiModificaProfilo: i }) {
 	let [a, o] = n("password"), [s, c] = n("password"), [l, u] = n("password"), d = (e, t) => {
 		e.preventDefault(), t === "password_attuale" ? o(a === "text" ? "password" : "text") : t === "nuova_password" ? c(s === "text" ? "password" : "text") : t === "conferma_nuova_password" && u(l === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [
-		/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ (0, z.jsx)(Q.SlideContainer, {
+	return /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(Q.StyledCard, { children: [
+		/* @__PURE__ */ C(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ C(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: r.map((n) => {
-				let r = t.type[n] ? L(1, !0, Q) : R(1, !0, Q), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
-				return /* @__PURE__ */ (0, z.jsxs)(e, { children: [
-					/* @__PURE__ */ (0, z.jsxs)(Q.StyledRow, { children: [/* @__PURE__ */ (0, z.jsx)(r, {
+				let r = t.type[n] ? P(1, !0, Q) : F(1, !0, Q), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
+				return /* @__PURE__ */ w(e, { children: [
+					/* @__PURE__ */ w(Q.StyledRow, { children: [/* @__PURE__ */ C(r, {
 						style: t.name[n].includes("password") ? { maxWidth: "80%" } : null,
 						rows: 1,
 						name: t.name[n],
@@ -2114,7 +1935,7 @@ function En({ campi: t, indici: r, eseguiModificaProfilo: i }) {
 						onClick: t.onClick,
 						onBlur: t.onBlur,
 						onContextMenu: (e) => handleRightClick(e, t.placeholder[n])
-					}), t.name[n].includes("password") && /* @__PURE__ */ (0, z.jsx)(i, {
+					}), t.name[n].includes("password") && /* @__PURE__ */ C(i, {
 						style: {
 							maxWidth: "20%",
 							marginLeft: "-6px",
@@ -2124,19 +1945,19 @@ function En({ campi: t, indici: r, eseguiModificaProfilo: i }) {
 						onClick: (e) => d(e, t.name[n])
 					})] }),
 					t.options[n],
-					t.errore[n] && /* @__PURE__ */ (0, z.jsx)(Q.StyledSpanErrore, { children: t.errore[n] })
+					t.errore[n] && /* @__PURE__ */ C(Q.StyledSpanErrore, { children: t.errore[n] })
 				] }, n);
 			})
 		}),
-		/* @__PURE__ */ (0, z.jsx)(W, {
+		/* @__PURE__ */ C(B, {
 			eseguiModificaProfilo: i,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] }) });
 }
-function Dn({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: i }) {
-	return /* @__PURE__ */ (0, z.jsxs)(T, {
+function Tn({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: i }) {
+	return /* @__PURE__ */ w(T, {
 		style: {
 			width: "300px",
 			height: "400px",
@@ -2151,7 +1972,7 @@ function Dn({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: i }) {
 			r(e, n);
 		},
 		draggable: !1,
-		children: [/* @__PURE__ */ (0, z.jsx)(T.Img, {
+		children: [/* @__PURE__ */ C(T.Img, {
 			style: {
 				width: "220px",
 				height: "220px",
@@ -2162,7 +1983,7 @@ function Dn({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: i }) {
 			},
 			variant: "top",
 			src: t
-		}), /* @__PURE__ */ (0, z.jsx)(T.Body, { children: /* @__PURE__ */ (0, z.jsx)(T.Title, {
+		}), /* @__PURE__ */ C(T.Body, { children: /* @__PURE__ */ C(T.Title, {
 			style: {
 				color: "#FFFFFF",
 				textAlign: "center"
@@ -2171,8 +1992,8 @@ function Dn({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: i }) {
 		}) })]
 	});
 }
-function On({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
-	return /* @__PURE__ */ (0, z.jsxs)(T, {
+function En({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
+	return /* @__PURE__ */ w(T, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2182,10 +2003,10 @@ function On({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ (0, z.jsx)(T.Body, { children: /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsx)(T.Title, {
+		children: [/* @__PURE__ */ C(T.Body, { children: /* @__PURE__ */ C("center", { children: /* @__PURE__ */ C(T.Title, {
 			style: { color: "#FFFFFF" },
 			children: t === "italiano" ? n : r
-		}) }) }), /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(E, {
+		}) }) }), /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(E, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2197,72 +2018,72 @@ function On({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 				textAlign: "center"
 			},
 			children: [
-				/* @__PURE__ */ (0, z.jsx)("thead", { children: /* @__PURE__ */ (0, z.jsxs)("tr", { children: [
-					/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("thead", { children: /* @__PURE__ */ w("tr", { children: [
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "ANNO" : "YEAR"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GEN" : "JAN"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "FEB"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "MAR"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "APR"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "MAG" : "MAY"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GIU" : "JUN"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "LUG" : "JUL"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "AGO" : "AUG"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "SET" : "SEP"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "OTT" : "OCT"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "NOV"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "DIC" : "DEC"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "TOT ENTRATE" : "TOT REVENUE"
 					})
 				] }) }),
-				/* @__PURE__ */ (0, z.jsx)("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ (0, z.jsx)("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ (0, z.jsx)("td", {
+				/* @__PURE__ */ C("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ C("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ C("td", {
 					style: {
 						color: $(e, t, "entrata"),
 						fontWeight: t === 0 ? "bold" : null
 					},
 					children: t > 0 ? parseFloat(e).toFixed(2) + " €" : e
 				}, t)) }, t)) }),
-				/* @__PURE__ */ (0, z.jsx)("tbody", { children: /* @__PURE__ */ (0, z.jsx)("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ (0, z.jsx)("td", {
+				/* @__PURE__ */ C("tbody", { children: /* @__PURE__ */ C("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ C("td", {
 					style: {
 						color: $(e, t, "entrata"),
 						fontWeight: t === 0 ? "bold" : null
@@ -2273,9 +2094,9 @@ function On({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 		}) })]
 	});
 }
-function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etichettaIta: o, etichettaEng: s }) {
+function Dn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etichettaIta: o, etichettaEng: s }) {
 	let [c, l] = n(0);
-	return /* @__PURE__ */ (0, z.jsxs)(T, {
+	return /* @__PURE__ */ w(T, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2285,10 +2106,10 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ (0, z.jsx)(T.Body, { children: /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsx)(T.Title, {
+		children: [/* @__PURE__ */ C(T.Body, { children: /* @__PURE__ */ C("center", { children: /* @__PURE__ */ C(T.Title, {
 			style: { color: "#FFFFFF" },
 			children: r === "italiano" ? o : s
-		}) }) }), /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(E, {
+		}) }) }), /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(E, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2299,79 +2120,79 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 				marginBottom: "10px",
 				textAlign: "center"
 			},
-			children: [/* @__PURE__ */ (0, z.jsx)("thead", {}), /* @__PURE__ */ (0, z.jsx)("tbody", { children: t.map((n, o) => /* @__PURE__ */ (0, z.jsxs)(e, { children: [(o === 0 || t[o].anno !== t[o - 1].anno) && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [/* @__PURE__ */ (0, z.jsx)("tr", { children: /* @__PURE__ */ (0, z.jsxs)("th", {
+			children: [/* @__PURE__ */ C("thead", {}), /* @__PURE__ */ C("tbody", { children: t.map((n, o) => /* @__PURE__ */ w(e, { children: [(o === 0 || t[o].anno !== t[o - 1].anno) && /* @__PURE__ */ w(S, { children: [/* @__PURE__ */ C("tr", { children: /* @__PURE__ */ w("th", {
 				colSpan: 14,
 				children: [
 					r === "italiano" ? "ANNO" : "YEAR",
 					" = ",
 					n.anno
 				]
-			}) }), /* @__PURE__ */ (0, z.jsxs)("tr", { children: [
-				/* @__PURE__ */ (0, z.jsx)("th", {
+			}) }), /* @__PURE__ */ w("tr", { children: [
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? i : a
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "GEN" : "JAN"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "FEB"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "MAR"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "APR"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "MAG" : "MAY"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "GIU" : "JUN"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "LUG" : "JUL"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "AGO" : "AUG"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "SET" : "SEP"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "OTT" : "OCT"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "NOV"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "DIC" : "DEC"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "TOT ENTRATE" : "TOT REVENUE"
 				})
-			] })] }), /* @__PURE__ */ (0, z.jsxs)("tr", { children: [
-				/* @__PURE__ */ (0, z.jsx)("td", {
+			] })] }), /* @__PURE__ */ w("tr", { children: [
+				/* @__PURE__ */ C("td", {
 					style: {
 						color: "#FFFFFF",
 						fontWeight: "bold"
 					},
 					children: n.nome
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_gennaio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2383,7 +2204,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_gennaio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_febbraio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2395,7 +2216,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_febbraio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_marzo, 1, "entrata"),
 						fontWeight: "bold"
@@ -2407,7 +2228,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_marzo).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_aprile, 1, "entrata"),
 						fontWeight: "bold"
@@ -2419,7 +2240,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_aprile).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_maggio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2431,7 +2252,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_maggio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_giugno, 1, "entrata"),
 						fontWeight: "bold"
@@ -2443,7 +2264,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_giugno).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_luglio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2455,7 +2276,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_luglio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_agosto, 1, "entrata"),
 						fontWeight: "bold"
@@ -2467,7 +2288,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_agosto).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_settembre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2479,7 +2300,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_settembre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_ottobre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2491,7 +2312,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_ottobre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_novembre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2503,7 +2324,7 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_novembre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
 						color: $(n.totale_dicembre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2515,24 +2336,24 @@ function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etiche
 						parseFloat(n.totale_dicembre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: {
-						color: $(yn(n), 1, "entrata"),
+						color: $(_n(n), 1, "entrata"),
 						fontWeight: "bold"
 					},
 					children: [
 						"x ",
-						bn(n),
+						vn(n),
 						" = ",
-						parseFloat(yn(n)).toFixed(2) + " €"
+						parseFloat(_n(n)).toFixed(2) + " €"
 					]
 				})
 			] })] }, o)) })]
 		}) })]
 	});
 }
-function An({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
-	return /* @__PURE__ */ (0, z.jsxs)(T, {
+function On({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
+	return /* @__PURE__ */ w(T, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2542,10 +2363,10 @@ function An({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ (0, z.jsx)(T.Body, { children: /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsx)(T.Title, {
+		children: [/* @__PURE__ */ C(T.Body, { children: /* @__PURE__ */ C("center", { children: /* @__PURE__ */ C(T.Title, {
 			style: { color: "#FFFFFF" },
 			children: t === "italiano" ? n : r
-		}) }) }), /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(E, {
+		}) }) }), /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(E, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2557,72 +2378,72 @@ function An({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 				textAlign: "center"
 			},
 			children: [
-				/* @__PURE__ */ (0, z.jsx)("thead", { children: /* @__PURE__ */ (0, z.jsxs)("tr", { children: [
-					/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("thead", { children: /* @__PURE__ */ w("tr", { children: [
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "ANNO" : "YEAR"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GEN" : "JAN"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "FEB"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "MAR"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "APR"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "MAG" : "MAY"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GIU" : "JUN"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "LUG" : "JUL"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "AGO" : "AUG"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "SET" : "SEP"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "OTT" : "OCT"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: "NOV"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "DIC" : "DEC"
 					}),
-					/* @__PURE__ */ (0, z.jsx)("th", {
+					/* @__PURE__ */ C("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "TOT USCITE" : "TOT EXIT"
 					})
 				] }) }),
-				/* @__PURE__ */ (0, z.jsx)("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ (0, z.jsx)("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ (0, z.jsx)("td", {
+				/* @__PURE__ */ C("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ C("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ C("td", {
 					style: {
 						color: $(-e, t, "uscita"),
 						fontWeight: t === 0 ? "bold" : null
 					},
 					children: t > 0 ? parseFloat(-e).toFixed(2) + " €" : e
 				}, t)) }, t)) }),
-				/* @__PURE__ */ (0, z.jsx)("tbody", { children: /* @__PURE__ */ (0, z.jsx)("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ (0, z.jsx)("td", {
+				/* @__PURE__ */ C("tbody", { children: /* @__PURE__ */ C("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ C("td", {
 					style: {
 						color: $(-e, t, "uscita"),
 						fontWeight: t === 0 ? "bold" : null
@@ -2633,8 +2454,8 @@ function An({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 		}) })]
 	});
 }
-function jn({ entrate: e, uscite: t, lingua: n }) {
-	return /* @__PURE__ */ (0, z.jsxs)(T, {
+function kn({ entrate: e, uscite: t, lingua: n }) {
+	return /* @__PURE__ */ w(T, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2644,10 +2465,10 @@ function jn({ entrate: e, uscite: t, lingua: n }) {
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ (0, z.jsx)(T.Body, { children: /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsx)(T.Title, {
+		children: [/* @__PURE__ */ C(T.Body, { children: /* @__PURE__ */ C("center", { children: /* @__PURE__ */ C(T.Title, {
 			style: { color: "#FFFFFF" },
 			children: n === "italiano" ? "Ricavi" : "Revenues"
-		}) }) }), /* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsxs)(E, {
+		}) }) }), /* @__PURE__ */ C("center", { children: /* @__PURE__ */ w(E, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2658,173 +2479,173 @@ function jn({ entrate: e, uscite: t, lingua: n }) {
 				marginBottom: "10px",
 				textAlign: "center"
 			},
-			children: [/* @__PURE__ */ (0, z.jsx)("thead", { children: /* @__PURE__ */ (0, z.jsxs)("tr", { children: [
-				/* @__PURE__ */ (0, z.jsx)("th", {
+			children: [/* @__PURE__ */ C("thead", { children: /* @__PURE__ */ w("tr", { children: [
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "ANNO" : "YEAR"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "GEN" : "JAN"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "FEB"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "MAR"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "APR"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "MAG" : "MAY"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "GIU" : "JUN"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "LUG" : "JUL"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "AGO" : "AUG"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "SET" : "SEP"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "OTT" : "OCT"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: "NOV"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "DIC" : "DEC"
 				}),
-				/* @__PURE__ */ (0, z.jsx)("th", {
+				/* @__PURE__ */ C("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "TOT RICAVI" : "TOT EARNINGS"
 				})
-			] }) }), /* @__PURE__ */ (0, z.jsxs)("tbody", { children: [e.map((e, n) => n > 1 && /* @__PURE__ */ (0, z.jsxs)("tr", { children: [/* @__PURE__ */ (0, z.jsx)("td", {
+			] }) }), /* @__PURE__ */ w("tbody", { children: [e.map((e, n) => n > 1 && /* @__PURE__ */ w("tr", { children: [/* @__PURE__ */ C("td", {
 				style: { fontWeight: "bold" },
 				children: e.Anno
-			}), t[n] && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+			}), t[n] && /* @__PURE__ */ w(S, { children: [
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.gen - t[n].gen) },
 					children: [parseFloat(e.gen - t[n].gen).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.feb - t[n].feb) },
 					children: [parseFloat(e.feb - t[n].feb).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.mar - t[n].mar) },
 					children: [parseFloat(e.mar - t[n].mar).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.apr - t[n].apr) },
 					children: [parseFloat(e.apr - t[n].apr).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.mag - t[n].mag) },
 					children: [parseFloat(e.mag - t[n].mag).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.giu - t[n].giu) },
 					children: [parseFloat(e.giu - t[n].giu).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.lug - t[n].lug) },
 					children: [parseFloat(e.lug - t[n].lug).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.ago - t[n].ago) },
 					children: [parseFloat(e.ago - t[n].ago).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.set - t[n].set) },
 					children: [parseFloat(e.set - t[n].set).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.ott - t[n].ott) },
 					children: [parseFloat(e.ott - t[n].ott).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.nov - t[n].nov) },
 					children: [parseFloat(e.nov - t[n].nov).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.dic - t[n].dic) },
 					children: [parseFloat(e.dic - t[n].dic).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e.totale_anno - t[n].totale_anno) },
 					children: [parseFloat(e.totale_anno - t[n].totale_anno).toFixed(2), " €"]
 				})
-			] })] }, n)), /* @__PURE__ */ (0, z.jsxs)("tr", { children: [
-				/* @__PURE__ */ (0, z.jsx)("td", {
+			] })] }, n)), /* @__PURE__ */ w("tr", { children: [
+				/* @__PURE__ */ C("td", {
 					style: { fontWeight: "bold" },
 					children: e[0].Anno
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].gen - t[0].gen, 1) },
 					children: [parseFloat(e[0].gen - t[0].gen).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].feb - t[0].feb) },
 					children: [parseFloat(e[0].feb - t[0].feb).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].mar - t[0].mar) },
 					children: [parseFloat(e[0].mar - t[0].mar).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].apr - t[0].apr) },
 					children: [parseFloat(e[0].apr - t[0].apr).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].mag - t[0].mag) },
 					children: [parseFloat(e[0].mag - t[0].mag).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].giu - t[0].giu) },
 					children: [parseFloat(e[0].giu - t[0].giu).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].lug - t[0].lug) },
 					children: [parseFloat(e[0].lug - t[0].lug).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].ago - t[0].ago) },
 					children: [parseFloat(e[0].ago - t[0].ago).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].set - t[0].set) },
 					children: [parseFloat(e[0].set - t[0].set).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].ott - t[0].ott) },
 					children: [parseFloat(e[0].ott - t[0].ott).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].nov - t[0].nov) },
 					children: [parseFloat(e[0].nov - t[0].nov).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].dic - t[0].dic) },
 					children: [parseFloat(e[0].dic - t[0].dic).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ (0, z.jsxs)("td", {
+				/* @__PURE__ */ w("td", {
 					style: { color: $(e[0].totale_anno - t[0].totale_anno) },
 					children: [parseFloat(e[0].totale_anno - t[0].totale_anno).toFixed(2), " €"]
 				})
@@ -2832,8 +2653,8 @@ function jn({ entrate: e, uscite: t, lingua: n }) {
 		}) })]
 	});
 }
-function Mn({ totaleItems: e }) {
-	return /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: "Informations" }), /* @__PURE__ */ (0, z.jsx)(Q.SlideContainer, { children: e && /* @__PURE__ */ (0, z.jsx)(Q.StyledInputBlock, {
+function An({ totaleItems: e }) {
+	return /* @__PURE__ */ w(Q.StyledCard, { children: [/* @__PURE__ */ C(Q.StyledCardHeader, { children: "Informations" }), /* @__PURE__ */ C(Q.SlideContainer, { children: e && /* @__PURE__ */ C(Q.StyledInputBlock, {
 		rows: 1,
 		name: "totale_items",
 		id: "totale_items",
@@ -2842,12 +2663,12 @@ function Mn({ totaleItems: e }) {
 		readOnly: !0
 	}) })] });
 }
-function Nn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
-	return /* @__PURE__ */ (0, z.jsxs)(Q.StyledCard, { children: [
-		/* @__PURE__ */ (0, z.jsx)(Q.StyledCardHeader, { children: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
-		/* @__PURE__ */ (0, z.jsxs)(Q.SlideContainer, {
+function jn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
+	return /* @__PURE__ */ w(Q.StyledCard, { children: [
+		/* @__PURE__ */ C(Q.StyledCardHeader, { children: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
+		/* @__PURE__ */ w(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
-			children: [/* @__PURE__ */ (0, z.jsx)(Q.StyledInputModifica, {
+			children: [/* @__PURE__ */ C(Q.StyledInputModifica, {
 				rows: 1,
 				name: "primo_anno",
 				id: "primo_anno",
@@ -2857,37 +2678,37 @@ function Nn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 				placeholder: "Primo anno",
 				onChange: (e) => n(e, t),
 				onContextMenu: (e) => handleRightClick(e, "Primo anno")
-			}), /* @__PURE__ */ (0, z.jsxs)(Q.StyledSelectModifica, {
+			}), /* @__PURE__ */ w(Q.StyledSelectModifica, {
 				name: "ultimo_anno",
 				id: "ultimo_anno",
 				value: e.ultimo_anno,
 				onChange: (e) => n(e, t),
 				onContextMenu: (e) => handleRightClick(e, "Ultimo anno"),
 				children: [
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 1,
 						children: parseInt(e.primo_anno) + 1
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 2,
 						children: parseInt(e.primo_anno) + 2
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 3,
 						children: parseInt(e.primo_anno) + 3
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 4,
 						children: parseInt(e.primo_anno) + 4
 					}),
-					/* @__PURE__ */ (0, z.jsx)("option", {
+					/* @__PURE__ */ C("option", {
 						value: parseInt(e.primo_anno) + 5,
 						children: parseInt(e.primo_anno) + 5
 					})
 				]
 			})]
 		}),
-		/* @__PURE__ */ (0, z.jsx)(H, {
+		/* @__PURE__ */ C(R, {
 			eseguiRicerca: (e) => r(e),
 			vistaItem: "card",
 			StyledComponents: Q
@@ -2896,8 +2717,8 @@ function Nn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 }
 //#endregion
 //#region src/Items.jsx
-var Pn = ({ tipoItem: e, items: t, setItems: n, selectOperation: r, campi: i, handleBlurItem: a, tipoForm: o, vistaItem: s }) => {
-	let c = s === "card" ? Cn : Nt, l = () => /* @__PURE__ */ (0, z.jsx)(z.Fragment, { children: t.map((o, s) => /* @__PURE__ */ (0, z.jsx)(c, {
+var Mn = ({ tipoItem: e, items: t, setItems: n, selectOperation: r, campi: i, handleBlurItem: a, tipoForm: o, vistaItem: s }) => {
+	let c = s === "card" ? xn : Nt, l = () => /* @__PURE__ */ C(S, { children: t.map((o, s) => /* @__PURE__ */ C(c, {
 		item: o,
 		campi: o ? i(o, null, null, null) : [],
 		indici: [...Array(i(o, null, null, null).label.length).keys()],
@@ -2907,77 +2728,77 @@ var Pn = ({ tipoItem: e, items: t, setItems: n, selectOperation: r, campi: i, ha
 		tipoItem: e,
 		handleBlurItem: a
 	}, s)) });
-	return /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [o === "search" && t.length === 0 && /* @__PURE__ */ (0, z.jsx)("div", {
+	return /* @__PURE__ */ w(S, { children: [o === "search" && t.length === 0 && /* @__PURE__ */ C("div", {
 		className: "contenitore-1",
 		children: "Nessun elemento trovato."
-	}), t.length > 0 && /* @__PURE__ */ (0, z.jsx)(z.Fragment, { children: s === "card" ? /* @__PURE__ */ (0, z.jsx)("div", {
+	}), t.length > 0 && /* @__PURE__ */ C(S, { children: s === "card" ? /* @__PURE__ */ C("div", {
 		className: "contenitore-3",
-		children: /* @__PURE__ */ (0, z.jsx)(l, {})
-	}) : /* @__PURE__ */ (0, z.jsx)(l, {}) })] });
-}, Fn = ({ componenti: t, elementi: r, vistaItem: i, vistaForm: a }) => {
-	let [o, s] = n("search"), c = a === "form" ? We : a === "card" ? xn : jt, l = a === "form" ? Ge : a === "card" ? Sn : Mt, u = a === "form" ? Je : a === "card" ? wn : Pt;
-	return /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-		/* @__PURE__ */ (0, z.jsx)(He, {
+		children: /* @__PURE__ */ C(l, {})
+	}) : /* @__PURE__ */ C(l, {}) })] });
+}, Nn = ({ componenti: t, elementi: r, vistaItem: i, vistaForm: a }) => {
+	let [o, s] = n("search"), c = a === "form" ? Ke : a === "card" ? yn : jt, l = a === "form" ? qe : a === "card" ? bn : Mt, u = a === "form" ? Xe : a === "card" ? Sn : Pt;
+	return /* @__PURE__ */ w(S, { children: [
+		/* @__PURE__ */ C(We, {
 			elementi: r,
 			tipoForm: o,
 			setTipoForm: s,
-			StyledComponents: I
+			StyledComponents: N
 		}),
-		/* @__PURE__ */ (0, z.jsx)("br", {}),
+		/* @__PURE__ */ C("br", {}),
 		" ",
-		/* @__PURE__ */ (0, z.jsx)("br", {}),
+		/* @__PURE__ */ C("br", {}),
 		" ",
-		/* @__PURE__ */ (0, z.jsx)("br", {}),
+		/* @__PURE__ */ C("br", {}),
 		" ",
-		/* @__PURE__ */ (0, z.jsx)("br", {}),
-		r.map((n, r) => /* @__PURE__ */ (0, z.jsxs)(e, { children: [
-			n === "insert" && o === "insert" && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				/* @__PURE__ */ (0, z.jsx)(c, {
+		/* @__PURE__ */ C("br", {}),
+		r.map((n, r) => /* @__PURE__ */ w(e, { children: [
+			n === "insert" && o === "insert" && /* @__PURE__ */ w(S, { children: [
+				/* @__PURE__ */ C(c, {
 					campi: t.campiNuovoItem,
 					indici: t.indiciNuovoItem,
 					eseguiSalvataggio: t.handleInsert
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			] }),
-			n === "search" && o === "search" && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				/* @__PURE__ */ (0, z.jsx)(l, {
+			n === "search" && o === "search" && /* @__PURE__ */ w(S, { children: [
+				/* @__PURE__ */ C(l, {
 					campi: t.campiRicercaItems,
 					indici: t.indiciRicercaItems,
 					handleSearch: t.handleSearch
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			] }),
-			n === "file" && o === "file" && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				/* @__PURE__ */ (0, z.jsx)(u, {
+			n === "file" && o === "file" && /* @__PURE__ */ w(S, { children: [
+				/* @__PURE__ */ C(u, {
 					campi: t.campiFile,
 					indici: t.indiciFile,
 					ottieniFileRangePDF: t.handleSearchRangeFilePDF,
 					ottieniFileRangeExcel: t.handleSearchRangeFileExcel,
 					eliminaItemsRange: t.handleDeleteRangeFile
 				}),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			] })
 		] }, r)),
-		o !== "file" && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-			/* @__PURE__ */ (0, z.jsx)(Pn, {
+		o !== "file" && /* @__PURE__ */ w(S, { children: [
+			/* @__PURE__ */ C(Mn, {
 				tipoItem: t.tipoItem,
 				items: t.items,
 				setItems: t.setItems,
@@ -2987,38 +2808,38 @@ var Pn = ({ tipoItem: e, items: t, setItems: n, selectOperation: r, campi: i, ha
 				tipoForm: o,
 				vistaItem: i
 			}),
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
+			/* @__PURE__ */ C("br", {}),
 			" ",
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
+			/* @__PURE__ */ C("br", {}),
 			" ",
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
+			/* @__PURE__ */ C("br", {}),
 			" ",
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
-			t.visualizzazioneInformazioni === !0 && t.items.length > 0 && /* @__PURE__ */ (0, z.jsxs)(z.Fragment, { children: [
-				/* @__PURE__ */ (0, z.jsx)("center", { children: /* @__PURE__ */ (0, z.jsx)(Mn, { totaleItems: t.totaleItems }) }),
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+			/* @__PURE__ */ C("br", {}),
+			t.visualizzazioneInformazioni === !0 && t.items.length > 0 && /* @__PURE__ */ w(S, { children: [
+				/* @__PURE__ */ C("center", { children: /* @__PURE__ */ C(An, { totaleItems: t.totaleItems }) }),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {}),
+				/* @__PURE__ */ C("br", {}),
 				" ",
-				/* @__PURE__ */ (0, z.jsx)("br", {})
+				/* @__PURE__ */ C("br", {})
 			] }),
-			/* @__PURE__ */ (0, z.jsx)(Be, {
+			/* @__PURE__ */ C(He, {
 				selectedIdsModifica: t.selectedIdsModifica,
 				selectedIdsEliminazione: t.selectedIdsEliminazione,
 				handleEdit: t.handleEdit,
 				handleDelete: t.handleDelete
 			}),
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
+			/* @__PURE__ */ C("br", {}),
 			" ",
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
+			/* @__PURE__ */ C("br", {}),
 			" ",
-			/* @__PURE__ */ (0, z.jsx)("br", {}),
+			/* @__PURE__ */ C("br", {}),
 			" ",
-			/* @__PURE__ */ (0, z.jsx)("br", {})
+			/* @__PURE__ */ C("br", {})
 		] })
 	] });
 };
 //#endregion
-export { He as CambioTipoForm, Ue as CambioTipoForm2, On as CardEntrateItems, kn as CardEntrateItemsByName, Nn as CardEntrateUscite, wn as CardFileItems, Mn as CardInformazioni, Cn as CardItemEsistente, Tn as CardLogin, xn as CardNuovoItem, En as CardProfilo, jn as CardRicavi, Sn as CardRicercaItems, An as CardUsciteItems, Dn as CardWidget, Ye as FormEntrateUscite, Je as FormFileItems, Ke as FormLogin, We as FormNuovoItem, qe as FormProfilo, Ge as FormRicercaItems, Fn as PaginaWeb, Lt as RowEntrateUscite, Pt as RowFileItems, Nt as RowItemEsistente, Ft as RowLogin, jt as RowNuovoItem, It as RowProfilo, Mt as RowRicercaItems };
+export { We as CambioTipoForm, Ge as CambioTipoForm2, En as CardEntrateItems, Dn as CardEntrateItemsByName, jn as CardEntrateUscite, Sn as CardFileItems, An as CardInformazioni, xn as CardItemEsistente, Cn as CardLogin, yn as CardNuovoItem, wn as CardProfilo, kn as CardRicavi, bn as CardRicercaItems, On as CardUsciteItems, Tn as CardWidget, Ze as FormEntrateUscite, Xe as FormFileItems, Je as FormLogin, Ke as FormNuovoItem, Ye as FormProfilo, qe as FormRicercaItems, Nn as PaginaWeb, Lt as RowEntrateUscite, Pt as RowFileItems, Nt as RowItemEsistente, Ft as RowLogin, jt as RowNuovoItem, It as RowProfilo, Mt as RowRicercaItems };

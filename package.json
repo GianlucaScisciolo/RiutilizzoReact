@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "Repository contenente del codice riutilizzabile per più progetti React.",
   "type": "module",
-  "main": "./dist/riutilizzoreact.umd.js",
+  "main": "./dist/riutilizzoreact.es.js",
   "module": "./dist/riutilizzoreact.es.js",
   "exports": {
     ".": {
       "import": "./dist/riutilizzoreact.es.js",
-      "require": "./dist/riutilizzoreact.umd.js"
+      "require": "./dist/riutilizzoreact.es.js"
     }
   },
   "files": [
