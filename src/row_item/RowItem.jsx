@@ -132,7 +132,7 @@ export function RowRicercaItems({campi, indici, handleSearch}) {
   );
 }
 
-export function RowItemEsistente({ item, campi, indici, selectOperation, tipoItem, handleBlurItem }) {
+export function RowItemEsistente({ item, campi, indici, operazioneModifica, operazioneElimina, tipoItem, handleBlurItem }) {
   const NomeTagHeader = getInputTag(campi.tipoSelezione, false, StyledComponents);
   const [localValues, setLocalValues] = useState(() =>
     indici.reduce((acc, i) => ({ ...acc, [i]: campi.value[i] }), {})
@@ -145,7 +145,13 @@ export function RowItemEsistente({ item, campi, indici, selectOperation, tipoIte
     
   return (
     <StyledComponents.StyledRow>
-      <OperazioniItemEsistente selectOperation={selectOperation} item={item} vistaItem={"row"} StyledComponents={StyledComponents} />
+      <OperazioniItemEsistente 
+        operazioneModifica={operazioneModifica} 
+        operazioneElimina={operazioneElimina} 
+        item={item} 
+        vistaItem={"card"} 
+        StyledComponents={StyledComponents} 
+      />
       
       <StyledComponents.StyledCol>
         <div style={{width: "100%"}}>

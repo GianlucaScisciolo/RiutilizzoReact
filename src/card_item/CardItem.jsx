@@ -113,7 +113,7 @@ export function CardRicercaItems({campi, indici, handleSearch}) {
   );
 }
 
-export function CardItemEsistente({ item, campi, indici, selectOperation, handleBlurItem }) {
+export function CardItemEsistente({ item, campi, indici, operazioneModifica, operazioneElimina, handleBlurItem }) {
   const inputRefs = useRef([]); // Array di riferimenti per ogni input
   const [localValues, setLocalValues] = useState(() =>
     indici.reduce((acc, i) => ({ ...acc, [i]: campi.value[i] }), {})
@@ -158,7 +158,13 @@ export function CardItemEsistente({ item, campi, indici, selectOperation, handle
           );
         })}
       </StyledComponents.SlideContainer>
-      <OperazioniItemEsistente selectOperation={selectOperation} item={item} vistaItem={"card"} StyledComponents={StyledComponents} />
+      <OperazioniItemEsistente 
+        operazioneModifica={operazioneModifica} 
+        operazioneElimina={operazioneElimina} 
+        item={item} 
+        vistaItem={"card"} 
+        StyledComponents={StyledComponents} 
+      />
     </StyledComponents.StyledCard>
   );
 }

@@ -24,7 +24,6 @@ export default defineConfig({
         /^@fortawesome.*/, 
       ],
       output: {
-        inlineDynamicImports: false, 
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
@@ -32,6 +31,13 @@ export default defineConfig({
           'styled-components': 'styled',
           'lucide-react': 'LucideReact',
           'react-bootstrap': 'ReactBootstrap',
+
+          'react-bootstrap/Card': 'ReactBootstrap.Card',
+          'react-bootstrap/ListGroup': 'ReactBootstrap.ListGroup',
+          'react-bootstrap/esm/Row': 'ReactBootstrap.Row',
+          'react-bootstrap/esm/Col': 'ReactBootstrap.Col',
+          '@fortawesome/react-fontawesome': 'FontAwesomeIcon',
+          '@fortawesome/free-solid-svg-icons': 'FreeSolidSvgIcons'
         }
       }
     }

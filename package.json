@@ -1,6 +1,6 @@
 {
   "name": "@gianlucascisciolo/riutilizzoreact",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Repository contenente del codice riutilizzabile per più progetti React.",
   "type": "module",
   "main": "./dist/riutilizzoreact.es.js",

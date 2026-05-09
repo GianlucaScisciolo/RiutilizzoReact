@@ -81,7 +81,8 @@ export const PaginaWeb = ({componenti, elementi, vistaItem, vistaForm}) => {
             tipoItem={componenti.tipoItem} 
             items={componenti.items} 
             setItems={componenti.setItems}
-            selectOperation={componenti.selectOperation}
+            operazioneModifica={componenti.operazioneModifica} 
+            operazioneElimina={componenti.operazioneElimina}
             campi={componenti.campiItemEsistente}
             handleBlurItem={componenti.handleBlurItem}
             tipoForm={tipoForm}

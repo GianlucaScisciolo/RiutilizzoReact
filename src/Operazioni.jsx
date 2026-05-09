@@ -169,39 +169,47 @@ export function OperazioniFileItems({ ottieniFileRangePDF, ottieniFileRangeExcel
   );
 };
 
-export function OperazioniItemEsistente ({ selectOperation, item, vistaItem, StyledComponents }) {
+export function OperazioniItemEsistente ({ operazioneModifica, operazioneElimina, item, vistaItem, StyledComponents }) {
   let TrashTag = getTrashTag(item.tipo_selezione, StyledComponents);
   let PencilTag = getPencilTag(item.tipo_selezione, StyledComponents);
 
   return (
     (vistaItem === "card" || vistaItem === "form") ? (
       <StyledComponents.StyledListGroupItem style={{ border: "5px solid #000000", backgroundColor: "#000000" }}>
-        <PencilTag 
-          className="modificaItemButton" 
-          size={StyledComponents.grandezzaIcona} 
-          onClick={() => selectOperation("pencil", item)} 
-          style={{ marginRight: "50%" }} 
-        />
-        <TrashTag 
-          className="eliminaItemButton" 
-          size={StyledComponents.grandezzaIcona} 
-          onClick={() => selectOperation("trash", item)} 
-        />
+        {operazioneModifica && (
+          <PencilTag 
+            className="modificaItemButton" 
+            size={StyledComponents.grandezzaIcona} 
+            onClick={() => operazioneModifica(item)} 
+            style={{ marginRight: "50%" }} 
+          />
+        )}
+        {operazioneElimina && (
+          <TrashTag 
+            className="eliminaItemButton" 
+            size={StyledComponents.grandezzaIcona} 
+            onClick={() => operazioneElimina(item)} 
+          />
+        )}
       </StyledComponents.StyledListGroupItem>
     ) : (
       <StyledComponents.StyledColOperazioni>
         <div style={{width: "100%"}}>
-          <PencilTag 
-            className="left modificaItemButton"
-            size={StyledComponents.grandezzaIcona} 
-            onClick={() => selectOperation("pencil", item)} 
-            style={{ marginRight: "50%" }} 
-          />
-          <TrashTag 
-            className="rigth eliminaItemButton" 
-            size={StyledComponents.grandezzaIcona} 
-            onClick={() => selectOperation("trash", item)} 
-          />
+          {operazioneModifica && (
+            <PencilTag 
+              className="left modificaItemButton"
+              size={StyledComponents.grandezzaIcona} 
+              onClick={() => operazioneModifica(item)} 
+              style={{ marginRight: "50%" }} 
+            />
+          )}
+          {operazioneElimina && (
+            <TrashTag 
+              className="rigth eliminaItemButton" 
+              size={StyledComponents.grandezzaIcona} 
+              onClick={() => operazioneElimina(item)} 
+            />
+          )}
         </div>
       </StyledComponents.StyledColOperazioni> 
     )
