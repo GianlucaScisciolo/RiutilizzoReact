@@ -2,7 +2,7 @@
 import { CardItemEsistente } from "./card_item/CardItem";
 import { RowItemEsistente } from "./row_item/RowItem";
 
-export const Items = ({ tipoItem, items, setItems, selectOperation, campi, handleBlurItem, tipoForm, vistaItem }) => {
+export const Items = ({ tipoItem, items, setItems, operazioneModifica, operazioneElimina, campi, handleBlurItem, tipoForm, vistaItem }) => {
   const ItemEsistenteTag = vistaItem === "card" ? CardItemEsistente : RowItemEsistente;
 
   const ItemElements = () => {
@@ -15,7 +15,8 @@ export const Items = ({ tipoItem, items, setItems, selectOperation, campi, handl
               item={item}
               campi={(item) ? campi(item, null, null, null ) : []}
               indici={[...Array(campi(item, null, null, null).label.length).keys()]}
-              selectOperation={selectOperation}
+              operazioneModifica={operazioneModifica} 
+              operazioneElimina={operazioneElimina}
               items={items}
               setItems={setItems}
               tipoItem={tipoItem}
