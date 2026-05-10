@@ -2659,7 +2659,7 @@ function Mn({ totaleItems: e }) {
 		name: "totale_items",
 		id: "totale_items",
 		type: "text",
-		value: e ? e.toFixed(2) : "Errore!!",
+		value: e || "Errore!!",
 		readOnly: !0
 	}) })] });
 }

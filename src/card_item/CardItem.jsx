@@ -814,7 +814,7 @@ export function CardInformazioni({ totaleItems }) {
             name="totale_items" 
             id="totale_items" 
             type="text" 
-            value={totaleItems ? totaleItems.toFixed(2) : "Errore!!"} 
+            value={totaleItems ? totaleItems : "Errore!!"} 
             readOnly 
           />
         )}
