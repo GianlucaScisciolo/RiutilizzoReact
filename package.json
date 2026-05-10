@@ -1,6 +1,6 @@
 {
   "name": "@gianlucascisciolo/riutilizzoreact",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Repository contenente del codice riutilizzabile per più progetti React.",
   "type": "module",
   "main": "./dist/riutilizzoreact.es.js",
@@ -15,14 +15,15 @@
     "dist"
   ],
   "scripts": {
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "peerDependencies": {
+    "lucide-react": ">=0.200.0",
     "react": ">=19.0.0",
-    "react-dom": ">=19.0.0", 
-    "styled-components": ">=6.0.0",
-    "lucide-react": ">=0.200.0"
+    "react-dom": ">=19.0.0",
+    "styled-components": ">=6.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.1",
@@ -35,14 +36,12 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.1",
+    "bootstrap": "^5.3.8",
+    "react-bootstrap": "^2.10.10"
+  }
 }
-
-
-
-
-
-
-
-
-

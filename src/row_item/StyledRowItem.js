@@ -1,8 +1,7 @@
 // node_modules
 import styled from 'styled-components';
 // React
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col';
+import { Row, Col } from 'react-bootstrap';
 import { 
   Trash2, Pencil, Save, Search, ChevronLeft, ChevronRight, LogIn, Download, X, 
   Eye, EyeClosed, Euro 

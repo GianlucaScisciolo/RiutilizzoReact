@@ -77,9 +77,7 @@ export function CardRicercaItems({campi, indici, handleSearch}) {
         <StyledComponents.StyledCardHeader>{campi["header"]}</StyledComponents.StyledCardHeader>
         <StyledComponents.SlideContainer style={{maxHeight: `${maxHeight}`}}>
           {indici.map((i) => {
-            const NomeTag = (campi.type[i]) ? getInputTag(1, true, StyledComponents) : (
-              getTextAreaTag(1, true, StyledComponents)
-            );
+            const NomeTag = (campi.type[i]) ? InputTag : TextAreaTag;
             return ( 
               <Fragment key={i}>
                 <StyledComponents.StyledRow>
@@ -816,7 +814,7 @@ export function CardInformazioni({ totaleItems }) {
             name="totale_items" 
             id="totale_items" 
             type="text" 
-            value={totaleItems ? totaleItems : "Errore!!"} 
+            value={totaleItems ? totaleItems.toFixed(2) : "Errore!!"} 
             readOnly 
           />
         )}
