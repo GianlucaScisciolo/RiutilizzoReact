@@ -187,20 +187,23 @@ export function CardFileItems({campi, indici, ottieniFileRangePDF, ottieniFileRa
             );
             return ( 
               <Fragment key={i}>
-                <NomeTag 
-                  key={i}
-                  rows={1}
-                  name={campi.name[i]}
-                  id={campi.id[i]}
-                  type={campi.type[i]}
-                  step={campi.step[i]}
-                  value={campi.value[i]}
-                  placeholder={campi.placeholder[i]}
-                  onChange={campi.onChange}
-                  onClick={campi.onClick}
-                  onBlur={campi.onBlur}
-                  onContextMenu={(e) => handleRightClick(e, campi.placeholder[i])}
-                />
+                <StyledComponents.StyledRow>
+                  <NomeTag 
+                    key={i}
+                    rows={1}
+                    name={campi.name[i]}
+                    id={campi.id[i]}
+                    type={campi.type[i]}
+                    step={campi.step[i]}
+                    value={campi.value[i]}
+                    placeholder={campi.placeholder[i]}
+                    onChange={campi.onChange}
+                    onClick={campi.onClick}
+                    onBlur={campi.onBlur}
+                    onContextMenu={(e) => handleRightClick(e, campi.placeholder[i])}
+                  />
+                </StyledComponents.StyledRow>
+                {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
               </Fragment>
             );
           })}

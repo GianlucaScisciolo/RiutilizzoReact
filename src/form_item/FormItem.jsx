@@ -365,6 +365,7 @@ export function FormFileItems({campi, indici, ottieniFileRangePDF, ottieniFileRa
                 onClick={campi.onClick}
                 onBlur={campi.onBlur}
               />
+              {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
             </Fragment>
           );
         })}

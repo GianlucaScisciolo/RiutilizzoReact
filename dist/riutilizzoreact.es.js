@@ -828,21 +828,25 @@ function Ze({ campi: t, indici: r, ottieniFileRangePDF: i, ottieniFileRangeExcel
 			children: [
 				r.map((n) => {
 					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P);
-					return /* @__PURE__ */ E(e, { children: [/* @__PURE__ */ T(P.StyledLabel, {
-						htmlFor: t.name[n],
-						children: t.label[n]
-					}), /* @__PURE__ */ T(r, {
-						rows: 1,
-						name: t.name[n],
-						id: t.id[n],
-						type: t.type[n],
-						step: t.step[n],
-						value: t.value[n],
-						placeholder: t.placeholder[n],
-						onChange: t.onChange,
-						onClick: t.onClick,
-						onBlur: t.onBlur
-					}, n)] }, n);
+					return /* @__PURE__ */ E(e, { children: [
+						/* @__PURE__ */ T(P.StyledLabel, {
+							htmlFor: t.name[n],
+							children: t.label[n]
+						}),
+						/* @__PURE__ */ T(r, {
+							rows: 1,
+							name: t.name[n],
+							id: t.id[n],
+							type: t.type[n],
+							step: t.step[n],
+							value: t.value[n],
+							placeholder: t.placeholder[n],
+							onChange: t.onChange,
+							onClick: t.onClick,
+							onBlur: t.onBlur
+						}, n),
+						t.errore[n] && /* @__PURE__ */ T(P.StyledSpanErrore, { children: t.errore[n] })
+					] }, n);
 				}),
 				/* @__PURE__ */ T("br", {}),
 				" ",
@@ -1327,9 +1331,9 @@ function Ft({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 		StyledComponents: J
 	}), n.map((n) => {
 		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J);
-		return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ T("div", {
+		return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ E("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ T(J.StyledRow, { children: /* @__PURE__ */ T(r, {
+			children: [/* @__PURE__ */ T(J.StyledRow, { children: /* @__PURE__ */ T(r, {
 				rows: 1,
 				name: t.name[n],
 				id: t.id[n],
@@ -1341,7 +1345,7 @@ function Ft({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 				onClick: t.onClick,
 				onBlur: t.onBlur,
 				onContextMenu: (e) => o(e, t.placeholder[n])
-			}) })
+			}) }), t.errore[n] && /* @__PURE__ */ T(J.StyledSpanErrore, { children: t.errore[n] })]
 		}) }) }, n);
 	})] });
 }
@@ -1843,19 +1847,22 @@ function wn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 		/* @__PURE__ */ T(Q.StyledCardHeader, { children: t.header }),
 		/* @__PURE__ */ T(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
-			children: n.map((n) => /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(t.type[n] ? F(1, !0, Q) : I(1, !0, Q), {
-				rows: 1,
-				name: t.name[n],
-				id: t.id[n],
-				type: t.type[n],
-				step: t.step[n],
-				value: t.value[n],
-				placeholder: t.placeholder[n],
-				onChange: t.onChange,
-				onClick: t.onClick,
-				onBlur: t.onBlur,
-				onContextMenu: (e) => o(e, t.placeholder[n])
-			}, n) }, n))
+			children: n.map((n) => {
+				let r = t.type[n] ? F(1, !0, Q) : I(1, !0, Q);
+				return /* @__PURE__ */ E(e, { children: [/* @__PURE__ */ T(Q.StyledRow, { children: /* @__PURE__ */ T(r, {
+					rows: 1,
+					name: t.name[n],
+					id: t.id[n],
+					type: t.type[n],
+					step: t.step[n],
+					value: t.value[n],
+					placeholder: t.placeholder[n],
+					onChange: t.onChange,
+					onClick: t.onClick,
+					onBlur: t.onBlur,
+					onContextMenu: (e) => o(e, t.placeholder[n])
+				}, n) }), t.errore[n] && /* @__PURE__ */ T(Q.StyledSpanErrore, { children: t.errore[n] })] }, n);
+			})
 		}),
 		/* @__PURE__ */ T(H, {
 			ottieniFileRangePDF: r,

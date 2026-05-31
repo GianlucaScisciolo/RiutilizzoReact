@@ -250,6 +250,7 @@ export function RowFileItems({campi, indici, ottieniFileRangePDF, ottieniFileRan
                     onContextMenu={(e) => handleRightClick(e, campi.placeholder[i])}
                   />
                 </StyledComponents.StyledRow>
+                {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
               </div>
             </StyledComponents.StyledCol>
           </Fragment>
