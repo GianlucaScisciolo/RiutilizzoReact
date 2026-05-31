@@ -107,6 +107,7 @@ export function CardRicercaItems({campi, indici, handleSearch}) {
           StyledComponents={StyledComponents}
         />
       </StyledComponents.StyledCard>
+      {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
     </center>
   );
 }
