@@ -94,6 +94,7 @@ export function CardRicercaItems({campi, indici, handleSearch}) {
                     onContextMenu={(e) => handleRightClick(e, campi.placeholder[i])}
                   />
                 </StyledComponents.StyledRow>
+                {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
               </Fragment>
             );
           })}
@@ -107,7 +108,6 @@ export function CardRicercaItems({campi, indici, handleSearch}) {
           StyledComponents={StyledComponents}
         />
       </StyledComponents.StyledCard>
-      {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
     </center>
   );
 }

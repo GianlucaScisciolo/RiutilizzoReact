@@ -1,15 +1,15 @@
 import { Fragment as e, useRef as t, useState as n } from "react";
 import r from "styled-components";
-import a from "react-bootstrap/Card";
-import o from "react-bootstrap/ListGroup";
-import s from "react-bootstrap/esm/Row";
-import c from "react-bootstrap/esm/Col";
-import { ChevronDown as l, ChevronLeft as u, ChevronRight as d, ChevronUp as f, Download as p, Euro as m, Eye as h, EyeClosed as g, LogIn as _, Pencil as v, Save as y, Search as b, Trash2 as x, X as S } from "lucide-react";
-import { FontAwesomeIcon as C } from "@fortawesome/react-fontawesome";
-import { faFile as w, faFileExcel as ee, faFilePdf as te } from "@fortawesome/free-solid-svg-icons";
-import { Fragment as T, jsx as E, jsxs as D } from "react/jsx-runtime";
-import { Card as O, Col as ne, Row as re, Table as k } from "react-bootstrap";
-var ie = r(a)`
+import i from "react-bootstrap/Card";
+import a from "react-bootstrap/ListGroup";
+import o from "react-bootstrap/esm/Row";
+import s from "react-bootstrap/esm/Col";
+import { ChevronDown as c, ChevronLeft as l, ChevronRight as u, ChevronUp as d, Download as f, Euro as p, Eye as m, EyeClosed as h, LogIn as g, Pencil as _, Save as v, Search as y, Trash2 as b, X as x } from "lucide-react";
+import { FontAwesomeIcon as S } from "@fortawesome/react-fontawesome";
+import { faFile as C, faFileExcel as ee, faFilePdf as te } from "@fortawesome/free-solid-svg-icons";
+import { Fragment as w, jsx as T, jsxs as E } from "react/jsx-runtime";
+import { Card as D, Col as ne, Row as re, Table as O } from "react-bootstrap";
+var ie = r(i)`
   background-color: #111111;
   overflow: hidden;
   border: 5px solid #000000;
@@ -19,12 +19,12 @@ var ie = r(a)`
 
   color: white;
   text-align: center;
-`, ae = r(a.Header)`
+`, ae = r(i.Header)`
   color: #ffffff;
   background-color: #000000;
   border: 5px solid #000000;
   min-height: 70px;
-`, oe = r(o.Item)`
+`, oe = r(a.Item)`
   color: #ffffff;
   background-color: transparent;
   border: 5px solid #000000;
@@ -32,12 +32,12 @@ var ie = r(a)`
 `, se = r.div`
   overflow: hidden;
   transition: max-height 1.5s ease-out;
-`, ce = r(s)`
+`, ce = r(o)`
   display: flex;
   flex-wrap: wrap;
   padding-left: 3%;
   padding-right: 3%;
-`, le = r(c)`
+`, le = r(s)`
   position: relative; 
   color: #FFFFFF;
   border-radius: 40px;
@@ -60,7 +60,7 @@ var ie = r(a)`
   text-align: center;
   min-height: 70px;
   margin-top: 2%;
-`, de = r.textarea`
+`, k = r.textarea`
   width: 100%;
   color: #ffffff;
   background-color: transparent;
@@ -70,13 +70,13 @@ var ie = r(a)`
   text-align: center;
   min-height: 70px;
   margin-bottom: 20px;
-`, fe = r(de)`
+`, de = r(k)`
   background-color: #000000;
-`, pe = r(de)`
+`, fe = r(k)`
   background-color: #0050EF;
-`, me = r(de)`
+`, pe = r(k)`
   background-color: #500000;
-`, he = r.input`
+`, me = r.input`
   width: 100%;
   color: #ffffff;
   background-color: transparent;
@@ -86,67 +86,67 @@ var ie = r(a)`
   text-align: center;
   min-height: 70px;
   margin-bottom: 20px;
-`, ge = r(he)`
+`, he = r(me)`
   background-color: #000000;
-`, _e = r(he)`
+`, ge = r(me)`
   background-color: #0050EF;
-`, ve = r(he)`
+`, _e = r(me)`
   background-color: #500000;
 `, A = "\n  color: #FFFFFF;\n  cursor: pointer;\n  transition: 0.5s all ease-out;\n", j = `
   ${A}
   &:hover {
     color: #0050EF;
   }
-`, ye = `
+`, ve = `
   ${A}
   &:hover {
     color: #500000;
   }
-`, be = r(y)`
+`, ye = r(v)`
   ${j}
-`, xe = r(y)`
+`, be = r(v)`
   ${A}
-`, Se = r(y)`
+`, xe = r(v)`
   ${A}
   color: #0050EF;
-`, Ce = r(g)`
+`, Se = r(h)`
   ${A}
   transition: 0.5s all ease-out;
-`, we = r(h)`
+`, Ce = r(m)`
   ${A}
   transition: 0.5s all ease-out;
   color: #0050EF;
-`, Te = r(b)`
+`, we = r(y)`
   ${j}
-`, Ee = r(b)`
+`, Te = r(y)`
   ${A}
-`, De = r(b)`
+`, Ee = r(y)`
   ${A}
   color: #0050EF;
-`, Oe = r(m)`
+`, De = r(p)`
   color: #FFFFFF;
   transition: 0.5s all ease-out;
-`, ke = r(f)`
+`, Oe = r(d)`
   ${j}
-`, Ae = r(l)`
+`, ke = r(c)`
   ${j}
-`, je = r(_)`
+`, Ae = r(g)`
   ${j}
-`, Me = r(C)`
+`, je = r(S)`
   color: #FFFFFF;
-`, Ne = r(C)`
+`, Me = r(S)`
   ${A}
-`, Pe = r(C)`
+`, Ne = r(S)`
   ${A}
   color: #0050EF;
-`, Fe = r(p)`
+`, Pe = r(f)`
   ${j}
 `;
-r(S)`
-  ${ye}
+r(x)`
+  ${ve}
 `;
-var Ie = r(x)`
-  ${ye}
+var Fe = r(b)`
+  ${ve}
 `, M = r.button`
   border-radius: 40px;
   border: 5px solid #000000;
@@ -188,11 +188,11 @@ var N = r.select`
   border: 5px solid #000000;
   color: #FFFFFF;
   text-align: center;
-`, Le = r(N)`
+`, Ie = r(N)`
   background-color: #111111;
-`, Re = r(N)`
+`, Le = r(N)`
   background-color: #0050EF;
-`, ze = r(N)`
+`, Re = r(N)`
   background-color: #500000;
 `;
 r.option`
@@ -201,20 +201,20 @@ r.option`
     background-color: #0050EF;
   }
 `;
-var Be = r.span`
+var ze = r.span`
   color: #FF0000;
   padding: 10px;
 `, P = {
 	StyledListGroupItem: oe,
 	StyledRow: ce,
 	StyledCol: le,
-	StyledSaveNotSelected: be,
+	StyledSaveNotSelected: ye,
 	grandezzaIcona: 50,
-	StyledSearchNotSelected: Te,
-	StyledArrowTopNotSelected: ke,
-	StyledArrowBottomNotSelected: Ae,
-	StyledLoginNotSelected: je,
-	StyledPencilNotSelected: r(v)`
+	StyledSearchNotSelected: we,
+	StyledArrowTopNotSelected: Oe,
+	StyledArrowBottomNotSelected: ke,
+	StyledLoginNotSelected: Ae,
+	StyledPencilNotSelected: r(_)`
   ${A}
   transition: 0.5s all ease-out;
   &:hover {
@@ -222,39 +222,39 @@ var Be = r.span`
   }
 `,
 	StyledLabel: ue,
-	StyledInputBlock: ge,
-	StyledInputModifica: _e,
-	StyledInputElimina: ve,
-	StyledTextAreaBlock: fe,
-	StyledTextAreaModifica: pe,
-	StyledTextAreaElimina: me,
+	StyledInputBlock: he,
+	StyledInputModifica: ge,
+	StyledInputElimina: _e,
+	StyledTextAreaBlock: de,
+	StyledTextAreaModifica: fe,
+	StyledTextAreaElimina: pe,
 	StyledForm: ie,
 	StyledHeader: ae,
 	SlideContainer: se,
-	StyledSpanErrore: Be,
-	StyledSelectBlock: Le,
-	StyledSelectModifica: Re,
-	StyledSelectElimina: ze,
-	StyledEyeClosedNotSelected: Ce,
-	StyledEyeOpenNotSelected: we,
-	StyledEuroNotSelected: Oe,
-	StyledFileIconNotSelected: Me,
-	StyledDownloadNotSelected: Fe,
-	StyledTrashNotSelected: Ie,
-	StyledSearchNotSelected2: Ee,
-	StyledSaveNotSelected2: xe,
-	StyledSearchSelected2: De,
-	StyledSaveSelected2: Se,
-	StyledFileIconNotSelected2: Ne,
-	StyledFileIconSelected2: Pe
+	StyledSpanErrore: ze,
+	StyledSelectBlock: Ie,
+	StyledSelectModifica: Le,
+	StyledSelectElimina: Re,
+	StyledEyeClosedNotSelected: Se,
+	StyledEyeOpenNotSelected: Ce,
+	StyledEuroNotSelected: De,
+	StyledFileIconNotSelected: je,
+	StyledDownloadNotSelected: Pe,
+	StyledTrashNotSelected: Fe,
+	StyledSearchNotSelected2: Te,
+	StyledSaveNotSelected2: be,
+	StyledSearchSelected2: Ee,
+	StyledSaveSelected2: xe,
+	StyledFileIconNotSelected2: Me,
+	StyledFileIconSelected2: Ne
 };
 //#endregion
 //#region src/Tags.js
-function Ve(e, t) {
-	return e === 0 || e === 2 ? t.StyledPencilNotSelected : e === 1 ? t.StyledPencilSelected : v;
+function Be(e, t) {
+	return e === 0 || e === 2 ? t.StyledPencilNotSelected : e === 1 ? t.StyledPencilSelected : _;
 }
-function He(e, t) {
-	return e === 0 || e === 1 ? t.StyledTrashNotSelected : e === 2 ? t.StyledTrashSelected : x;
+function Ve(e, t) {
+	return e === 0 || e === 1 ? t.StyledTrashNotSelected : e === 2 ? t.StyledTrashSelected : b;
 }
 function F(e, t, n) {
 	return t ? e !== 1 && e !== 2 ? n.StyledInputBlock : e === 1 ? n.StyledInputModifica : n.StyledInputElimina : e === 2 ? n.StyledInputElimina : n.StyledInputBlock;
@@ -265,40 +265,40 @@ function I(e, t, n) {
 //#endregion
 //#region src/Operazioni.jsx
 function L({ eseguiSalvataggio: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ E(n.StyledListGroupItem, {
+	return t === "card" || t === "form" ? /* @__PURE__ */ T(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ E(n.StyledRow, { children: /* @__PURE__ */ E(n.StyledCol, { children: /* @__PURE__ */ E(n.StyledSaveNotSelected, {
+		children: /* @__PURE__ */ T(n.StyledRow, { children: /* @__PURE__ */ T(n.StyledCol, { children: /* @__PURE__ */ T(n.StyledSaveNotSelected, {
 			className: "salvaItemButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		}) }) })
-	}) : /* @__PURE__ */ E(n.StyledColOperazioni, { children: /* @__PURE__ */ E(n.StyledSaveNotSelected, {
+	}) : /* @__PURE__ */ T(n.StyledColOperazioni, { children: /* @__PURE__ */ T(n.StyledSaveNotSelected, {
 		className: "center salvaItemButton",
 		size: n.grandezzaIcona,
 		onClick: e
 	}) });
 }
 function R({ handleSearch: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ E(n.StyledListGroupItem, {
+	return t === "card" || t === "form" ? /* @__PURE__ */ T(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ E(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ T(n.StyledSearchNotSelected, {
 			className: "ricercaItemsButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ E(n.StyledColOperazioni, { children: /* @__PURE__ */ E("div", {
+	}) : /* @__PURE__ */ T(n.StyledColOperazioni, { children: /* @__PURE__ */ T("div", {
 		style: { width: "100%" },
-		children: /* @__PURE__ */ E(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ T(n.StyledSearchNotSelected, {
 			className: "center ricercaItemsButton",
 			size: n.grandezzaIcona,
 			onClick: e
@@ -306,21 +306,21 @@ function R({ handleSearch: e, vistaItem: t, StyledComponents: n }) {
 	}) });
 }
 function z({ eseguiRicerca: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ E(n.StyledListGroupItem, {
+	return t === "card" || t === "form" ? /* @__PURE__ */ T(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ E(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ T(n.StyledSearchNotSelected, {
 			className: "ricercaEntrateUsciteButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ E(n.StyledColOperazioni, { children: /* @__PURE__ */ E("div", {
+	}) : /* @__PURE__ */ T(n.StyledColOperazioni, { children: /* @__PURE__ */ T("div", {
 		style: { width: "100%" },
-		children: /* @__PURE__ */ E(n.StyledSearchNotSelected, {
+		children: /* @__PURE__ */ T(n.StyledSearchNotSelected, {
 			className: "ricercaEntrateUsciteButton",
 			size: n.grandezzaIcona,
 			onClick: e
@@ -328,19 +328,19 @@ function z({ eseguiRicerca: e, vistaItem: t, StyledComponents: n }) {
 	}) });
 }
 function B({ eseguiLogin: e, vistaItem: t, StyledComponents: n }) {
-	return t === "card" || t === "form" ? /* @__PURE__ */ E(n.StyledListGroupItem, {
+	return t === "card" || t === "form" ? /* @__PURE__ */ T(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "3%",
 			paddingBottom: "3%"
 		},
-		children: /* @__PURE__ */ E(n.StyledLoginNotSelected, {
+		children: /* @__PURE__ */ T(n.StyledLoginNotSelected, {
 			className: "loginButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ E(n.StyledColOperazioni, { children: /* @__PURE__ */ E(n.StyledLoginNotSelected, {
+	}) : /* @__PURE__ */ T(n.StyledColOperazioni, { children: /* @__PURE__ */ T(n.StyledLoginNotSelected, {
 		className: "center loginButton",
 		size: n.grandezzaIcona,
 		onClick: e
@@ -348,141 +348,141 @@ function B({ eseguiLogin: e, vistaItem: t, StyledComponents: n }) {
 }
 function V({ eseguiModificaProfilo: e, vistaItem: t, StyledComponents: n }) {
 	let r = t === "form" ? n.StyledPencilNotSelected : n.StyledPencilNotSelected2;
-	return t === "card" || t === "form" ? /* @__PURE__ */ E(n.StyledListGroupItem, {
+	return t === "card" || t === "form" ? /* @__PURE__ */ T(n.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "2%",
 			paddingBottom: "2%"
 		},
-		children: /* @__PURE__ */ E(r, {
+		children: /* @__PURE__ */ T(r, {
 			className: "modificaProfiloButton",
 			size: n.grandezzaIcona,
 			onClick: e
 		})
-	}) : /* @__PURE__ */ E(n.StyledColOperazioni, { children: /* @__PURE__ */ E(n.StyledPencilNotSelectedModificaProfilo, {
+	}) : /* @__PURE__ */ T(n.StyledColOperazioni, { children: /* @__PURE__ */ T(n.StyledPencilNotSelectedModificaProfilo, {
 		className: "center modificaProfiloButton",
 		size: n.grandezzaIcona,
 		onClick: e
 	}) });
 }
-function H({ ottieniFileRangePDF: e, ottieniFileRangeExcel: t, eliminaItemsRange: n, vistaItem: r, StyledComponents: a }) {
-	return r === "card" || r === "form" ? /* @__PURE__ */ D(a.StyledListGroupItem, {
+function H({ ottieniFileRangePDF: e, ottieniFileRangeExcel: t, eliminaItemsRange: n, vistaItem: r, StyledComponents: i }) {
+	return r === "card" || r === "form" ? /* @__PURE__ */ E(i.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
 			paddingTop: "3%"
 		},
 		children: [
-			/* @__PURE__ */ D("div", { children: [/* @__PURE__ */ E(a.StyledFileIconNotSelected, {
+			/* @__PURE__ */ E("div", { children: [/* @__PURE__ */ T(i.StyledFileIconNotSelected, {
 				icon: te,
 				size: "2xl",
 				style: { marginRight: "50%" }
-			}), /* @__PURE__ */ E(a.StyledFileIconNotSelected, {
+			}), /* @__PURE__ */ T(i.StyledFileIconNotSelected, {
 				icon: ee,
 				size: "2xl"
 			})] }),
-			/* @__PURE__ */ E("br", {}),
-			/* @__PURE__ */ D("div", { children: [/* @__PURE__ */ E(a.StyledDownloadNotSelected, {
-				size: a.grandezzaIcona,
+			/* @__PURE__ */ T("br", {}),
+			/* @__PURE__ */ E("div", { children: [/* @__PURE__ */ T(i.StyledDownloadNotSelected, {
+				size: i.grandezzaIcona,
 				style: { marginRight: "50%" },
 				onClick: e
-			}), /* @__PURE__ */ E(a.StyledDownloadNotSelected, {
-				size: a.grandezzaIcona,
+			}), /* @__PURE__ */ T(i.StyledDownloadNotSelected, {
+				size: i.grandezzaIcona,
 				onClick: t
 			})] }),
-			/* @__PURE__ */ E("br", {}),
-			/* @__PURE__ */ E("div", { children: /* @__PURE__ */ E(a.StyledTrashNotSelected, {
-				size: a.grandezzaIcona,
+			/* @__PURE__ */ T("br", {}),
+			/* @__PURE__ */ T("div", { children: /* @__PURE__ */ T(i.StyledTrashNotSelected, {
+				size: i.grandezzaIcona,
 				onClick: n
 			}) }),
-			/* @__PURE__ */ E("br", {})
+			/* @__PURE__ */ T("br", {})
 		]
-	}) : /* @__PURE__ */ D(T, { children: [
-		/* @__PURE__ */ E(a.StyledColOperazioni, { children: /* @__PURE__ */ D("div", {
+	}) : /* @__PURE__ */ E(w, { children: [
+		/* @__PURE__ */ T(i.StyledColOperazioni, { children: /* @__PURE__ */ E("div", {
 			style: { width: "100%" },
-			children: [/* @__PURE__ */ E(a.StyledFileIconNotSelected, {
+			children: [/* @__PURE__ */ T(i.StyledFileIconNotSelected, {
 				icon: te,
 				className: "left",
 				style: { marginRight: "50%" },
 				size: "2xl"
-			}), /* @__PURE__ */ E(a.StyledDownloadNotSelected, {
-				size: a.grandezzaIcona,
+			}), /* @__PURE__ */ T(i.StyledDownloadNotSelected, {
+				size: i.grandezzaIcona,
 				className: "rigth",
 				onClick: e
 			})]
 		}) }),
-		/* @__PURE__ */ E(a.StyledColOperazioni, { children: /* @__PURE__ */ D("div", {
+		/* @__PURE__ */ T(i.StyledColOperazioni, { children: /* @__PURE__ */ E("div", {
 			style: { width: "100%" },
-			children: [/* @__PURE__ */ E(a.StyledFileIconNotSelected, {
+			children: [/* @__PURE__ */ T(i.StyledFileIconNotSelected, {
 				icon: ee,
 				className: "left",
 				style: { marginRight: "50%" },
 				size: "2xl"
-			}), /* @__PURE__ */ E(a.StyledDownloadNotSelected, {
-				size: a.grandezzaIcona,
+			}), /* @__PURE__ */ T(i.StyledDownloadNotSelected, {
+				size: i.grandezzaIcona,
 				className: "rigth",
 				onClick: t
 			})]
 		}) }),
-		/* @__PURE__ */ E(a.StyledColOperazioni, { children: /* @__PURE__ */ E("div", {
+		/* @__PURE__ */ T(i.StyledColOperazioni, { children: /* @__PURE__ */ T("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ E(a.StyledTrashNotSelected2, {
-				size: a.grandezzaIcona,
+			children: /* @__PURE__ */ T(i.StyledTrashNotSelected2, {
+				size: i.grandezzaIcona,
 				className: "center",
 				onClick: n
 			})
 		}) })
 	] });
 }
-function Ue({ operazioneModifica: e, operazioneElimina: t, item: n, vistaItem: r, StyledComponents: a }) {
-	let o = He(n.tipo_selezione, a), s = Ve(n.tipo_selezione, a);
-	return r === "card" || r === "form" ? /* @__PURE__ */ D(a.StyledListGroupItem, {
+function He({ operazioneModifica: e, operazioneElimina: t, item: n, vistaItem: r, StyledComponents: i }) {
+	let a = Ve(n.tipo_selezione, i), o = Be(n.tipo_selezione, i);
+	return r === "card" || r === "form" ? /* @__PURE__ */ E(i.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000"
 		},
-		children: [e && /* @__PURE__ */ E(s, {
+		children: [e && /* @__PURE__ */ T(o, {
 			className: "modificaItemButton",
-			size: a.grandezzaIcona,
+			size: i.grandezzaIcona,
 			onClick: () => e(n),
 			style: { marginRight: "50%" }
-		}), t && /* @__PURE__ */ E(o, {
+		}), t && /* @__PURE__ */ T(a, {
 			className: "eliminaItemButton",
-			size: a.grandezzaIcona,
+			size: i.grandezzaIcona,
 			onClick: () => t(n)
 		})]
-	}) : /* @__PURE__ */ E(a.StyledColOperazioni, { children: /* @__PURE__ */ D("div", {
+	}) : /* @__PURE__ */ T(i.StyledColOperazioni, { children: /* @__PURE__ */ E("div", {
 		style: { width: "100%" },
-		children: [e && /* @__PURE__ */ E(s, {
+		children: [e && /* @__PURE__ */ T(o, {
 			className: "left modificaItemButton",
-			size: a.grandezzaIcona,
+			size: i.grandezzaIcona,
 			onClick: () => e(n),
 			style: { marginRight: "50%" }
-		}), t && /* @__PURE__ */ E(o, {
+		}), t && /* @__PURE__ */ T(a, {
 			className: "rigth eliminaItemButton",
-			size: a.grandezzaIcona,
+			size: i.grandezzaIcona,
 			onClick: () => t(n)
 		})]
 	}) });
 }
-var We = ({ selectedIdsModifica: e, selectedIdsEliminazione: t, handleEdit: n, handleDelete: r }) => /* @__PURE__ */ E(T, { children: /* @__PURE__ */ E("div", {
+var Ue = ({ selectedIdsModifica: e, selectedIdsEliminazione: t, handleEdit: n, handleDelete: r }) => /* @__PURE__ */ T(w, { children: /* @__PURE__ */ T("div", {
 	className: "contenitore-2",
-	children: /* @__PURE__ */ D(s, { children: [e.length > 0 && /* @__PURE__ */ E(c, { children: /* @__PURE__ */ E("button", {
+	children: /* @__PURE__ */ E(o, { children: [e.length > 0 && /* @__PURE__ */ T(s, { children: /* @__PURE__ */ T("button", {
 		className: "bottone-blu-non-selezionato",
 		onClick: n,
 		children: "Modifica"
-	}) }), t.length > 0 && /* @__PURE__ */ E(c, { children: /* @__PURE__ */ E("button", {
+	}) }), t.length > 0 && /* @__PURE__ */ T(s, { children: /* @__PURE__ */ T("button", {
 		className: "bottone-rosso-non-selezionato",
 		onClick: r,
 		children: "Elimina"
 	}) })] })
 }) });
-function Ge({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
-	let a = (e) => {
+function We({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
+	let i = (e) => {
 		n(e);
 	};
-	return /* @__PURE__ */ D(r.StyledListGroupItem, {
+	return /* @__PURE__ */ E(r.StyledListGroupItem, {
 		style: {
 			border: "5px solid #000000",
 			backgroundColor: "#000000",
@@ -490,55 +490,55 @@ function Ge({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
 			paddingBottom: "20px"
 		},
 		children: [
-			e.includes("insert") && t === "insert" && /* @__PURE__ */ D(T, { children: [
-				e.includes("search") && /* @__PURE__ */ E(r.StyledSearchNotSelected2, {
+			e.includes("insert") && t === "insert" && /* @__PURE__ */ E(w, { children: [
+				e.includes("search") && /* @__PURE__ */ T(r.StyledSearchNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
-					onClick: () => a("search")
+					onClick: () => i("search")
 				}),
-				/* @__PURE__ */ E(r.StyledSaveSelected2, {
+				/* @__PURE__ */ T(r.StyledSaveSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
-					onClick: () => a("insert")
+					onClick: () => i("insert")
 				}),
-				e.includes("file") && /* @__PURE__ */ E(r.StyledFileIconNotSelected2, {
-					icon: w,
+				e.includes("file") && /* @__PURE__ */ T(r.StyledFileIconNotSelected2, {
+					icon: C,
 					size: "2xl",
-					onClick: () => a("file")
+					onClick: () => i("file")
 				})
 			] }),
-			e.includes("search") && t === "search" && /* @__PURE__ */ D(T, { children: [
-				/* @__PURE__ */ E(r.StyledSearchSelected2, {
+			e.includes("search") && t === "search" && /* @__PURE__ */ E(w, { children: [
+				/* @__PURE__ */ T(r.StyledSearchSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
-					onClick: () => a("search")
+					onClick: () => i("search")
 				}),
-				e.includes("insert") && /* @__PURE__ */ E(r.StyledSaveNotSelected2, {
+				e.includes("insert") && /* @__PURE__ */ T(r.StyledSaveNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
-					onClick: () => a("insert")
+					onClick: () => i("insert")
 				}),
-				e.includes("file") && /* @__PURE__ */ E(r.StyledFileIconNotSelected2, {
-					icon: w,
+				e.includes("file") && /* @__PURE__ */ T(r.StyledFileIconNotSelected2, {
+					icon: C,
 					size: "2xl",
-					onClick: () => a("file")
+					onClick: () => i("file")
 				})
 			] }),
-			e.includes("file") && t === "file" && /* @__PURE__ */ D(T, { children: [
-				e.includes("search") && /* @__PURE__ */ E(r.StyledSearchNotSelected2, {
+			e.includes("file") && t === "file" && /* @__PURE__ */ E(w, { children: [
+				e.includes("search") && /* @__PURE__ */ T(r.StyledSearchNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
-					onClick: () => a("search")
+					onClick: () => i("search")
 				}),
-				e.includes("insert") && /* @__PURE__ */ E(r.StyledSaveNotSelected2, {
+				e.includes("insert") && /* @__PURE__ */ T(r.StyledSaveNotSelected2, {
 					size: r.grandezzaIcona,
 					style: { marginRight: "50px" },
-					onClick: () => a("insert")
+					onClick: () => i("insert")
 				}),
-				/* @__PURE__ */ E(r.StyledFileIconNotSelected2, {
-					icon: w,
+				/* @__PURE__ */ T(r.StyledFileIconNotSelected2, {
+					icon: C,
 					size: "2xl",
-					onClick: () => a("file")
+					onClick: () => i("file")
 				})
 			] })
 		]
@@ -546,26 +546,26 @@ function Ge({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
 }
 //#endregion
 //#region src/form_item/FormItem.jsx
+function Ge({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
+	return /* @__PURE__ */ T(r.StyledForm, { children: /* @__PURE__ */ T(We, {
+		elementi: e,
+		tipoForm: t,
+		setTipoForm: n,
+		StyledComponents: r
+	}) });
+}
 function Ke({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
-	return /* @__PURE__ */ E(r.StyledForm, { children: /* @__PURE__ */ E(Ge, {
+	return /* @__PURE__ */ T(r.StyledForm, { children: /* @__PURE__ */ T(We, {
 		elementi: e,
 		tipoForm: t,
 		setTipoForm: n,
 		StyledComponents: r
 	}) });
 }
-function qe({ elementi: e, tipoForm: t, setTipoForm: n, StyledComponents: r }) {
-	return /* @__PURE__ */ E(r.StyledForm, { children: /* @__PURE__ */ E(Ge, {
-		elementi: e,
-		tipoForm: t,
-		setTipoForm: n,
-		StyledComponents: r
-	}) });
-}
-function Je({ campi: t, indici: n, eseguiSalvataggio: r }) {
-	return /* @__PURE__ */ D(P.StyledForm, { children: [
-		/* @__PURE__ */ E(P.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ D(P.SlideContainer, {
+function qe({ campi: t, indici: n, eseguiSalvataggio: r }) {
+	return /* @__PURE__ */ E(P.StyledForm, { children: [
+		/* @__PURE__ */ T(P.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ E(P.SlideContainer, {
 			style: {
 				maxHeight: "2000px",
 				overflowY: "auto"
@@ -573,13 +573,13 @@ function Je({ campi: t, indici: n, eseguiSalvataggio: r }) {
 			children: [
 				n.map((n) => {
 					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P);
-					return /* @__PURE__ */ D(e, { children: [
-						/* @__PURE__ */ E(P.StyledLabel, {
+					return /* @__PURE__ */ E(e, { children: [
+						/* @__PURE__ */ T(P.StyledLabel, {
 							htmlFor: t.name[n],
 							children: t.label[n]
 						}),
-						t.name[n] === "prezzo" ? /* @__PURE__ */ E(P.StyledRow, { children: /* @__PURE__ */ D(T, { children: [
-							/* @__PURE__ */ E(r, {
+						t.name[n] === "prezzo" ? /* @__PURE__ */ T(P.StyledRow, { children: /* @__PURE__ */ E(w, { children: [
+							/* @__PURE__ */ T(r, {
 								style: ["prezzo", "totale"].includes(t.name[n]) ? {
 									marginLeft: "-10%",
 									marginRight: 0,
@@ -596,7 +596,7 @@ function Je({ campi: t, indici: n, eseguiSalvataggio: r }) {
 								onClick: t.onClick,
 								onBlur: t.onBlur
 							}),
-							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ E(P.StyledEuroNotSelected, {
+							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ T(P.StyledEuroNotSelected, {
 								style: {
 									maxWidth: "5%",
 									marginTop: "13px"
@@ -605,8 +605,8 @@ function Je({ campi: t, indici: n, eseguiSalvataggio: r }) {
 								onClick: null
 							}),
 							t.options[n]
-						] }) }) : /* @__PURE__ */ D(T, { children: [
-							/* @__PURE__ */ E(r, {
+						] }) }) : /* @__PURE__ */ E(w, { children: [
+							/* @__PURE__ */ T(r, {
 								style: ["prezzo", "totale"].includes(t.name[n]) ? {
 									marginLeft: "-10%",
 									marginRight: 0,
@@ -623,7 +623,7 @@ function Je({ campi: t, indici: n, eseguiSalvataggio: r }) {
 								onClick: t.onClick,
 								onBlur: t.onBlur
 							}),
-							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ E(P.StyledEuroNotSelected, {
+							["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ T(P.StyledEuroNotSelected, {
 								style: {
 									maxWidth: "5%",
 									marginTop: "13px"
@@ -633,26 +633,26 @@ function Je({ campi: t, indici: n, eseguiSalvataggio: r }) {
 							}),
 							t.options[n]
 						] }),
-						t.errore[n] !== "" && /* @__PURE__ */ E(P.StyledSpanErrore, { children: t.errore[n] })
+						t.errore[n] !== "" && /* @__PURE__ */ T(P.StyledSpanErrore, { children: t.errore[n] })
 					] }, n);
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			]
 		}),
-		/* @__PURE__ */ E(L, {
+		/* @__PURE__ */ T(L, {
 			eseguiSalvataggio: r,
 			vistaItem: "form",
 			StyledComponents: P
 		})
 	] });
 }
-function Ye({ campi: t, indici: r, handleSearch: a }) {
-	let [o, s] = n(!0), [c, l] = n(!0);
-	return F(1, !0, P), I(1, !0, P), /* @__PURE__ */ D(P.StyledForm, { children: [
-		/* @__PURE__ */ E(P.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ D(P.SlideContainer, {
+function Je({ campi: t, indici: r, handleSearch: i }) {
+	let [a, o] = n(!0), [s, c] = n(!0);
+	return F(1, !0, P), I(1, !0, P), /* @__PURE__ */ E(P.StyledForm, { children: [
+		/* @__PURE__ */ T(P.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ E(P.SlideContainer, {
 			style: {
 				maxHeight: "2000px",
 				overflowY: "auto"
@@ -660,54 +660,58 @@ function Ye({ campi: t, indici: r, handleSearch: a }) {
 			children: [
 				r.map((n) => {
 					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P);
-					return /* @__PURE__ */ D(e, { children: [/* @__PURE__ */ E(P.StyledLabel, {
-						htmlFor: t.name[n],
-						children: t.label[n]
-					}), /* @__PURE__ */ E(r, {
-						rows: 1,
-						name: t.name[n],
-						id: t.id[n],
-						type: t.type[n],
-						step: t.step[n],
-						value: t.value[n],
-						placeholder: t.placeholder[n],
-						onChange: t.onChange,
-						onClick: t.onClick,
-						onBlur: t.onBlur
-					}, n)] }, n);
+					return /* @__PURE__ */ E(e, { children: [
+						/* @__PURE__ */ T(P.StyledLabel, {
+							htmlFor: t.name[n],
+							children: t.label[n]
+						}),
+						/* @__PURE__ */ T(r, {
+							rows: 1,
+							name: t.name[n],
+							id: t.id[n],
+							type: t.type[n],
+							step: t.step[n],
+							value: t.value[n],
+							placeholder: t.placeholder[n],
+							onChange: t.onChange,
+							onClick: t.onClick,
+							onBlur: t.onBlur
+						}, n),
+						t.errore[n] && /* @__PURE__ */ T(P.StyledSpanErrore, { children: t.errore[n] })
+					] }, n);
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			]
 		}),
-		/* @__PURE__ */ E(R, {
-			setIsVisible: s,
-			arrowUp: c,
-			setArrowUp: l,
-			handleSearch: a,
+		/* @__PURE__ */ T(R, {
+			setIsVisible: o,
+			arrowUp: s,
+			setArrowUp: c,
+			handleSearch: i,
 			vistaItem: "form",
 			StyledComponents: P
 		})
 	] });
 }
-function Xe({ campi: t, indici: r, eseguiLogin: a }) {
-	let [o, s] = n("password"), c = (e) => {
-		e.preventDefault(), s(o === "text" ? "password" : "text");
+function Ye({ campi: t, indici: r, eseguiLogin: i }) {
+	let [a, o] = n("password"), s = (e) => {
+		e.preventDefault(), o(a === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ D(P.StyledForm, { children: [
-		/* @__PURE__ */ E(P.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ D(P.SlideContainer, {
+	return /* @__PURE__ */ E(P.StyledForm, { children: [
+		/* @__PURE__ */ T(P.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ E(P.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: [
 				r.map((n) => {
-					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P), a = o === "password" ? P.StyledEyeClosedNotSelected : P.StyledEyeOpenNotSelected;
-					return /* @__PURE__ */ D(e, { children: [
-						/* @__PURE__ */ E(P.StyledLabel, {
+					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P), i = a === "password" ? P.StyledEyeClosedNotSelected : P.StyledEyeOpenNotSelected;
+					return /* @__PURE__ */ E(e, { children: [
+						/* @__PURE__ */ T(P.StyledLabel, {
 							htmlFor: t.name[n],
 							children: t.label[n]
 						}),
-						/* @__PURE__ */ D(P.StyledRow, { children: [/* @__PURE__ */ E(r, {
+						/* @__PURE__ */ E(P.StyledRow, { children: [/* @__PURE__ */ T(r, {
 							style: t.name[n] === "password" ? {
 								marginLeft: "-10%",
 								marginRight: 0,
@@ -721,7 +725,7 @@ function Xe({ campi: t, indici: r, eseguiLogin: a }) {
 							rows: 1,
 							name: t.name[n],
 							id: t.id[n],
-							type: t.name[n] === "password" ? o : t.type[n],
+							type: t.name[n] === "password" ? a : t.type[n],
 							step: t.step[n],
 							min: t.min[n],
 							value: t.value[n],
@@ -729,47 +733,47 @@ function Xe({ campi: t, indici: r, eseguiLogin: a }) {
 							onChange: t.onChange,
 							onClick: t.onClick,
 							onBlur: t.onBlur
-						}), t.name[n] === "password" && /* @__PURE__ */ E(a, {
+						}), t.name[n] === "password" && /* @__PURE__ */ T(i, {
 							style: {
 								maxWidth: "5%",
 								marginTop: "13px"
 							},
 							size: P.grandezzaIcona,
-							onClick: c
+							onClick: s
 						})] }),
 						t.options[n],
-						t.errore[n] && /* @__PURE__ */ E(P.StyledSpanErrore, { children: t.errore[n] })
+						t.errore[n] && /* @__PURE__ */ T(P.StyledSpanErrore, { children: t.errore[n] })
 					] }, n);
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			]
 		}),
-		/* @__PURE__ */ E(B, {
-			eseguiLogin: a,
+		/* @__PURE__ */ T(B, {
+			eseguiLogin: i,
 			vistaItem: "form",
 			StyledComponents: P
 		})
 	] });
 }
-function Ze({ campi: t, indici: r, eseguiModificaProfilo: a }) {
-	let [o, s] = n("password"), [c, l] = n("password"), [u, d] = n("password"), f = (e, t) => {
-		e.preventDefault(), t === "password_attuale" ? s(o === "text" ? "password" : "text") : t === "nuova_password" ? l(c === "text" ? "password" : "text") : t === "conferma_nuova_password" && d(u === "text" ? "password" : "text");
+function Xe({ campi: t, indici: r, eseguiModificaProfilo: i }) {
+	let [a, o] = n("password"), [s, c] = n("password"), [l, u] = n("password"), d = (e, t) => {
+		e.preventDefault(), t === "password_attuale" ? o(a === "text" ? "password" : "text") : t === "nuova_password" ? c(s === "text" ? "password" : "text") : t === "conferma_nuova_password" && u(l === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ D(P.StyledForm, { children: [
-		/* @__PURE__ */ E(P.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ D(P.SlideContainer, {
+	return /* @__PURE__ */ E(P.StyledForm, { children: [
+		/* @__PURE__ */ T(P.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ E(P.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: [
 				r.map((n) => {
-					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P), a = t.name[n] === "password_attuale" && o === "password" || t.name[n] === "nuova_password" && c === "password" || t.name[n] === "conferma_nuova_password" && u === "password" ? P.StyledEyeClosedNotSelected : P.StyledEyeOpenNotSelected;
-					return /* @__PURE__ */ D(e, { children: [
-						/* @__PURE__ */ E(P.StyledLabel, {
+					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? P.StyledEyeClosedNotSelected : P.StyledEyeOpenNotSelected;
+					return /* @__PURE__ */ E(e, { children: [
+						/* @__PURE__ */ T(P.StyledLabel, {
 							htmlFor: t.name[n],
 							children: t.label[n]
 						}),
-						/* @__PURE__ */ D(P.StyledRow, { children: [/* @__PURE__ */ E(r, {
+						/* @__PURE__ */ E(P.StyledRow, { children: [/* @__PURE__ */ T(r, {
 							style: t.name[n].includes("password") ? {
 								marginLeft: "-10%",
 								marginRight: 0,
@@ -783,7 +787,7 @@ function Ze({ campi: t, indici: r, eseguiModificaProfilo: a }) {
 							rows: 1,
 							name: t.name[n],
 							id: t.id[n],
-							type: t.name[n].includes("password") ? t.name[n] === "password_attuale" ? o : t.name[n] === "nuova_password" ? c : u : t.type[n],
+							type: t.name[n].includes("password") ? t.name[n] === "password_attuale" ? a : t.name[n] === "nuova_password" ? s : l : t.type[n],
 							step: t.step[n],
 							min: t.min[n],
 							value: t.value[n],
@@ -791,43 +795,43 @@ function Ze({ campi: t, indici: r, eseguiModificaProfilo: a }) {
 							onChange: t.onChange,
 							onClick: t.onClick,
 							onBlur: t.onBlur
-						}), t.name[n].includes("password") && /* @__PURE__ */ E(a, {
+						}), t.name[n].includes("password") && /* @__PURE__ */ T(i, {
 							style: {
 								maxWidth: "5%",
 								marginTop: "13px"
 							},
 							size: P.grandezzaIcona,
-							onClick: (e) => f(e, t.name[n])
+							onClick: (e) => d(e, t.name[n])
 						})] }),
 						t.options[n],
-						t.errore[n] && /* @__PURE__ */ E(P.StyledSpanErrore, { children: t.errore[n] })
+						t.errore[n] && /* @__PURE__ */ T(P.StyledSpanErrore, { children: t.errore[n] })
 					] }, n);
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			]
 		}),
-		/* @__PURE__ */ E(V, {
-			eseguiModificaProfilo: a,
+		/* @__PURE__ */ T(V, {
+			eseguiModificaProfilo: i,
 			vistaItem: "form",
 			StyledComponents: P
 		})
 	] });
 }
-function Qe({ campi: t, indici: r, ottieniFileRangePDF: a, ottieniFileRangeExcel: o, eliminaItemsRange: s }) {
-	let [c, l] = n(!0), [u, d] = n(!0), f = c ? "2000px" : "0px";
-	return F(1, !0, P), I(1, !0, P), /* @__PURE__ */ D(P.StyledForm, { children: [
-		/* @__PURE__ */ E(P.StyledHeader, { children: t.header }),
-		/* @__PURE__ */ D(P.SlideContainer, {
-			style: { maxHeight: `${f}` },
+function Ze({ campi: t, indici: r, ottieniFileRangePDF: i, ottieniFileRangeExcel: a, eliminaItemsRange: o }) {
+	let [s, c] = n(!0), [l, u] = n(!0), d = s ? "2000px" : "0px";
+	return F(1, !0, P), I(1, !0, P), /* @__PURE__ */ E(P.StyledForm, { children: [
+		/* @__PURE__ */ T(P.StyledHeader, { children: t.header }),
+		/* @__PURE__ */ E(P.SlideContainer, {
+			style: { maxHeight: `${d}` },
 			children: [
 				r.map((n) => {
 					let r = t.type[n] ? F(1, !0, P) : I(1, !0, P);
-					return /* @__PURE__ */ D(e, { children: [/* @__PURE__ */ E(P.StyledLabel, {
+					return /* @__PURE__ */ E(e, { children: [/* @__PURE__ */ T(P.StyledLabel, {
 						htmlFor: t.name[n],
 						children: t.label[n]
-					}), /* @__PURE__ */ E(r, {
+					}), /* @__PURE__ */ T(r, {
 						rows: 1,
 						name: t.name[n],
 						id: t.id[n],
@@ -840,85 +844,85 @@ function Qe({ campi: t, indici: r, ottieniFileRangePDF: a, ottieniFileRangeExcel
 						onBlur: t.onBlur
 					}, n)] }, n);
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			]
 		}),
-		/* @__PURE__ */ E(H, {
-			ottieniFileRangePDF: a,
-			ottieniFileRangeExcel: o,
-			eliminaItemsRange: s,
+		/* @__PURE__ */ T(H, {
+			ottieniFileRangePDF: i,
+			ottieniFileRangeExcel: a,
+			eliminaItemsRange: o,
 			vistaItem: "form",
 			StyledComponents: P
 		})
 	] });
 }
-function $e({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: a }) {
-	return /* @__PURE__ */ D(P.StyledForm, { children: [
-		/* @__PURE__ */ E(P.StyledHeader, { children: a === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
-		/* @__PURE__ */ D(P.SlideContainer, {
+function Qe({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
+	return /* @__PURE__ */ E(P.StyledForm, { children: [
+		/* @__PURE__ */ T(P.StyledHeader, { children: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
+		/* @__PURE__ */ E(P.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: [
-				/* @__PURE__ */ E(P.StyledLabel, {
+				/* @__PURE__ */ T(P.StyledLabel, {
 					htmlFor: "primo_anno",
-					children: a === "italiano" ? "Primo anno" : "First year"
+					children: i === "italiano" ? "Primo anno" : "First year"
 				}),
-				/* @__PURE__ */ E(P.StyledInputModifica, {
+				/* @__PURE__ */ T(P.StyledInputModifica, {
 					rows: 1,
 					name: "primo_anno",
 					id: "primo_anno",
 					type: "number",
 					step: 1,
 					value: e.primo_anno,
-					placeholder: a === "italiano" ? "Primo anno" : "First year",
+					placeholder: i === "italiano" ? "Primo anno" : "First year",
 					onChange: (e) => n(e, t)
 				}),
-				/* @__PURE__ */ E(P.StyledLabel, {
+				/* @__PURE__ */ T(P.StyledLabel, {
 					htmlFor: "ultimo_anno",
-					children: a === "italiano" ? "Ultimo anno" : "Last year"
+					children: i === "italiano" ? "Ultimo anno" : "Last year"
 				}),
-				/* @__PURE__ */ D(P.StyledSelectModifica, {
+				/* @__PURE__ */ E(P.StyledSelectModifica, {
 					name: "ultimo_anno",
 					id: "ultimo_anno",
 					value: e.ultimo_anno,
 					onChange: (e) => n(e, t),
 					children: [
-						/* @__PURE__ */ E("option", {
+						/* @__PURE__ */ T("option", {
 							value: parseInt(e.primo_anno) + 1,
 							children: parseInt(e.primo_anno) + 1
 						}),
-						/* @__PURE__ */ E("option", {
+						/* @__PURE__ */ T("option", {
 							value: parseInt(e.primo_anno) + 2,
 							children: parseInt(e.primo_anno) + 2
 						}),
-						/* @__PURE__ */ E("option", {
+						/* @__PURE__ */ T("option", {
 							value: parseInt(e.primo_anno) + 3,
 							children: parseInt(e.primo_anno) + 3
 						}),
-						/* @__PURE__ */ E("option", {
+						/* @__PURE__ */ T("option", {
 							value: parseInt(e.primo_anno) + 4,
 							children: parseInt(e.primo_anno) + 4
 						}),
-						/* @__PURE__ */ E("option", {
+						/* @__PURE__ */ T("option", {
 							value: parseInt(e.primo_anno) + 5,
 							children: parseInt(e.primo_anno) + 5
 						})
 					]
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			]
 		}),
-		/* @__PURE__ */ E(z, {
+		/* @__PURE__ */ T(z, {
 			eseguiRicerca: (e) => r(e),
 			vistaItem: "form",
 			StyledComponents: P
 		})
 	] });
 }
-var et = r(re)`
+var $e = r(re)`
   display: flex;
   align-items: stretch; 
   justify-content: space-between;
@@ -946,7 +950,7 @@ r(U)`
   border: 5px solid #000000;
   background-color: #000000;
 `;
-var tt = r(U)`
+var et = r(U)`
   border: 5px solid #000000;
   background-color: #000000;
   min-width: 230px;
@@ -964,67 +968,73 @@ r(U)`
   display: flex;
   flex-direction: row-reverse;
 `;
-var W = "\n  flex: 1;\n  display: flex;\n  align-items: center; /* Centro verticale */\n  justify-content: center; /* Centro orizzontale */\n  width: 100%;\n  height: 100%;\n  border: none;\n  outline: none;\n  background-color: transparent;\n  color: inherit;\n  padding: 0; \n  margin: 0;\n  text-align: center; /* Centro orizzontale del testo */\n  overflow: hidden; /* Nasconde l'overflow */\n  resize: vertical;\n  border-radius: 40px;\n  min-height: 50px;\n  border: 5px solid #000000; \n  color: #FFFFFF;\n  padding: auto;\n", nt = r.textarea`
+var W = "\n  flex: 1;\n  display: flex;\n  align-items: center; /* Centro verticale */\n  justify-content: center; /* Centro orizzontale */\n  width: 100%;\n  height: 100%;\n  border: none;\n  outline: none;\n  background-color: transparent;\n  color: inherit;\n  padding: 0; \n  margin: 0;\n  text-align: center; /* Centro orizzontale del testo */\n  overflow: hidden; /* Nasconde l'overflow */\n  resize: vertical;\n  border-radius: 40px;\n  min-height: 50px;\n  border: 5px solid #000000; \n  color: #FFFFFF;\n  padding: auto;\n", tt = r.textarea`
   ${W}
-`, rt = r(nt)`
+`, nt = r(tt)`
   background-color: #111111;
-`, it = r(nt)`
+`, rt = r(tt)`
   background-color: #0050EF;
-`, at = r(nt)`
+`, it = r(tt)`
   background-color: #500000;
 `, G = r.input`
   ${W}
-`, ot = r(G)`
+`, at = r(G)`
   background-color: #111111;
-`, st = r(G)`
+`, ot = r(G)`
   background-color: #0050EF;
-`, ct = r(G)`
+`, st = r(G)`
   background-color: #500000;
-`, lt = r.button`
+`, ct = r.button`
   ${W}
-`, ut = "\n  margin-left: 10%;\n  margin-right: 10%;\n  border: 5px solid #000000;\n  background-color: #000000;\n  cursor: pointer;  \n  transition: 0.5s all ease-out;\n";
-r(lt)`
-  ${ut}
+`, lt = "\n  margin-left: 10%;\n  margin-right: 10%;\n  border: 5px solid #000000;\n  background-color: #000000;\n  cursor: pointer;  \n  transition: 0.5s all ease-out;\n";
+r(ct)`
+  ${lt}
   &:hover {
     background-color: #0050EF;
     color: #FFFFFF;
   }
-`, r(lt)`
-  ${ut}
+`, r(ct)`
+  ${lt}
   &:hover {
     background-color: #500000;
     color: #FFFFFF;
   }
 `;
-var K = "\n  color: #FFFFFF;\n  cursor: pointer;\n", dt = r(y)`
+var K = "\n  color: #FFFFFF;\n  cursor: pointer;\n", ut = r(v)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, ft = r(g)`
+`, dt = r(h)`
   ${K}
   transition: 0.5s all ease-out;
-`, pt = r(h)`
+`, ft = r(m)`
   ${K}
   transition: 0.5s all ease-out;
   color: #0050EF;
-`, mt = r(b)`
+`, pt = r(y)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, ht = r(m)`
+`, mt = r(p)`
   color: #FFFFFF;
   transition: 0.5s all ease-out;
+`, ht = r(l)`
+  ${K}
+  transition: 0.5s all ease-out;
+  &:hover {
+    color: #0050EF;
+  }
 `, gt = r(u)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, _t = r(d)`
+`, _t = r(g)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
@@ -1032,46 +1042,40 @@ var K = "\n  color: #FFFFFF;\n  cursor: pointer;\n", dt = r(y)`
   }
 `, vt = r(_)`
   ${K}
-  transition: 0.5s all ease-out;
-  &:hover {
-    color: #0050EF;
-  }
-`, yt = r(v)`
-  ${K}
-`, bt = r(v)`
+`, yt = r(_)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, xt = r(v)`
+`, bt = r(_)`
   color: #0050EF;
   cursor: pointer;
-`, St = r(x)`
+`, xt = r(b)`
   ${K}
-`, Ct = r(x)`
+`, St = r(b)`
   color: #500000;
   cursor: pointer;
-`, wt = r(C)`
+`, Ct = r(S)`
   color: #FFFFFF;
-`, Tt = r(C)`
+`, wt = r(S)`
   ${K}
   color: #0050EF;
-`, Et = r(p)`
+`, Tt = r(f)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `;
-r(S)`
+r(x)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
     color: #500000;
   }
 `;
-var Dt = r(x)`
+var Et = r(b)`
   ${K}
   transition: 0.5s all ease-out;
   &:hover {
@@ -1085,11 +1089,11 @@ var Dt = r(x)`
   border: 5px solid #000000;
   color: #FFFFFF;
   text-align: center;
-`, Ot = r(q)`
+`, Dt = r(q)`
   background-color: #111111;
-`, kt = r(q)`
+`, Ot = r(q)`
   background-color: #0050EF;
-`, At = r(q)`
+`, kt = r(q)`
   background-color: #500000;
 `;
 r.option`
@@ -1099,73 +1103,73 @@ r.option`
   }
 `;
 var J = {
-	StyledPencilNotSelected: yt,
-	StyledPencilSelected: xt,
+	StyledPencilNotSelected: vt,
+	StyledPencilSelected: bt,
 	grandezzaIcona: 50,
-	StyledTrashNotSelected: St,
-	StyledTrashSelected: Ct,
-	StyledColOperazioni: tt,
-	StyledSaveNotSelected: dt,
-	StyledSearchNotSelected: mt,
-	StyledArrowLeftNotSelected: gt,
-	StyledArrowRightNotSelected: _t,
-	StyledFileIconNotSelected: wt,
-	StyledDownloadNotSelected: Et,
-	StyledTrashNotSelected2: Dt,
-	StyledLoginNotSelected: vt,
-	StyledPencilNotSelectedModificaProfilo: bt,
-	StyledInputBlock: ot,
-	StyledInputModifica: st,
-	StyledInputElimina: ct,
-	StyledTextAreaBlock: rt,
-	StyledTextAreaModifica: it,
-	StyledTextAreaElimina: at,
-	StyledRow: et,
+	StyledTrashNotSelected: xt,
+	StyledTrashSelected: St,
+	StyledColOperazioni: et,
+	StyledSaveNotSelected: ut,
+	StyledSearchNotSelected: pt,
+	StyledArrowLeftNotSelected: ht,
+	StyledArrowRightNotSelected: gt,
+	StyledFileIconNotSelected: Ct,
+	StyledDownloadNotSelected: Tt,
+	StyledTrashNotSelected2: Et,
+	StyledLoginNotSelected: _t,
+	StyledPencilNotSelectedModificaProfilo: yt,
+	StyledInputBlock: at,
+	StyledInputModifica: ot,
+	StyledInputElimina: st,
+	StyledTextAreaBlock: nt,
+	StyledTextAreaModifica: rt,
+	StyledTextAreaElimina: it,
+	StyledRow: $e,
 	StyledCol: U,
 	StyledSpanErrore: r.span`
   color: #FF0000;
   border-radius: 40px;
   padding: 10px;
 `,
-	StyledSelectBlock: Ot,
-	StyledSelectModifica: kt,
-	StyledSelectElimina: At,
-	StyledEyeClosedNotSelected: ft,
-	StyledEyeOpenNotSelected: pt,
-	StyledEuroNotSelected: ht,
-	StyledFileIconSelected2: Tt
-}, jt = (e, t, n) => {
+	StyledSelectBlock: Dt,
+	StyledSelectModifica: Ot,
+	StyledSelectElimina: kt,
+	StyledEyeClosedNotSelected: dt,
+	StyledEyeOpenNotSelected: ft,
+	StyledEuroNotSelected: mt,
+	StyledFileIconSelected2: wt
+}, At = (e, t, n) => {
 	e.preventDefault();
-	let { name: r, value: a, id: o } = e.target, s = !0;
+	let { name: r, value: i, id: a } = e.target, o = !0;
 	[
 		"note_cliente",
 		"note_servizio",
 		"note_lavoro",
 		"note_spesa"
-	].includes(o) ? a.length > 200 && (s = !1) : ["descrizione_spesa"].includes(o) ? a.length > 1e3 && (s = !1) : ["nome_servizio"].includes(o) ? a.length > 100 && (s = !1) : ["prezzo_servizio", "totale_spesa"].includes(o) ? (!(!isNaN(a.substr(0, a)) && Number(a) === parseFloat(a)) || a < 0) && (s = !1) : ["email_cliente"].includes(o) ? a.length > 254 && (s = !1) : ["contatto_cliente"].includes(o) && (a === "" ? s = !0 : (!/^\d+$/.test(a) || !(a.startsWith("0") && a.length <= 11 || a.startsWith("3") && a.length <= 10)) && (s = !1)), s === !0 && n((e) => ({
+	].includes(a) ? i.length > 200 && (o = !1) : ["descrizione_spesa"].includes(a) ? i.length > 1e3 && (o = !1) : ["nome_servizio"].includes(a) ? i.length > 100 && (o = !1) : ["prezzo_servizio", "totale_spesa"].includes(a) ? (!(!isNaN(i.substr(0, i)) && Number(i) === parseFloat(i)) || i < 0) && (o = !1) : ["email_cliente"].includes(a) ? i.length > 254 && (o = !1) : ["contatto_cliente"].includes(a) && (i === "" ? o = !0 : (!/^\d+$/.test(i) || !(i.startsWith("0") && i.length <= 11 || i.startsWith("3") && i.length <= 10)) && (o = !1)), o === !0 && n((e) => ({
 		...e,
-		[t]: a
+		[t]: i
 	}));
-}, Mt = (e) => {
+}, jt = (e) => {
 	["giorno_spesa", "giorno_lavoro"].includes(e.target.id) ? e.target.type = "date" : ["prezzo_servizio", "totale_spesa"].includes(e.target.id) && (e.target.value = e.target.value.substr(0, e.target.value.length - 2));
 };
 //#endregion
 //#region src/row_item/RowItem.jsx
-function Nt({ campi: t, indici: n, eseguiSalvataggio: r }) {
+function Mt({ campi: t, indici: n, eseguiSalvataggio: r }) {
 	F(1, !0, J), I(1, !0, J);
-	let a = (e, t) => {
+	let i = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ D(J.StyledRow, { children: [/* @__PURE__ */ E(L, {
+	return /* @__PURE__ */ E(J.StyledRow, { children: [/* @__PURE__ */ T(L, {
 		eseguiSalvataggio: r,
 		vistaItem: "row",
 		StyledComponents: J
 	}), n.map((n) => {
 		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J);
-		return /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ D("div", {
+		return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ E("div", {
 			style: { width: "100%" },
-			children: [/* @__PURE__ */ D(J.StyledRow, { children: [
-				/* @__PURE__ */ E(r, {
+			children: [/* @__PURE__ */ E(J.StyledRow, { children: [
+				/* @__PURE__ */ T(r, {
 					rows: 1,
 					style: ["prezzo", "totale"].includes(t.name[n]) ? { maxWidth: "90%" } : null,
 					name: t.name[n],
@@ -1177,9 +1181,9 @@ function Nt({ campi: t, indici: n, eseguiSalvataggio: r }) {
 					onChange: t.onChange,
 					onClick: t.onClick,
 					onBlur: t.onBlur,
-					onContextMenu: (e) => a(e, t.placeholder[n])
+					onContextMenu: (e) => i(e, t.placeholder[n])
 				}),
-				["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ E(J.StyledEuroNotSelected, {
+				["prezzo", "totale"].includes(t.name[n]) && /* @__PURE__ */ T(J.StyledEuroNotSelected, {
 					style: {
 						maxWidth: "10%",
 						marginLeft: "-6px"
@@ -1188,12 +1192,12 @@ function Nt({ campi: t, indici: n, eseguiSalvataggio: r }) {
 					onClick: null
 				}),
 				t.options[n]
-			] }), t.errore[n] !== "" && /* @__PURE__ */ E(J.StyledSpanErrore, { children: t.errore[n] })]
+			] }), t.errore[n] !== "" && /* @__PURE__ */ T(J.StyledSpanErrore, { children: t.errore[n] })]
 		}) }) }, n);
 	})] });
 }
-function Pt({ campi: t, indici: r, handleSearch: a }) {
-	let [o, s] = n([
+function Nt({ campi: t, indici: r, handleSearch: i }) {
+	let [a, o] = n([
 		!0,
 		!0,
 		!0,
@@ -1202,24 +1206,24 @@ function Pt({ campi: t, indici: r, handleSearch: a }) {
 		!0,
 		!0,
 		!0
-	]), [c, l] = n(!0);
+	]), [s, c] = n(!0);
 	F(1, !0, J), I(1, !0, J);
-	let u = (e, t) => {
+	let l = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ D(J.StyledRow, { children: [/* @__PURE__ */ E(R, {
-		visibilita: o,
-		setVisibilita: s,
-		arrowUp: c,
-		setArrowUp: l,
-		handleSearch: a,
+	return /* @__PURE__ */ E(J.StyledRow, { children: [/* @__PURE__ */ T(R, {
+		visibilita: a,
+		setVisibilita: o,
+		arrowUp: s,
+		setArrowUp: c,
+		handleSearch: i,
 		vistaItem: "row",
 		StyledComponents: J
 	}), r.map((n) => {
 		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J);
-		return /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ E("div", {
+		return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ E("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ E(J.StyledRow, { children: o[n] && /* @__PURE__ */ D(T, { children: [/* @__PURE__ */ E(r, {
+			children: [/* @__PURE__ */ T(J.StyledRow, { children: a[n] && /* @__PURE__ */ E(w, { children: [/* @__PURE__ */ T(r, {
 				style: [
 					"prezzo_min",
 					"prezzo_max",
@@ -1236,41 +1240,41 @@ function Pt({ campi: t, indici: r, handleSearch: a }) {
 				onChange: t.onChange,
 				onClick: t.onClick,
 				onBlur: t.onBlur,
-				onContextMenu: (e) => u(e, t.placeholder[n])
+				onContextMenu: (e) => l(e, t.placeholder[n])
 			}), [
 				"prezzo_min",
 				"prezzo_max",
 				"totale_min",
 				"totale_max"
-			].includes(t.name[n]) && /* @__PURE__ */ E(J.StyledEuroNotSelected, {
+			].includes(t.name[n]) && /* @__PURE__ */ T(J.StyledEuroNotSelected, {
 				style: {
 					maxWidth: "20%",
 					marginLeft: "-6px"
 				},
 				size: J.grandezzaIcona,
 				onClick: null
-			})] }) })
+			})] }) }), t.errore[n] && /* @__PURE__ */ T(J.StyledSpanErrore, { children: t.errore[n] })]
 		}) }) }, n);
 	})] });
 }
-function Ft({ item: t, campi: r, indici: a, operazioneModifica: o, operazioneElimina: s, handleBlurItem: c }) {
-	let l = F(r.tipoSelezione, !1, J), [u, d] = n(() => a.reduce((e, t) => ({
+function Pt({ item: t, campi: r, indici: i, operazioneModifica: a, operazioneElimina: o, handleBlurItem: s }) {
+	let c = F(r.tipoSelezione, !1, J), [l, u] = n(() => i.reduce((e, t) => ({
 		...e,
 		[t]: r.value[t]
-	}), {})), f = (e, t) => {
+	}), {})), d = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ D(J.StyledRow, { children: [
-		(o || s) && /* @__PURE__ */ E(Ue, {
-			operazioneModifica: o,
-			operazioneElimina: s,
+	return /* @__PURE__ */ E(J.StyledRow, { children: [
+		(a || o) && /* @__PURE__ */ T(He, {
+			operazioneModifica: a,
+			operazioneElimina: o,
 			item: t,
 			vistaItem: "row",
 			StyledComponents: J
 		}),
-		/* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ E("div", {
+		/* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ T("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ E(J.StyledRow, { children: /* @__PURE__ */ E(l, {
+			children: /* @__PURE__ */ T(J.StyledRow, { children: /* @__PURE__ */ T(c, {
 				rows: 1,
 				name: "header",
 				value: r.header,
@@ -1278,27 +1282,27 @@ function Ft({ item: t, campi: r, indici: a, operazioneModifica: o, operazioneEli
 				readOnly: !0
 			}) })
 		}) }),
-		a.map((n) => {
-			let a = r.type[n] ? F(r.tipoSelezione, r.valoreModificabile[n], J) : I(r.tipoSelezione, r.valoreModificabile[n], J);
-			return /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ D("div", {
+		i.map((n) => {
+			let i = r.type[n] ? F(r.tipoSelezione, r.valoreModificabile[n], J) : I(r.tipoSelezione, r.valoreModificabile[n], J);
+			return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ E("div", {
 				style: { width: "100%" },
-				children: [/* @__PURE__ */ D(J.StyledRow, { children: [
-					/* @__PURE__ */ E(a, {
+				children: [/* @__PURE__ */ E(J.StyledRow, { children: [
+					/* @__PURE__ */ T(i, {
 						style: ["prezzo", "totale"].includes(r.name[n]) ? { maxWidth: "80%" } : null,
 						rows: 1,
 						name: r.name[n],
 						id: r.id[n],
 						type: r.type[n],
 						step: r.step[n],
-						value: u[n],
+						value: l[n],
 						placeholder: r.placeholder[n],
-						onChange: (e) => jt(e, n, d),
-						onBlur: (e) => c(e, t),
-						onClick: (e) => Mt(e),
+						onChange: (e) => At(e, n, u),
+						onBlur: (e) => s(e, t),
+						onClick: (e) => jt(e),
 						readOnly: t.tipo_selezione !== 1,
-						onContextMenu: (e) => f(e, r.placeholder[n])
+						onContextMenu: (e) => d(e, r.placeholder[n])
 					}),
-					["prezzo", "totale"].includes(r.name[n]) && /* @__PURE__ */ E(J.StyledEuroNotSelected, {
+					["prezzo", "totale"].includes(r.name[n]) && /* @__PURE__ */ T(J.StyledEuroNotSelected, {
 						style: {
 							maxWidth: "20%",
 							marginLeft: "-6px"
@@ -1306,26 +1310,26 @@ function Ft({ item: t, campi: r, indici: a, operazioneModifica: o, operazioneEli
 						size: J.grandezzaIcona
 					}),
 					r.options[n]
-				] }), r.errore[n] && /* @__PURE__ */ E(J.StyledSpanErrore, { children: r.errore[n] })]
+				] }), r.errore[n] && /* @__PURE__ */ T(J.StyledSpanErrore, { children: r.errore[n] })]
 			}) }) }, n);
 		})
 	] });
 }
-function It({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel: a, eliminaItemsRange: o }) {
-	let s = (e, t) => {
+function Ft({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel: i, eliminaItemsRange: a }) {
+	let o = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ D(J.StyledRow, { children: [/* @__PURE__ */ E(H, {
+	return /* @__PURE__ */ E(J.StyledRow, { children: [/* @__PURE__ */ T(H, {
 		ottieniFileRangePDF: r,
-		ottieniFileRangeExcel: a,
-		eliminaItemsRange: o,
+		ottieniFileRangeExcel: i,
+		eliminaItemsRange: a,
 		vistaItem: "row",
 		StyledComponents: J
 	}), n.map((n) => {
 		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J);
-		return /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ E("div", {
+		return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ T("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ E(J.StyledRow, { children: /* @__PURE__ */ E(r, {
+			children: /* @__PURE__ */ T(J.StyledRow, { children: /* @__PURE__ */ T(r, {
 				rows: 1,
 				name: t.name[n],
 				id: t.id[n],
@@ -1336,32 +1340,32 @@ function It({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 				onChange: t.onChange,
 				onClick: t.onClick,
 				onBlur: t.onBlur,
-				onContextMenu: (e) => s(e, t.placeholder[n])
+				onContextMenu: (e) => o(e, t.placeholder[n])
 			}) })
 		}) }) }, n);
 	})] });
 }
-function Lt({ campi: t, indici: r, eseguiLogin: a }) {
-	let [o, s] = n("password"), c = (e) => {
-		e.preventDefault(), s(o === "text" ? "password" : "text");
-	}, l = (e, t) => {
+function It({ campi: t, indici: r, eseguiLogin: i }) {
+	let [a, o] = n("password"), s = (e) => {
+		e.preventDefault(), o(a === "text" ? "password" : "text");
+	}, c = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ D(J.StyledRow, { children: [/* @__PURE__ */ E(B, {
-		eseguiLogin: a,
+	return /* @__PURE__ */ E(J.StyledRow, { children: [/* @__PURE__ */ T(B, {
+		eseguiLogin: i,
 		vistaItem: "row",
 		StyledComponents: J
 	}), r.map((n) => {
-		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J), a = o === "password" ? J.StyledEyeClosedNotSelected : J.StyledEyeOpenNotSelected;
-		return /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ D("div", {
+		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J), i = a === "password" ? J.StyledEyeClosedNotSelected : J.StyledEyeOpenNotSelected;
+		return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ E("div", {
 			style: { width: "100%" },
 			children: [
-				/* @__PURE__ */ D(J.StyledRow, { children: [/* @__PURE__ */ E(r, {
+				/* @__PURE__ */ E(J.StyledRow, { children: [/* @__PURE__ */ T(r, {
 					style: t.name[n] === "password" ? { maxWidth: "80%" } : null,
 					rows: 1,
 					name: t.name[n],
 					id: t.id[n],
-					type: t.name[n] === "password" ? o : t.type[n],
+					type: t.name[n] === "password" ? a : t.type[n],
 					step: t.step[n],
 					min: t.min[n],
 					value: t.value[n],
@@ -1369,40 +1373,40 @@ function Lt({ campi: t, indici: r, eseguiLogin: a }) {
 					onChange: t.onChange,
 					onClick: t.onClick,
 					onBlur: t.onBlur,
-					onContextMenu: (e) => l(e, t.placeholder[n])
-				}), t.name[n] === "password" && /* @__PURE__ */ E(a, {
+					onContextMenu: (e) => c(e, t.placeholder[n])
+				}), t.name[n] === "password" && /* @__PURE__ */ T(i, {
 					style: {
 						maxWidth: "20%",
 						marginLeft: "-6px"
 					},
 					size: J.grandezzaIcona,
-					onClick: c
+					onClick: s
 				})] }),
 				t.options[n],
-				t.errore[n] && /* @__PURE__ */ E(J.StyledSpanErrore, { children: t.errore[n] })
+				t.errore[n] && /* @__PURE__ */ T(J.StyledSpanErrore, { children: t.errore[n] })
 			]
 		}) }) }, n);
 	})] });
 }
-function Rt({ campi: t, indici: r, eseguiModificaProfilo: a }) {
-	let [o, s] = n("password"), [c, l] = n("password"), [u, d] = n("password"), f = (e, t) => {
-		e.preventDefault(), t === "password_attuale" ? s(o === "text" ? "password" : "text") : t === "nuova_password" ? l(c === "text" ? "password" : "text") : t === "conferma_nuova_password" && d(u === "text" ? "password" : "text");
+function Lt({ campi: t, indici: r, eseguiModificaProfilo: i }) {
+	let [a, o] = n("password"), [s, c] = n("password"), [l, u] = n("password"), d = (e, t) => {
+		e.preventDefault(), t === "password_attuale" ? o(a === "text" ? "password" : "text") : t === "nuova_password" ? c(s === "text" ? "password" : "text") : t === "conferma_nuova_password" && u(l === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ D(J.StyledRow, { children: [/* @__PURE__ */ E(V, {
-		eseguiModificaProfilo: a,
+	return /* @__PURE__ */ E(J.StyledRow, { children: [/* @__PURE__ */ T(V, {
+		eseguiModificaProfilo: i,
 		vistaItem: "row",
 		StyledComponents: J
 	}), r.map((n) => {
-		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J), a = t.name[n] === "password_attuale" && o === "password" || t.name[n] === "nuova_password" && c === "password" || t.name[n] === "conferma_nuova_password" && u === "password" ? J.StyledEyeClosedNotSelected : J.StyledEyeOpenNotSelected;
-		return /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ D("div", {
+		let r = t.type[n] ? F(1, !0, J) : I(1, !0, J), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? J.StyledEyeClosedNotSelected : J.StyledEyeOpenNotSelected;
+		return /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ E("div", {
 			style: { width: "100%" },
 			children: [
-				/* @__PURE__ */ D(J.StyledRow, { children: [/* @__PURE__ */ E(r, {
+				/* @__PURE__ */ E(J.StyledRow, { children: [/* @__PURE__ */ T(r, {
 					style: t.name[n].includes("password") ? { maxWidth: "80%" } : null,
 					rows: 1,
 					name: t.name[n],
 					id: t.id[n],
-					type: t.name[n].includes("password") ? t.name[n] === "password_attuale" ? o : t.name[n] === "nuova_password" ? c : u : t.type[n],
+					type: t.name[n].includes("password") ? t.name[n] === "password_attuale" ? a : t.name[n] === "nuova_password" ? s : l : t.type[n],
 					step: t.step[n],
 					min: t.min[n],
 					value: t.value[n],
@@ -1411,40 +1415,40 @@ function Rt({ campi: t, indici: r, eseguiModificaProfilo: a }) {
 					onClick: t.onClick,
 					onBlur: t.onBlur,
 					onContextMenu: (e) => handleRightClick(e, t.placeholder[n])
-				}), t.name[n].includes("password") && /* @__PURE__ */ E(a, {
+				}), t.name[n].includes("password") && /* @__PURE__ */ T(i, {
 					style: {
 						maxWidth: "20%",
 						marginLeft: "-6px"
 					},
 					size: J.grandezzaIcona,
-					onClick: (e) => f(e, t.name[n])
+					onClick: (e) => d(e, t.name[n])
 				})] }),
 				t.options[n],
-				t.errore[n] && /* @__PURE__ */ E(J.StyledSpanErrore, { children: t.errore[n] })
+				t.errore[n] && /* @__PURE__ */ T(J.StyledSpanErrore, { children: t.errore[n] })
 			]
 		}) }) }, n);
 	})] });
 }
-function zt({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: a }) {
-	return /* @__PURE__ */ D(J.StyledRow, { children: [
-		/* @__PURE__ */ E(z, {
+function Rt({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
+	return /* @__PURE__ */ E(J.StyledRow, { children: [
+		/* @__PURE__ */ T(z, {
 			eseguiRicerca: (e) => r(e),
 			vistaItem: "row",
 			StyledComponents: J
 		}),
-		/* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ E("div", {
+		/* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ T("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ E(J.StyledRow, { children: /* @__PURE__ */ E(J.StyledInputBlock, {
+			children: /* @__PURE__ */ T(J.StyledRow, { children: /* @__PURE__ */ T(J.StyledInputBlock, {
 				rows: 1,
 				name: "header",
-				value: a === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs",
-				placeholder: a === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs",
+				value: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs",
+				placeholder: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs",
 				readOnly: !0
 			}) })
 		}) }),
-		/* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ E("div", {
+		/* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ T("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ E(J.StyledInputModifica, {
+			children: /* @__PURE__ */ T(J.StyledInputModifica, {
 				rows: 1,
 				name: "primo_anno",
 				id: "primo_anno",
@@ -1456,32 +1460,32 @@ function zt({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 				onContextMenu: (e) => handleRightClick(e, "Primo anno")
 			})
 		}) }),
-		/* @__PURE__ */ E(J.StyledCol, { children: /* @__PURE__ */ E("div", {
+		/* @__PURE__ */ T(J.StyledCol, { children: /* @__PURE__ */ T("div", {
 			style: { width: "100%" },
-			children: /* @__PURE__ */ D(J.StyledSelectModifica, {
+			children: /* @__PURE__ */ E(J.StyledSelectModifica, {
 				name: "ultimo_anno",
 				id: "ultimo_anno",
 				onContextMenu: (e) => handleRightClick(e, "Ultimo anno"),
 				value: e.ultimo_anno,
 				onChange: (e) => n(e, t),
 				children: [
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 1,
 						children: parseInt(e.primo_anno) + 1
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 2,
 						children: parseInt(e.primo_anno) + 2
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 3,
 						children: parseInt(e.primo_anno) + 3
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 4,
 						children: parseInt(e.primo_anno) + 4
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 5,
 						children: parseInt(e.primo_anno) + 5
 					})
@@ -1490,7 +1494,7 @@ function zt({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 		}) })
 	] });
 }
-var Bt = r(a)`
+var zt = r(i)`
   width: 18rem;
   background-color: transparent;
   overflow: hidden;
@@ -1499,10 +1503,10 @@ var Bt = r(a)`
   text-align: center;
   padding: 0;
   border: transparent;
-`, Vt = r(re)`
+`, Bt = r(re)`
   display: flex;
   flex-wrap: wrap;
-`, Ht = r(ne)`
+`, Vt = r(ne)`
   position: relative; 
   color: #FFFFFF;
   border-radius: 40px;
@@ -1515,17 +1519,17 @@ var Bt = r(a)`
   height: auto;
   min-height: 50px;
   min-width: 300px;
-`, Ut = r(a.Header)`
+`, Ht = r(i.Header)`
   color: #ffffff;
   background-color: #000000;
   border: 5px solid #000000;
   min-height: 70px;
-`, Wt = r(o.Item)`
+`, Ut = r(a.Item)`
   color: #ffffff;
   background-color: transparent;
   border: 5px solid #000000;
   min-height: 70px;
-`, Gt = r.div`
+`, Wt = r.div`
   overflow: hidden;
   transition: max-height 2s ease-out;
   background-color: #111111;
@@ -1540,11 +1544,11 @@ var Bt = r(a)`
   box-sizing: border-box;
   text-align: center;
   min-height: 70px;
-`, Kt = r(Y)`
+`, Gt = r(Y)`
   background-color: #111111;
-`, qt = r(Y)`
+`, Kt = r(Y)`
   background-color: #0050EF;
-`, Jt = r(Y)`
+`, qt = r(Y)`
   background-color: #500000;
 `, X = r.input`
   width: 100%;
@@ -1556,11 +1560,11 @@ var Bt = r(a)`
   box-sizing: border-box;
   text-align: center;
   min-height: 70px;
-`, Yt = r(X)`
+`, Jt = r(X)`
   background-color: #111111;
-`, Xt = r(X)`
+`, Yt = r(X)`
   background-color: #0050EF;
-`, Zt = r(X)`
+`, Xt = r(X)`
   background-color: #500000;
 `, Z = "\n  color: #FFFFFF;\n  cursor: pointer;\n";
 r.div`
@@ -1570,35 +1574,41 @@ r.div`
   height: 100%;
   padding-top:10px;
 `;
-var Qt = r(y)`
+var Zt = r(v)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, $t = r(g)`
+`, Qt = r(h)`
   ${Z}
   transition: 0.5s all ease-out;
-`, en = r(h)`
+`, $t = r(m)`
   ${Z}
   transition: 0.5s all ease-out;
   color: #0050EF;
-`, tn = r(b)`
+`, en = r(y)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, nn = r(m)`
+`, tn = r(p)`
   color: #FFFFFF;
   transition: 0.5s all ease-out;
-`, rn = r(f)`
+`, nn = r(d)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, an = r(l)`
+`, rn = r(c)`
+  ${Z}
+  transition: 0.5s all ease-out;
+  &:hover {
+    color: #0050EF;
+  }
+`, an = r(g)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
@@ -1606,71 +1616,65 @@ var Qt = r(y)`
   }
 `, on = r(_)`
   ${Z}
-  transition: 0.5s all ease-out;
-  &:hover {
-    color: #0050EF;
-  }
-`, sn = r(v)`
-  ${Z}
 `;
-r(v)`
+r(_)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `;
-var cn = r(v)`
+var sn = r(_)`
   color: #0050EF;
   cursor: pointer;
-`, ln = r(x)`
+`, cn = r(b)`
   ${Z}
-`, un = r(x)`
+`, ln = r(b)`
   color: #500000;
   cursor: pointer;
-`, dn = r(C)`
+`, un = r(S)`
   color: #FFFFFF;
-`, fn = r(C)`
+`, dn = r(S)`
   ${Z}
   color: #0050EF;
-`, pn = r(p)`
+`, fn = r(f)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
 `;
-r(S)`
+r(x)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #500000;
   }
 `;
-var mn = r(v)`
+var pn = r(_)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #0050EF;
   }
-`, hn = r(x)`
+`, mn = r(b)`
   ${Z}
   transition: 0.5s all ease-out;
   &:hover {
     color: #500000;
   }
-`, gn = r.select`
+`, hn = r.select`
   width: 100%;
   min-height: 70px;
   background-color: #0050EF;
   border: 5px solid #000000;
   color: #FFFFFF;
   text-align: center;
-`, _n = r(gn)`
+`, gn = r(hn)`
   background-color: #111111;
-`, vn = r(gn)`
+`, _n = r(hn)`
   background-color: #0050EF;
-`, yn = r(gn)`
+`, vn = r(hn)`
   background-color: #500000;
 `;
 r.option`
@@ -1681,43 +1685,43 @@ r.option`
   }
 `;
 var Q = {
-	StyledPencilNotSelected: sn,
-	StyledPencilSelected: cn,
+	StyledPencilNotSelected: on,
+	StyledPencilSelected: sn,
 	grandezzaIcona: 50,
-	StyledTrashNotSelected: ln,
-	StyledTrashSelected: un,
-	StyledListGroupItem: Wt,
-	StyledRow: Vt,
-	StyledCol: Ht,
-	StyledSaveNotSelected: Qt,
-	StyledEyeOpenNotSelected: en,
-	StyledEyeClosedNotSelected: $t,
-	StyledSearchNotSelected: tn,
-	StyledArrowTopNotSelected: rn,
-	StyledArrowBottomNotSelected: an,
-	StyledFileIconNotSelected: dn,
-	StyledDownloadNotSelected: pn,
-	StyledTrashNotSelected2: hn,
-	StyledLoginNotSelected: on,
-	StyledPencilNotSelected2: mn,
-	StyledSelectBlock: _n,
-	StyledSelectModifica: vn,
-	StyledSelectElimina: yn,
-	StyledInputBlock: Yt,
-	StyledInputModifica: Xt,
-	StyledInputElimina: Zt,
-	StyledTextAreaBlock: Kt,
-	StyledTextAreaModifica: qt,
-	StyledTextAreaElimina: Jt,
-	StyledCard: Bt,
-	StyledCardHeader: Ut,
-	SlideContainer: Gt,
+	StyledTrashNotSelected: cn,
+	StyledTrashSelected: ln,
+	StyledListGroupItem: Ut,
+	StyledRow: Bt,
+	StyledCol: Vt,
+	StyledSaveNotSelected: Zt,
+	StyledEyeOpenNotSelected: $t,
+	StyledEyeClosedNotSelected: Qt,
+	StyledSearchNotSelected: en,
+	StyledArrowTopNotSelected: nn,
+	StyledArrowBottomNotSelected: rn,
+	StyledFileIconNotSelected: un,
+	StyledDownloadNotSelected: fn,
+	StyledTrashNotSelected2: mn,
+	StyledLoginNotSelected: an,
+	StyledPencilNotSelected2: pn,
+	StyledSelectBlock: gn,
+	StyledSelectModifica: _n,
+	StyledSelectElimina: vn,
+	StyledInputBlock: Jt,
+	StyledInputModifica: Yt,
+	StyledInputElimina: Xt,
+	StyledTextAreaBlock: Gt,
+	StyledTextAreaModifica: Kt,
+	StyledTextAreaElimina: qt,
+	StyledCard: zt,
+	StyledCardHeader: Ht,
+	SlideContainer: Wt,
 	StyledSpanErrore: r.span`
   color: #FFFFFF;
   padding: 10px;
 `,
-	StyledEuroNotSelected: nn,
-	StyledFileIconSelected2: fn
+	StyledEuroNotSelected: tn,
+	StyledFileIconSelected2: dn
 };
 //#endregion
 //#region src/Colori.js
@@ -1726,20 +1730,20 @@ function $(e, t, n) {
 }
 //#endregion
 //#region src/Calcoli.js
-var bn = (e) => e.totale_gennaio + e.totale_febbraio + e.totale_marzo + e.totale_aprile + e.totale_maggio + e.totale_giugno + e.totale_luglio + e.totale_agosto + e.totale_settembre + e.totale_ottobre + e.totale_novembre + e.totale_dicembre, xn = (e) => parseInt(e.quantita_gennaio) + parseInt(e.quantita_febbraio) + parseInt(e.quantita_marzo) + parseInt(e.quantita_aprile) + parseInt(e.quantita_maggio) + parseInt(e.quantita_giugno) + parseInt(e.quantita_luglio) + parseInt(e.quantita_agosto) + parseInt(e.quantita_settembre) + parseInt(e.quantita_ottobre) + parseInt(e.quantita_novembre) + parseInt(e.quantita_dicembre);
+var yn = (e) => e.totale_gennaio + e.totale_febbraio + e.totale_marzo + e.totale_aprile + e.totale_maggio + e.totale_giugno + e.totale_luglio + e.totale_agosto + e.totale_settembre + e.totale_ottobre + e.totale_novembre + e.totale_dicembre, bn = (e) => parseInt(e.quantita_gennaio) + parseInt(e.quantita_febbraio) + parseInt(e.quantita_marzo) + parseInt(e.quantita_aprile) + parseInt(e.quantita_maggio) + parseInt(e.quantita_giugno) + parseInt(e.quantita_luglio) + parseInt(e.quantita_agosto) + parseInt(e.quantita_settembre) + parseInt(e.quantita_ottobre) + parseInt(e.quantita_novembre) + parseInt(e.quantita_dicembre);
 //#endregion
 //#region src/card_item/CardItem.jsx
-function Sn({ campi: t, indici: n, eseguiSalvataggio: r }) {
-	let a = (e, t) => {
+function xn({ campi: t, indici: n, eseguiSalvataggio: r }) {
+	let i = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(Q.StyledCard, { children: [
-		/* @__PURE__ */ E(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ E(Q.SlideContainer, {
+	return /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(Q.StyledCard, { children: [
+		/* @__PURE__ */ T(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ T(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: n.map((n) => {
 				let r = t.type[n] ? F(1, !0, Q) : I(1, !0, Q);
-				return /* @__PURE__ */ D(e, { children: [/* @__PURE__ */ D(Q.StyledRow, { children: [/* @__PURE__ */ E(r, {
+				return /* @__PURE__ */ E(e, { children: [/* @__PURE__ */ E(Q.StyledRow, { children: [/* @__PURE__ */ T(r, {
 					rows: 1,
 					name: t.name[n],
 					id: t.id[n],
@@ -1750,28 +1754,28 @@ function Sn({ campi: t, indici: n, eseguiSalvataggio: r }) {
 					onChange: t.onChange,
 					onClick: t.onClick,
 					onBlur: t.onBlur,
-					onContextMenu: (e) => a(e, t.placeholder[n])
-				}), t.options[n]] }), t.errore[n] !== "" && /* @__PURE__ */ E(Q.StyledSpanErrore, { children: t.errore[n] })] }, n);
+					onContextMenu: (e) => i(e, t.placeholder[n])
+				}), t.options[n]] }), t.errore[n] !== "" && /* @__PURE__ */ T(Q.StyledSpanErrore, { children: t.errore[n] })] }, n);
 			})
 		}),
-		/* @__PURE__ */ E(L, {
+		/* @__PURE__ */ T(L, {
 			eseguiSalvataggio: r,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] }) });
 }
-function Cn({ campi: t, indici: r, handleSearch: a }) {
-	let [o, s] = n(!0), [c, l] = n(!0), u = o ? "2000px" : "0px", d = F(1, !0, Q), f = I(1, !0, Q), p = (e, t) => {
+function Sn({ campi: t, indici: r, handleSearch: i }) {
+	let [a, o] = n(!0), [s, c] = n(!0), l = a ? "2000px" : "0px", u = F(1, !0, Q), d = I(1, !0, Q), f = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ D("center", { children: [/* @__PURE__ */ D(Q.StyledCard, { children: [
-		/* @__PURE__ */ E(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ E(Q.SlideContainer, {
-			style: { maxHeight: `${u}` },
+	return /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(Q.StyledCard, { children: [
+		/* @__PURE__ */ T(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ T(Q.SlideContainer, {
+			style: { maxHeight: `${l}` },
 			children: r.map((n) => {
-				let r = t.type[n] ? d : f;
-				return /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(Q.StyledRow, { children: /* @__PURE__ */ E(r, {
+				let r = t.type[n] ? u : d;
+				return /* @__PURE__ */ E(e, { children: [/* @__PURE__ */ T(Q.StyledRow, { children: /* @__PURE__ */ T(r, {
 					rows: 1,
 					name: t.name[n],
 					id: t.id[n],
@@ -1781,65 +1785,65 @@ function Cn({ campi: t, indici: r, handleSearch: a }) {
 					onChange: t.onChange,
 					onClick: t.onClick,
 					onBlur: t.onBlur,
-					onContextMenu: (e) => p(e, t.placeholder[n])
-				}) }) }, n);
+					onContextMenu: (e) => f(e, t.placeholder[n])
+				}) }), t.errore[n] && /* @__PURE__ */ T(Q.StyledSpanErrore, { children: t.errore[n] })] }, n);
 			})
 		}),
-		/* @__PURE__ */ E(R, {
-			setIsVisible: s,
-			arrowUp: c,
-			setArrowUp: l,
-			handleSearch: a,
+		/* @__PURE__ */ T(R, {
+			setIsVisible: o,
+			arrowUp: s,
+			setArrowUp: c,
+			handleSearch: i,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
-	] }), t.errore[i] && /* @__PURE__ */ E(Q.StyledSpanErrore, { children: t.errore[i] })] });
+	] }) });
 }
-function wn({ item: r, campi: a, indici: o, operazioneModifica: s, operazioneElimina: c, handleBlurItem: l }) {
-	let u = t([]), [d, f] = n(() => o.reduce((e, t) => ({
+function Cn({ item: r, campi: i, indici: a, operazioneModifica: o, operazioneElimina: s, handleBlurItem: c }) {
+	let l = t([]), [u, d] = n(() => a.reduce((e, t) => ({
 		...e,
-		[t]: a.value[t]
-	}), {})), p = (e, t) => {
+		[t]: i.value[t]
+	}), {})), f = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ D(Q.StyledCard, { children: [
-		/* @__PURE__ */ E(Q.StyledCardHeader, { children: a.header }),
-		/* @__PURE__ */ E(Q.SlideContainer, { children: o.map((t) => {
-			let n = a.type[t] ? F(a.tipoSelezione, a.valoreModificabile[t], Q) : I(a.tipoSelezione, a.valoreModificabile[t], Q);
-			return /* @__PURE__ */ D(e, { children: [/* @__PURE__ */ D(Q.StyledRow, { children: [/* @__PURE__ */ E(n, {
-				ref: (e) => u.current[t] = e,
+	return /* @__PURE__ */ E(Q.StyledCard, { children: [
+		/* @__PURE__ */ T(Q.StyledCardHeader, { children: i.header }),
+		/* @__PURE__ */ T(Q.SlideContainer, { children: a.map((t) => {
+			let n = i.type[t] ? F(i.tipoSelezione, i.valoreModificabile[t], Q) : I(i.tipoSelezione, i.valoreModificabile[t], Q);
+			return /* @__PURE__ */ E(e, { children: [/* @__PURE__ */ E(Q.StyledRow, { children: [/* @__PURE__ */ T(n, {
+				ref: (e) => l.current[t] = e,
 				rows: 1,
-				name: a.name[t],
-				id: a.id[t],
-				type: a.type[t],
-				step: a.step[t],
-				value: d[t],
-				placeholder: a.placeholder[t],
-				onChange: (e) => jt(e, t, f),
-				onBlur: (e) => l(e, r),
-				onClick: (e) => Mt(e),
+				name: i.name[t],
+				id: i.id[t],
+				type: i.type[t],
+				step: i.step[t],
+				value: u[t],
+				placeholder: i.placeholder[t],
+				onChange: (e) => At(e, t, d),
+				onBlur: (e) => c(e, r),
+				onClick: (e) => jt(e),
 				readOnly: r.tipo_selezione !== 1,
-				onContextMenu: (e) => p(e, a.placeholder[t])
-			}), a.options[t]] }), a.errore[t] && /* @__PURE__ */ E(Q.StyledSpanErrore, { children: a.errore[t] })] }, `input-${t}`);
+				onContextMenu: (e) => f(e, i.placeholder[t])
+			}), i.options[t]] }), i.errore[t] && /* @__PURE__ */ T(Q.StyledSpanErrore, { children: i.errore[t] })] }, `input-${t}`);
 		}) }),
-		/* @__PURE__ */ E(Ue, {
-			operazioneModifica: s,
-			operazioneElimina: c,
+		/* @__PURE__ */ T(He, {
+			operazioneModifica: o,
+			operazioneElimina: s,
 			item: r,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] });
 }
-function Tn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel: a, eliminaItemsRange: o }) {
-	let s = (e, t) => {
+function wn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel: i, eliminaItemsRange: a }) {
+	let o = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(Q.StyledCard, { children: [
-		/* @__PURE__ */ E(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ E(Q.SlideContainer, {
+	return /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(Q.StyledCard, { children: [
+		/* @__PURE__ */ T(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ T(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
-			children: n.map((n) => /* @__PURE__ */ E(e, { children: /* @__PURE__ */ E(t.type[n] ? F(1, !0, Q) : I(1, !0, Q), {
+			children: n.map((n) => /* @__PURE__ */ T(e, { children: /* @__PURE__ */ T(t.type[n] ? F(1, !0, Q) : I(1, !0, Q), {
 				rows: 1,
 				name: t.name[n],
 				id: t.id[n],
@@ -1850,37 +1854,37 @@ function Tn({ campi: t, indici: n, ottieniFileRangePDF: r, ottieniFileRangeExcel
 				onChange: t.onChange,
 				onClick: t.onClick,
 				onBlur: t.onBlur,
-				onContextMenu: (e) => s(e, t.placeholder[n])
+				onContextMenu: (e) => o(e, t.placeholder[n])
 			}, n) }, n))
 		}),
-		/* @__PURE__ */ E(H, {
+		/* @__PURE__ */ T(H, {
 			ottieniFileRangePDF: r,
-			ottieniFileRangeExcel: a,
-			eliminaItemsRange: o,
+			ottieniFileRangeExcel: i,
+			eliminaItemsRange: a,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] }) });
 }
-function En({ campi: t, indici: r, eseguiLogin: a }) {
-	let [o, s] = n("password"), c = (e) => {
-		e.preventDefault(), s(o === "text" ? "password" : "text");
-	}, l = (e, t) => {
+function Tn({ campi: t, indici: r, eseguiLogin: i }) {
+	let [a, o] = n("password"), s = (e) => {
+		e.preventDefault(), o(a === "text" ? "password" : "text");
+	}, c = (e, t) => {
 		e.preventDefault(), alert(t);
 	};
-	return /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(Q.StyledCard, { children: [
-		/* @__PURE__ */ E(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ E(Q.SlideContainer, {
+	return /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(Q.StyledCard, { children: [
+		/* @__PURE__ */ T(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ T(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: r.map((n) => {
-				let r = t.type[n] ? F(1, !0, Q) : I(1, !0, Q), a = o === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
-				return /* @__PURE__ */ D(e, { children: [
-					/* @__PURE__ */ D(Q.StyledRow, { children: [/* @__PURE__ */ E(r, {
+				let r = t.type[n] ? F(1, !0, Q) : I(1, !0, Q), i = a === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
+				return /* @__PURE__ */ E(e, { children: [
+					/* @__PURE__ */ E(Q.StyledRow, { children: [/* @__PURE__ */ T(r, {
 						style: t.name[n] === "password" ? { maxWidth: "80%" } : null,
 						rows: 1,
 						name: t.name[n],
 						id: t.id[n],
-						type: t.name[n] === "password" ? o : t.type[n],
+						type: t.name[n] === "password" ? a : t.type[n],
 						step: t.step[n],
 						min: t.min[n],
 						value: t.value[n],
@@ -1888,45 +1892,45 @@ function En({ campi: t, indici: r, eseguiLogin: a }) {
 						onChange: t.onChange,
 						onClick: t.onClick,
 						onBlur: t.onBlur,
-						onContextMenu: (e) => l(e, t.placeholder[n])
-					}), t.name[n] === "password" && /* @__PURE__ */ E(a, {
+						onContextMenu: (e) => c(e, t.placeholder[n])
+					}), t.name[n] === "password" && /* @__PURE__ */ T(i, {
 						style: {
 							maxWidth: "20%",
 							marginLeft: "-6px",
 							marginTop: "13px"
 						},
 						size: Q.grandezzaIcona,
-						onClick: c
+						onClick: s
 					})] }),
 					t.options[n],
-					t.errore[n] && /* @__PURE__ */ E(Q.StyledSpanErrore, { children: t.errore[n] })
+					t.errore[n] && /* @__PURE__ */ T(Q.StyledSpanErrore, { children: t.errore[n] })
 				] }, n);
 			})
 		}),
-		/* @__PURE__ */ E(B, {
-			eseguiLogin: a,
+		/* @__PURE__ */ T(B, {
+			eseguiLogin: i,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] }) });
 }
-function Dn({ campi: t, indici: r, eseguiModificaProfilo: a }) {
-	let [o, s] = n("password"), [c, l] = n("password"), [u, d] = n("password"), f = (e, t) => {
-		e.preventDefault(), t === "password_attuale" ? s(o === "text" ? "password" : "text") : t === "nuova_password" ? l(c === "text" ? "password" : "text") : t === "conferma_nuova_password" && d(u === "text" ? "password" : "text");
+function En({ campi: t, indici: r, eseguiModificaProfilo: i }) {
+	let [a, o] = n("password"), [s, c] = n("password"), [l, u] = n("password"), d = (e, t) => {
+		e.preventDefault(), t === "password_attuale" ? o(a === "text" ? "password" : "text") : t === "nuova_password" ? c(s === "text" ? "password" : "text") : t === "conferma_nuova_password" && u(l === "text" ? "password" : "text");
 	};
-	return /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(Q.StyledCard, { children: [
-		/* @__PURE__ */ E(Q.StyledCardHeader, { children: t.header }),
-		/* @__PURE__ */ E(Q.SlideContainer, {
+	return /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(Q.StyledCard, { children: [
+		/* @__PURE__ */ T(Q.StyledCardHeader, { children: t.header }),
+		/* @__PURE__ */ T(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
 			children: r.map((n) => {
-				let r = t.type[n] ? F(1, !0, Q) : I(1, !0, Q), a = t.name[n] === "password_attuale" && o === "password" || t.name[n] === "nuova_password" && c === "password" || t.name[n] === "conferma_nuova_password" && u === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
-				return /* @__PURE__ */ D(e, { children: [
-					/* @__PURE__ */ D(Q.StyledRow, { children: [/* @__PURE__ */ E(r, {
+				let r = t.type[n] ? F(1, !0, Q) : I(1, !0, Q), i = t.name[n] === "password_attuale" && a === "password" || t.name[n] === "nuova_password" && s === "password" || t.name[n] === "conferma_nuova_password" && l === "password" ? Q.StyledEyeClosedNotSelected : Q.StyledEyeOpenNotSelected;
+				return /* @__PURE__ */ E(e, { children: [
+					/* @__PURE__ */ E(Q.StyledRow, { children: [/* @__PURE__ */ T(r, {
 						style: t.name[n].includes("password") ? { maxWidth: "80%" } : null,
 						rows: 1,
 						name: t.name[n],
 						id: t.id[n],
-						type: t.name[n].includes("password") ? t.name[n] === "password_attuale" ? o : t.name[n] === "nuova_password" ? c : u : t.type[n],
+						type: t.name[n].includes("password") ? t.name[n] === "password_attuale" ? a : t.name[n] === "nuova_password" ? s : l : t.type[n],
 						step: t.step[n],
 						min: t.min[n],
 						value: t.value[n],
@@ -1935,33 +1939,33 @@ function Dn({ campi: t, indici: r, eseguiModificaProfilo: a }) {
 						onClick: t.onClick,
 						onBlur: t.onBlur,
 						onContextMenu: (e) => handleRightClick(e, t.placeholder[n])
-					}), t.name[n].includes("password") && /* @__PURE__ */ E(a, {
+					}), t.name[n].includes("password") && /* @__PURE__ */ T(i, {
 						style: {
 							maxWidth: "20%",
 							marginLeft: "-6px",
 							marginTop: "13px"
 						},
 						size: Q.grandezzaIcona,
-						onClick: (e) => f(e, t.name[n])
+						onClick: (e) => d(e, t.name[n])
 					})] }),
 					t.options[n],
-					t.errore[n] && /* @__PURE__ */ E(Q.StyledSpanErrore, { children: t.errore[n] })
+					t.errore[n] && /* @__PURE__ */ T(Q.StyledSpanErrore, { children: t.errore[n] })
 				] }, n);
 			})
 		}),
-		/* @__PURE__ */ E(V, {
-			eseguiModificaProfilo: a,
+		/* @__PURE__ */ T(V, {
+			eseguiModificaProfilo: i,
 			vistaItem: "card",
 			StyledComponents: Q
 		})
 	] }) });
 }
-function On({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: a }) {
-	return /* @__PURE__ */ D(O, {
+function Dn({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: i }) {
+	return /* @__PURE__ */ E(D, {
 		style: {
 			width: "300px",
 			height: "400px",
-			backgroundColor: a,
+			backgroundColor: i,
 			borderRadius: "50px",
 			display: "flex",
 			flexDirection: "column",
@@ -1972,7 +1976,7 @@ function On({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: a }) {
 			r(e, n);
 		},
 		draggable: !1,
-		children: [/* @__PURE__ */ E(O.Img, {
+		children: [/* @__PURE__ */ T(D.Img, {
 			style: {
 				width: "220px",
 				height: "220px",
@@ -1983,7 +1987,7 @@ function On({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: a }) {
 			},
 			variant: "top",
 			src: t
-		}), /* @__PURE__ */ E(O.Body, { children: /* @__PURE__ */ E(O.Title, {
+		}), /* @__PURE__ */ T(D.Body, { children: /* @__PURE__ */ T(D.Title, {
 			style: {
 				color: "#FFFFFF",
 				textAlign: "center"
@@ -1992,8 +1996,8 @@ function On({ nome: e, img: t, id: n, onClickWidget: r, backgroundColor: a }) {
 		}) })]
 	});
 }
-function kn({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
-	return /* @__PURE__ */ D(O, {
+function On({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
+	return /* @__PURE__ */ E(D, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2003,10 +2007,10 @@ function kn({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ E(O.Body, { children: /* @__PURE__ */ E("center", { children: /* @__PURE__ */ E(O.Title, {
+		children: [/* @__PURE__ */ T(D.Body, { children: /* @__PURE__ */ T("center", { children: /* @__PURE__ */ T(D.Title, {
 			style: { color: "#FFFFFF" },
 			children: t === "italiano" ? n : r
-		}) }) }), /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(k, {
+		}) }) }), /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(O, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2018,72 +2022,72 @@ function kn({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 				textAlign: "center"
 			},
 			children: [
-				/* @__PURE__ */ E("thead", { children: /* @__PURE__ */ D("tr", { children: [
-					/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("thead", { children: /* @__PURE__ */ E("tr", { children: [
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "ANNO" : "YEAR"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GEN" : "JAN"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "FEB"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "MAR"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "APR"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "MAG" : "MAY"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GIU" : "JUN"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "LUG" : "JUL"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "AGO" : "AUG"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "SET" : "SEP"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "OTT" : "OCT"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "NOV"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "DIC" : "DEC"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "TOT ENTRATE" : "TOT REVENUE"
 					})
 				] }) }),
-				/* @__PURE__ */ E("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ E("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ E("td", {
+				/* @__PURE__ */ T("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ T("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ T("td", {
 					style: {
 						color: $(e, t, "entrata"),
 						fontWeight: t === 0 ? "bold" : null
 					},
 					children: t > 0 ? parseFloat(e).toFixed(2) + " €" : e
 				}, t)) }, t)) }),
-				/* @__PURE__ */ E("tbody", { children: /* @__PURE__ */ E("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ E("td", {
+				/* @__PURE__ */ T("tbody", { children: /* @__PURE__ */ T("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ T("td", {
 					style: {
 						color: $(e, t, "entrata"),
 						fontWeight: t === 0 ? "bold" : null
@@ -2094,9 +2098,9 @@ function kn({ entrateItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 		}) })]
 	});
 }
-function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etichettaIta: s, etichettaEng: c }) {
-	let [l, u] = n(0);
-	return /* @__PURE__ */ D(O, {
+function kn({ entrateItems: t, lingua: r, tipoItemIta: i, tipoItemEng: a, etichettaIta: o, etichettaEng: s }) {
+	let [c, l] = n(0);
+	return /* @__PURE__ */ E(D, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2106,10 +2110,10 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ E(O.Body, { children: /* @__PURE__ */ E("center", { children: /* @__PURE__ */ E(O.Title, {
+		children: [/* @__PURE__ */ T(D.Body, { children: /* @__PURE__ */ T("center", { children: /* @__PURE__ */ T(D.Title, {
 			style: { color: "#FFFFFF" },
-			children: r === "italiano" ? s : c
-		}) }) }), /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(k, {
+			children: r === "italiano" ? o : s
+		}) }) }), /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(O, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2120,79 +2124,79 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 				marginBottom: "10px",
 				textAlign: "center"
 			},
-			children: [/* @__PURE__ */ E("thead", {}), /* @__PURE__ */ E("tbody", { children: t.map((n, s) => /* @__PURE__ */ D(e, { children: [(s === 0 || t[s].anno !== t[s - 1].anno) && /* @__PURE__ */ D(T, { children: [/* @__PURE__ */ E("tr", { children: /* @__PURE__ */ D("th", {
+			children: [/* @__PURE__ */ T("thead", {}), /* @__PURE__ */ T("tbody", { children: t.map((n, o) => /* @__PURE__ */ E(e, { children: [(o === 0 || t[o].anno !== t[o - 1].anno) && /* @__PURE__ */ E(w, { children: [/* @__PURE__ */ T("tr", { children: /* @__PURE__ */ E("th", {
 				colSpan: 14,
 				children: [
 					r === "italiano" ? "ANNO" : "YEAR",
 					" = ",
 					n.anno
 				]
-			}) }), /* @__PURE__ */ D("tr", { children: [
-				/* @__PURE__ */ E("th", {
+			}) }), /* @__PURE__ */ E("tr", { children: [
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
-					children: r === "italiano" ? a : o
+					children: r === "italiano" ? i : a
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "GEN" : "JAN"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "FEB"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "MAR"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "APR"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "MAG" : "MAY"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "GIU" : "JUN"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "LUG" : "JUL"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "AGO" : "AUG"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "SET" : "SEP"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "OTT" : "OCT"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "NOV"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "DIC" : "DEC"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: r === "italiano" ? "TOT ENTRATE" : "TOT REVENUE"
 				})
-			] })] }), /* @__PURE__ */ D("tr", { children: [
-				/* @__PURE__ */ E("td", {
+			] })] }), /* @__PURE__ */ E("tr", { children: [
+				/* @__PURE__ */ T("td", {
 					style: {
 						color: "#FFFFFF",
 						fontWeight: "bold"
 					},
 					children: n.nome
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_gennaio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2204,7 +2208,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_gennaio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_febbraio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2216,7 +2220,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_febbraio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_marzo, 1, "entrata"),
 						fontWeight: "bold"
@@ -2228,7 +2232,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_marzo).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_aprile, 1, "entrata"),
 						fontWeight: "bold"
@@ -2240,7 +2244,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_aprile).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_maggio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2252,7 +2256,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_maggio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_giugno, 1, "entrata"),
 						fontWeight: "bold"
@@ -2264,7 +2268,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_giugno).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_luglio, 1, "entrata"),
 						fontWeight: "bold"
@@ -2276,7 +2280,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_luglio).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_agosto, 1, "entrata"),
 						fontWeight: "bold"
@@ -2288,7 +2292,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_agosto).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_settembre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2300,7 +2304,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_settembre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_ottobre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2312,7 +2316,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_ottobre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_novembre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2324,7 +2328,7 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_novembre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
 						color: $(n.totale_dicembre, 1, "entrata"),
 						fontWeight: "bold"
@@ -2336,24 +2340,24 @@ function An({ entrateItems: t, lingua: r, tipoItemIta: a, tipoItemEng: o, etiche
 						parseFloat(n.totale_dicembre).toFixed(2) + " €"
 					]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: {
-						color: $(bn(n), 1, "entrata"),
+						color: $(yn(n), 1, "entrata"),
 						fontWeight: "bold"
 					},
 					children: [
 						"x ",
-						xn(n),
+						bn(n),
 						" = ",
-						parseFloat(bn(n)).toFixed(2) + " €"
+						parseFloat(yn(n)).toFixed(2) + " €"
 					]
 				})
-			] })] }, s)) })]
+			] })] }, o)) })]
 		}) })]
 	});
 }
-function jn({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
-	return /* @__PURE__ */ D(O, {
+function An({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
+	return /* @__PURE__ */ E(D, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2363,10 +2367,10 @@ function jn({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ E(O.Body, { children: /* @__PURE__ */ E("center", { children: /* @__PURE__ */ E(O.Title, {
+		children: [/* @__PURE__ */ T(D.Body, { children: /* @__PURE__ */ T("center", { children: /* @__PURE__ */ T(D.Title, {
 			style: { color: "#FFFFFF" },
 			children: t === "italiano" ? n : r
-		}) }) }), /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(k, {
+		}) }) }), /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(O, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2378,72 +2382,72 @@ function jn({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 				textAlign: "center"
 			},
 			children: [
-				/* @__PURE__ */ E("thead", { children: /* @__PURE__ */ D("tr", { children: [
-					/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("thead", { children: /* @__PURE__ */ E("tr", { children: [
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "ANNO" : "YEAR"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GEN" : "JAN"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "FEB"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "MAR"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "APR"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "MAG" : "MAY"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "GIU" : "JUN"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "LUG" : "JUL"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "AGO" : "AUG"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "SET" : "SEP"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "OTT" : "OCT"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: "NOV"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "DIC" : "DEC"
 					}),
-					/* @__PURE__ */ E("th", {
+					/* @__PURE__ */ T("th", {
 						style: { color: "#FFFFFF" },
 						children: t === "italiano" ? "TOT USCITE" : "TOT EXIT"
 					})
 				] }) }),
-				/* @__PURE__ */ E("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ E("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ E("td", {
+				/* @__PURE__ */ T("tbody", { children: e.map((e, t) => t > 1 && /* @__PURE__ */ T("tr", { children: Object.values(e).map((e, t) => /* @__PURE__ */ T("td", {
 					style: {
 						color: $(-e, t, "uscita"),
 						fontWeight: t === 0 ? "bold" : null
 					},
 					children: t > 0 ? parseFloat(-e).toFixed(2) + " €" : e
 				}, t)) }, t)) }),
-				/* @__PURE__ */ E("tbody", { children: /* @__PURE__ */ E("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ E("td", {
+				/* @__PURE__ */ T("tbody", { children: /* @__PURE__ */ T("tr", { children: Object.values(e[0]).map((e, t) => /* @__PURE__ */ T("td", {
 					style: {
 						color: $(-e, t, "uscita"),
 						fontWeight: t === 0 ? "bold" : null
@@ -2454,8 +2458,8 @@ function jn({ usciteItems: e, lingua: t, etichettaIta: n, etichettaEng: r }) {
 		}) })]
 	});
 }
-function Mn({ entrate: e, uscite: t, lingua: n }) {
-	return /* @__PURE__ */ D(O, {
+function jn({ entrate: e, uscite: t, lingua: n }) {
+	return /* @__PURE__ */ E(D, {
 		style: {
 			display: "inline-block",
 			backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -2465,10 +2469,10 @@ function Mn({ entrate: e, uscite: t, lingua: n }) {
 			paddingBottom: "50px",
 			overflowX: "auto"
 		},
-		children: [/* @__PURE__ */ E(O.Body, { children: /* @__PURE__ */ E("center", { children: /* @__PURE__ */ E(O.Title, {
+		children: [/* @__PURE__ */ T(D.Body, { children: /* @__PURE__ */ T("center", { children: /* @__PURE__ */ T(D.Title, {
 			style: { color: "#FFFFFF" },
 			children: n === "italiano" ? "Ricavi" : "Revenues"
-		}) }) }), /* @__PURE__ */ E("center", { children: /* @__PURE__ */ D(k, {
+		}) }) }), /* @__PURE__ */ T("center", { children: /* @__PURE__ */ E(O, {
 			striped: !0,
 			bordered: !0,
 			hover: !0,
@@ -2479,173 +2483,173 @@ function Mn({ entrate: e, uscite: t, lingua: n }) {
 				marginBottom: "10px",
 				textAlign: "center"
 			},
-			children: [/* @__PURE__ */ E("thead", { children: /* @__PURE__ */ D("tr", { children: [
-				/* @__PURE__ */ E("th", {
+			children: [/* @__PURE__ */ T("thead", { children: /* @__PURE__ */ E("tr", { children: [
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "ANNO" : "YEAR"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "GEN" : "JAN"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "FEB"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "MAR"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "APR"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "MAG" : "MAY"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "GIU" : "JUN"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "LUG" : "JUL"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "AGO" : "AUG"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "SET" : "SEP"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "OTT" : "OCT"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: "NOV"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "DIC" : "DEC"
 				}),
-				/* @__PURE__ */ E("th", {
+				/* @__PURE__ */ T("th", {
 					style: { color: "#FFFFFF" },
 					children: n === "italiano" ? "TOT RICAVI" : "TOT EARNINGS"
 				})
-			] }) }), /* @__PURE__ */ D("tbody", { children: [e.map((e, n) => n > 1 && /* @__PURE__ */ D("tr", { children: [/* @__PURE__ */ E("td", {
+			] }) }), /* @__PURE__ */ E("tbody", { children: [e.map((e, n) => n > 1 && /* @__PURE__ */ E("tr", { children: [/* @__PURE__ */ T("td", {
 				style: { fontWeight: "bold" },
 				children: e.Anno
-			}), t[n] && /* @__PURE__ */ D(T, { children: [
-				/* @__PURE__ */ D("td", {
+			}), t[n] && /* @__PURE__ */ E(w, { children: [
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.gen - t[n].gen) },
 					children: [parseFloat(e.gen - t[n].gen).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.feb - t[n].feb) },
 					children: [parseFloat(e.feb - t[n].feb).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.mar - t[n].mar) },
 					children: [parseFloat(e.mar - t[n].mar).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.apr - t[n].apr) },
 					children: [parseFloat(e.apr - t[n].apr).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.mag - t[n].mag) },
 					children: [parseFloat(e.mag - t[n].mag).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.giu - t[n].giu) },
 					children: [parseFloat(e.giu - t[n].giu).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.lug - t[n].lug) },
 					children: [parseFloat(e.lug - t[n].lug).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.ago - t[n].ago) },
 					children: [parseFloat(e.ago - t[n].ago).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.set - t[n].set) },
 					children: [parseFloat(e.set - t[n].set).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.ott - t[n].ott) },
 					children: [parseFloat(e.ott - t[n].ott).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.nov - t[n].nov) },
 					children: [parseFloat(e.nov - t[n].nov).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.dic - t[n].dic) },
 					children: [parseFloat(e.dic - t[n].dic).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e.totale_anno - t[n].totale_anno) },
 					children: [parseFloat(e.totale_anno - t[n].totale_anno).toFixed(2), " €"]
 				})
-			] })] }, n)), /* @__PURE__ */ D("tr", { children: [
-				/* @__PURE__ */ E("td", {
+			] })] }, n)), /* @__PURE__ */ E("tr", { children: [
+				/* @__PURE__ */ T("td", {
 					style: { fontWeight: "bold" },
 					children: e[0].Anno
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].gen - t[0].gen, 1) },
 					children: [parseFloat(e[0].gen - t[0].gen).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].feb - t[0].feb) },
 					children: [parseFloat(e[0].feb - t[0].feb).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].mar - t[0].mar) },
 					children: [parseFloat(e[0].mar - t[0].mar).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].apr - t[0].apr) },
 					children: [parseFloat(e[0].apr - t[0].apr).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].mag - t[0].mag) },
 					children: [parseFloat(e[0].mag - t[0].mag).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].giu - t[0].giu) },
 					children: [parseFloat(e[0].giu - t[0].giu).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].lug - t[0].lug) },
 					children: [parseFloat(e[0].lug - t[0].lug).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].ago - t[0].ago) },
 					children: [parseFloat(e[0].ago - t[0].ago).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].set - t[0].set) },
 					children: [parseFloat(e[0].set - t[0].set).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].ott - t[0].ott) },
 					children: [parseFloat(e[0].ott - t[0].ott).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].nov - t[0].nov) },
 					children: [parseFloat(e[0].nov - t[0].nov).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].dic - t[0].dic) },
 					children: [parseFloat(e[0].dic - t[0].dic).toFixed(2), " €"]
 				}),
-				/* @__PURE__ */ D("td", {
+				/* @__PURE__ */ E("td", {
 					style: { color: $(e[0].totale_anno - t[0].totale_anno) },
 					children: [parseFloat(e[0].totale_anno - t[0].totale_anno).toFixed(2), " €"]
 				})
@@ -2653,8 +2657,8 @@ function Mn({ entrate: e, uscite: t, lingua: n }) {
 		}) })]
 	});
 }
-function Nn({ totaleItems: e }) {
-	return /* @__PURE__ */ D(Q.StyledCard, { children: [/* @__PURE__ */ E(Q.StyledCardHeader, { children: "Informations" }), /* @__PURE__ */ E(Q.SlideContainer, { children: e && /* @__PURE__ */ E(Q.StyledInputBlock, {
+function Mn({ totaleItems: e }) {
+	return /* @__PURE__ */ E(Q.StyledCard, { children: [/* @__PURE__ */ T(Q.StyledCardHeader, { children: "Informations" }), /* @__PURE__ */ T(Q.SlideContainer, { children: e && /* @__PURE__ */ T(Q.StyledInputBlock, {
 		rows: 1,
 		name: "totale_items",
 		id: "totale_items",
@@ -2663,12 +2667,12 @@ function Nn({ totaleItems: e }) {
 		readOnly: !0
 	}) })] });
 }
-function Pn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: a }) {
-	return /* @__PURE__ */ D(Q.StyledCard, { children: [
-		/* @__PURE__ */ E(Q.StyledCardHeader, { children: a === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
-		/* @__PURE__ */ D(Q.SlideContainer, {
+function Nn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRicerca: r, lingua: i }) {
+	return /* @__PURE__ */ E(Q.StyledCard, { children: [
+		/* @__PURE__ */ T(Q.StyledCardHeader, { children: i === "italiano" ? "Ricerca entrate e uscite" : "Searching for inputs and outputs" }),
+		/* @__PURE__ */ E(Q.SlideContainer, {
 			style: { maxHeight: "2000px" },
-			children: [/* @__PURE__ */ E(Q.StyledInputModifica, {
+			children: [/* @__PURE__ */ T(Q.StyledInputModifica, {
 				rows: 1,
 				name: "primo_anno",
 				id: "primo_anno",
@@ -2678,37 +2682,37 @@ function Pn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 				placeholder: "Primo anno",
 				onChange: (e) => n(e, t),
 				onContextMenu: (e) => handleRightClick(e, "Primo anno")
-			}), /* @__PURE__ */ D(Q.StyledSelectModifica, {
+			}), /* @__PURE__ */ E(Q.StyledSelectModifica, {
 				name: "ultimo_anno",
 				id: "ultimo_anno",
 				value: e.ultimo_anno,
 				onChange: (e) => n(e, t),
 				onContextMenu: (e) => handleRightClick(e, "Ultimo anno"),
 				children: [
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 1,
 						children: parseInt(e.primo_anno) + 1
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 2,
 						children: parseInt(e.primo_anno) + 2
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 3,
 						children: parseInt(e.primo_anno) + 3
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 4,
 						children: parseInt(e.primo_anno) + 4
 					}),
-					/* @__PURE__ */ E("option", {
+					/* @__PURE__ */ T("option", {
 						value: parseInt(e.primo_anno) + 5,
 						children: parseInt(e.primo_anno) + 5
 					})
 				]
 			})]
 		}),
-		/* @__PURE__ */ E(z, {
+		/* @__PURE__ */ T(z, {
 			eseguiRicerca: (e) => r(e),
 			vistaItem: "card",
 			StyledComponents: Q
@@ -2717,89 +2721,89 @@ function Pn({ datiRicerca: e, setDatiRicerca: t, handleInputChange: n, eseguiRic
 }
 //#endregion
 //#region src/Items.jsx
-var Fn = ({ tipoItem: e, items: t, setItems: n, operazioneModifica: r, operazioneElimina: a, campi: o, handleBlurItem: s, tipoForm: c, vistaItem: l }) => {
-	let u = l === "card" ? wn : Ft, d = () => /* @__PURE__ */ E(T, { children: t.map((c, l) => /* @__PURE__ */ E(u, {
-		item: c,
-		campi: c ? o(c, null, null, null) : [],
-		indici: [...Array(o(c, null, null, null).label.length).keys()],
+var Pn = ({ tipoItem: e, items: t, setItems: n, operazioneModifica: r, operazioneElimina: i, campi: a, handleBlurItem: o, tipoForm: s, vistaItem: c }) => {
+	let l = c === "card" ? Cn : Pt, u = () => /* @__PURE__ */ T(w, { children: t.map((s, c) => /* @__PURE__ */ T(l, {
+		item: s,
+		campi: s ? a(s, null, null, null) : [],
+		indici: [...Array(a(s, null, null, null).label.length).keys()],
 		operazioneModifica: r,
-		operazioneElimina: a,
+		operazioneElimina: i,
 		items: t,
 		setItems: n,
 		tipoItem: e,
-		handleBlurItem: s
-	}, l)) });
-	return /* @__PURE__ */ D(T, { children: [c === "search" && t.length === 0 && /* @__PURE__ */ E("div", {
+		handleBlurItem: o
+	}, c)) });
+	return /* @__PURE__ */ E(w, { children: [s === "search" && t.length === 0 && /* @__PURE__ */ T("div", {
 		className: "contenitore-1",
 		children: "Nessun elemento trovato."
-	}), t.length > 0 && /* @__PURE__ */ E(T, { children: l === "card" ? /* @__PURE__ */ E("div", {
+	}), t.length > 0 && /* @__PURE__ */ T(w, { children: c === "card" ? /* @__PURE__ */ T("div", {
 		className: "contenitore-3",
-		children: /* @__PURE__ */ E(d, {})
-	}) : /* @__PURE__ */ E(d, {}) })] });
-}, In = ({ componenti: t, elementi: r, vistaItem: a, vistaForm: o }) => {
-	let [s, c] = n("search"), l = o === "form" ? Je : o === "card" ? Sn : Nt, u = o === "form" ? Ye : o === "card" ? Cn : Pt, d = o === "form" ? Qe : o === "card" ? Tn : It;
-	return /* @__PURE__ */ D(T, { children: [
-		/* @__PURE__ */ E(Ke, {
+		children: /* @__PURE__ */ T(u, {})
+	}) : /* @__PURE__ */ T(u, {}) })] });
+}, Fn = ({ componenti: t, elementi: r, vistaItem: i, vistaForm: a }) => {
+	let [o, s] = n("search"), c = a === "form" ? qe : a === "card" ? xn : Mt, l = a === "form" ? Je : a === "card" ? Sn : Nt, u = a === "form" ? Ze : a === "card" ? wn : Ft;
+	return /* @__PURE__ */ E(w, { children: [
+		/* @__PURE__ */ T(Ge, {
 			elementi: r,
-			tipoForm: s,
-			setTipoForm: c,
+			tipoForm: o,
+			setTipoForm: s,
 			StyledComponents: P
 		}),
-		/* @__PURE__ */ E("br", {}),
+		/* @__PURE__ */ T("br", {}),
 		" ",
-		/* @__PURE__ */ E("br", {}),
+		/* @__PURE__ */ T("br", {}),
 		" ",
-		/* @__PURE__ */ E("br", {}),
+		/* @__PURE__ */ T("br", {}),
 		" ",
-		/* @__PURE__ */ E("br", {}),
-		r.map((n, r) => /* @__PURE__ */ D(e, { children: [
-			n === "insert" && s === "insert" && /* @__PURE__ */ D(T, { children: [
-				/* @__PURE__ */ E(l, {
+		/* @__PURE__ */ T("br", {}),
+		r.map((n, r) => /* @__PURE__ */ E(e, { children: [
+			n === "insert" && o === "insert" && /* @__PURE__ */ E(w, { children: [
+				/* @__PURE__ */ T(c, {
 					campi: t.campiNuovoItem,
 					indici: t.indiciNuovoItem,
 					eseguiSalvataggio: t.handleInsert
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			] }),
-			n === "search" && s === "search" && /* @__PURE__ */ D(T, { children: [
-				/* @__PURE__ */ E(u, {
+			n === "search" && o === "search" && /* @__PURE__ */ E(w, { children: [
+				/* @__PURE__ */ T(l, {
 					campi: t.campiRicercaItems,
 					indici: t.indiciRicercaItems,
 					handleSearch: t.handleSearch
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			] }),
-			n === "file" && s === "file" && /* @__PURE__ */ D(T, { children: [
-				/* @__PURE__ */ E(d, {
+			n === "file" && o === "file" && /* @__PURE__ */ E(w, { children: [
+				/* @__PURE__ */ T(u, {
 					campi: t.campiFile,
 					indici: t.indiciFile,
 					ottieniFileRangePDF: t.handleSearchRangeFilePDF,
 					ottieniFileRangeExcel: t.handleSearchRangeFileExcel,
 					eliminaItemsRange: t.handleDeleteRangeFile
 				}),
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			] })
 		] }, r)),
-		s !== "file" && /* @__PURE__ */ D(T, { children: [
-			/* @__PURE__ */ E(Fn, {
+		o !== "file" && /* @__PURE__ */ E(w, { children: [
+			/* @__PURE__ */ T(Pn, {
 				tipoItem: t.tipoItem,
 				items: t.items,
 				setItems: t.setItems,
@@ -2807,41 +2811,41 @@ var Fn = ({ tipoItem: e, items: t, setItems: n, operazioneModifica: r, operazion
 				operazioneElimina: t.operazioneElimina,
 				campi: t.campiItemEsistente,
 				handleBlurItem: t.handleBlurItem,
-				tipoForm: s,
-				vistaItem: a
+				tipoForm: o,
+				vistaItem: i
 			}),
-			/* @__PURE__ */ E("br", {}),
+			/* @__PURE__ */ T("br", {}),
 			" ",
-			/* @__PURE__ */ E("br", {}),
+			/* @__PURE__ */ T("br", {}),
 			" ",
-			/* @__PURE__ */ E("br", {}),
+			/* @__PURE__ */ T("br", {}),
 			" ",
-			/* @__PURE__ */ E("br", {}),
-			t.visualizzazioneInformazioni === !0 && t.items.length > 0 && /* @__PURE__ */ D(T, { children: [
-				/* @__PURE__ */ E("center", { children: /* @__PURE__ */ E(Nn, { totaleItems: t.totaleItems }) }),
-				/* @__PURE__ */ E("br", {}),
+			/* @__PURE__ */ T("br", {}),
+			t.visualizzazioneInformazioni === !0 && t.items.length > 0 && /* @__PURE__ */ E(w, { children: [
+				/* @__PURE__ */ T("center", { children: /* @__PURE__ */ T(Mn, { totaleItems: t.totaleItems }) }),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {}),
+				/* @__PURE__ */ T("br", {}),
 				" ",
-				/* @__PURE__ */ E("br", {})
+				/* @__PURE__ */ T("br", {})
 			] }),
-			/* @__PURE__ */ E(We, {
+			/* @__PURE__ */ T(Ue, {
 				selectedIdsModifica: t.selectedIdsModifica,
 				selectedIdsEliminazione: t.selectedIdsEliminazione,
 				handleEdit: t.handleEdit,
 				handleDelete: t.handleDelete
 			}),
-			/* @__PURE__ */ E("br", {}),
+			/* @__PURE__ */ T("br", {}),
 			" ",
-			/* @__PURE__ */ E("br", {}),
+			/* @__PURE__ */ T("br", {}),
 			" ",
-			/* @__PURE__ */ E("br", {}),
+			/* @__PURE__ */ T("br", {}),
 			" ",
-			/* @__PURE__ */ E("br", {})
+			/* @__PURE__ */ T("br", {})
 		] })
 	] });
 };
 //#endregion
-export { Ke as CambioTipoForm, qe as CambioTipoForm2, kn as CardEntrateItems, An as CardEntrateItemsByName, Pn as CardEntrateUscite, Tn as CardFileItems, Nn as CardInformazioni, wn as CardItemEsistente, En as CardLogin, Sn as CardNuovoItem, Dn as CardProfilo, Mn as CardRicavi, Cn as CardRicercaItems, jn as CardUsciteItems, On as CardWidget, $e as FormEntrateUscite, Qe as FormFileItems, Xe as FormLogin, Je as FormNuovoItem, Ze as FormProfilo, Ye as FormRicercaItems, In as PaginaWeb, zt as RowEntrateUscite, It as RowFileItems, Ft as RowItemEsistente, Lt as RowLogin, Nt as RowNuovoItem, Rt as RowProfilo, Pt as RowRicercaItems };
+export { Ge as CambioTipoForm, Ke as CambioTipoForm2, On as CardEntrateItems, kn as CardEntrateItemsByName, Nn as CardEntrateUscite, wn as CardFileItems, Mn as CardInformazioni, Cn as CardItemEsistente, Tn as CardLogin, xn as CardNuovoItem, En as CardProfilo, jn as CardRicavi, Sn as CardRicercaItems, An as CardUsciteItems, Dn as CardWidget, Qe as FormEntrateUscite, Ze as FormFileItems, Ye as FormLogin, qe as FormNuovoItem, Xe as FormProfilo, Je as FormRicercaItems, Fn as PaginaWeb, Rt as RowEntrateUscite, Ft as RowFileItems, Pt as RowItemEsistente, It as RowLogin, Mt as RowNuovoItem, Lt as RowProfilo, Nt as RowRicercaItems };

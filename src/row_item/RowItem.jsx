@@ -123,6 +123,7 @@ export function RowRicercaItems({campi, indici, handleSearch}) {
                     </>
                   )}
                 </StyledComponents.StyledRow>
+                {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
               </div>
             </StyledComponents.StyledCol>
           </Fragment>

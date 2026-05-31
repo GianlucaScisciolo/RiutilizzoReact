@@ -161,6 +161,7 @@ export function FormRicercaItems({campi, indici, handleSearch}) {
                 onClick={campi.onClick}
                 onBlur={campi.onBlur}
               />
+              {(campi.errore[i]) && (<StyledComponents.StyledSpanErrore>{campi.errore[i]}</StyledComponents.StyledSpanErrore>)}
             </Fragment>
           );
         })}
