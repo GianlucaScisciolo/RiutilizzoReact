@@ -35,7 +35,7 @@ export function CardNuovoItem({campi, indici, eseguiSalvataggio}) {
                     id={campi.id[i]}
                     type={campi.type[i]}
                     step={campi.step[i]}
-                    value={(campi.value[i] !== " €") ? campi.value[i] : ""}
+                    value={campi.value[i]}
                     placeholder={campi.placeholder[i]}
                     onChange={campi.onChange}
                     onClick={campi.onClick}
@@ -85,8 +85,8 @@ export function CardRicercaItems({campi, indici, handleSearch}) {
                     rows={1}
                     name={campi.name[i]}
                     id={campi.id[i]}
-                    type={campi.value[i]}
-                    value={(campi.value[i] !== " €") ? campi.value[i] : ""}
+                    type={campi.type[i]}
+                    value={campi.value[i]}
                     placeholder={campi.placeholder[i]}
                     onChange={campi.onChange}
                     onClick={campi.onClick}
